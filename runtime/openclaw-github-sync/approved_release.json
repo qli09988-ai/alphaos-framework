@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "repository": "qli09988-ai/alphaos-framework",
+  "framework_version": "v0.1",
+  "approval_status": "Human Approved",
+  "approved_at": "2026-10-06",
+  "framework_ref": "freeze/alphaos-v0.1",
+  "commit": "c9c676f9127a4c57ba90c7dfdf501015f802fed9",
+  "files": {
+    "alphaos_core_spec.md": "7ee1bd7ee2337416254982f16f2a7c8070d0067f5fa16064a81f6d9f530d3b11",
+    "alphaos_personal_policy.md": "ee787f7100584506248a702ff0dafd69a4eafbccc13162395f47dd2a724d49b2",
+    "alphaos_status_board.md": "9144a51eb43944395f06a39b2df4f5e0484f38b32e574e8d2837e984e4610889",
+    "alphaos_case_lab.md": "2e3ccdb5034d751999ed45e69efce364f272f0a2ab2a4368baad76c2914bc774",
+    "alphaos_backlog_changelog.md": "c15579c440fe44729a266fc7097eb9f4c7a9bac546c04ae2aa0b65ded49fc26c",
+    "alphaos_usage_protocol.md": "be2e393a8e69df838d66e52af7bf2095f4c8feb4664a692adbc1c3d779e13d02",
+    "README.md": "dfc10d0c0f9ed8c2f93c9d1e5e67af65a34998f02e3501cc883f27229c31ae64",
+    "FREEZE_v0.1.md": "5d6117513b44cc8e521783b1e85015ed2f709bee5a3a26a2ff4ffd3840206531",
+    "HANDOFF_RUNTIME_v0.1.md": "896a6537ad42868896b187ebc13094de574a2e36fa389c8e2cde17bd02da5483"
+  }
+}
