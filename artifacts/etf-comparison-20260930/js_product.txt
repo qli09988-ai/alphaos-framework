@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>景顺长城基金管理有限公司</title>
+    <meta name="keywords" content="景顺长城,景顺长城基金, 景顺基金,景顺长城基金官网,基金官网,新基金,费率优惠,网上交易,基金产品,基金定投,基金净值,净值查询 ,基金投资理财,开放式基金净值,认购,量化新动力,001974,景顺长城量化新动力股票型证券投资基金,MSCI,MSCI A股国际指数">
+    <meta name="description" content="景顺长城，股票投资专家。曾多次获得金牛基金公司称号，旗下股票基金多次赢得年度股基收益冠军，景顺长城基金官网直接申购、定投费率优惠低至1折！">
+    <!-- <base target="_blank" /> -->
+    <link rel="stylesheet" href="/front/style/style/init.css">
+    <link rel="stylesheet" href="/front/style/style/product-detail.css">
+    <link rel="stylesheet" href="/front/style/style/side-bar.css">
+    <link rel="stylesheet" href="/front/style/style/nav-float.css">
+    <link rel="stylesheet" href="/front/style/style/datepicker.css">
+    <link rel="stylesheet" href="/front/style/style/product-detail_en.css">
+    <!-- <link rel="stylesheet" href="style/jquery-ui.min.css"> -->
+    <script type="text/javascript" src="/front/js/js/esl.min.js"></script>
+    <script type="text/javascript" src="/front/js/js/echarts.min.js"></script>
+    <script type="text/javascript" src="/front/js/js/chart/bar.js"></script>
+    <script type="text/javascript" src="/front/js/js/chart/line.js"></script>
+    <script type="text/javascript" src="/front/js/js/chart/pie.js"></script>
+    <script type="text/javascript" src="/zhsh/js/jquery.js"></script>
+    <script type="text/javascript" src="/front/js/js/laydate.dev.js"></script>
+    <script>
+        function backToTop(){ $('body,html').animate({scrollTop:0},666);return false; }
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ed25ac3c0e72b77fbab3c2b066a445e7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <script>
+        // 通用的图表渲染函数
+        function renderChart(tableId, chartId, tipId, targetJ, valueHandler) {
+            var tb = document.getElementById(tableId);
+            if (!tb) return; // 表格不存在则退出
+
+            var rows = tb.rows;
+            var nameArr = []; // 图例名称数组
+            var dataArr = []; // 图表数据数组
+
+            for (var i = 2; i < rows.length; i++) {
+                var cells = rows[i].cells;
+                for (var j = 1; j < cells.length; j++) {
+                    if (j === targetJ) { // 根据目标列索引处理
+                        var json = {};
+                        // 构建名称字符串
+                        var name = cells[j + 1].innerHTML + "%" + " : " + cells[j].innerHTML;
+                        nameArr.push(name);
+                        // 处理数值（通过回调函数处理不同的数值提取逻辑）
+                        json.value = valueHandler(cells[j + 1].innerHTML);
+                        json.name = name;
+                        dataArr.push(json);
+                    }
+                }
+            }
+
+            // 加载并渲染图表
+            var myChart = echarts.init(document.getElementById(chartId));
+            var option = {
+                color: ['#00207f', '#1450d2', '#009afa', '#d30546', '#e20092', '#af24a5', '#6e29aa', '#570c71', '#fa4526', '#f9dd17'],
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{b}",
+                    extraCssText: 'max-width: 200px; white-space: pre-wrap;word-wrap: break-word; text-align: left;',
+                    confine: true
+                },
+                legend: {
+                    orient: 'vertical',
+                    x: '240px',
+                    y: 'center',
+                    textStyle: {width: 190, overflow: 'truncate'},
+                    data: nameArr,
+                    tooltip: {
+                        //开启图例的tooltip，鼠标悬浮时显示完整文本
+                        show: true,
+                        trigger: 'item',
+                        extraCssText: 'max-width: 200px; white-space: pre-wrap;word-wrap: break-word; text-align: left;',
+                        position: function(point, params, dom, rect, size) {
+                            var positiony = rect.y + 25;
+                            if(rect.y >= size.viewSize[1] - 80){
+                                positiony = rect.y - 80;
+                            }
+                            return {left: 240, top: positiony};
+                        },
+                        confine: true
+                    },
+                    icon: 'path://M21,4.3C19.6,2.9,18,1.8,16.2,1.1C14.4,0.4,12.4,0,10.5,0C8.5,0,6.6,0.4,4.8,1.1C3,1.8,1.4,2.9,0,4.3L5.8,10C6.5,9.4,7.2,8.9,8,8.6C8.8,8.3,9.6,8.1,10.5,8.1C11.4,8.1,12.2,8.3,13,8.6C13.8,8.9,14.5,9.4,15.2,10L21,4.3Z',
+                    itemWidth: 20
+                },
+                series: [{
+                    name: '访问来源',
+                    type: 'pie',
+                    center: ['25%', '50%'],
+                    itemStyle: {
+                        normal: {
+                            label: { show: false },
+                            labelLine: { show: false }
+                        },
+                        emphasis: {
+                            label: {
+                                show: false,
+                                position: 'center',
+                                textStyle: { fontSize: '30', fontWeight: 'bold' }
+                            }
+                        }
+                    },
+                    data: dataArr
+                }]
+            };
+
+            // 处理空数据情况
+            if (nameArr.length === 0 && dataArr.length === 0) {
+                document.getElementById(tipId).innerHTML = getTipMessage(tipId);
+            } else {
+                myChart.setOption(option);
+            }
+        }
+
+        // 获取不同场景的提示信息
+        function getTipMessage(tipId) {
+            var tipMap = {
+                'tszcpz2': 'This fund has no asset allocation at the end of the reporting period.',
+                'tshypz2': 'This fund has no industry allocation at the end of the reporting period.',
+                'tssdgp2': 'This fund holds no stocks at the end of the reporting period.',
+                'tswdzq2': 'This fund holds no bonds at the end of the reporting period.'
+            };
+            return tipMap[tipId] || 'No data available.';
+        }
+
+        // 各个场景的调用函数（基于通用函数实现）
+        function zcchange2() {
+            renderChart(
+                'zcpz',       // 表格ID
+                'pie5',       // 图表容器ID
+                'tszcpz2',    // 提示信息元素ID
+                1,            // 目标列索引j
+                function(value) { return value.split("（")[0]; }
+            );
+        }
+
+        function hychange2() {
+            renderChart(
+                'hypz',
+                'pie6',
+                'tshypz2',
+                1,
+                function(value) { return value.split("（")[0]; }
+            );
+        }
+
+        function sdgpchange2() {
+            renderChart(
+                'sdgp',
+                'pie7',
+                'tssdgp2',
+                2,          // 目标列索引j为2
+                function(value) { return value; }
+            );
+        }
+
+        function wdzqchange2() {
+            renderChart(
+                'wdzq',
+                'pie8',
+                'tswdzq2',
+                2,
+                function(value) { return value; }
+            );
+        }
+
+        function qyfbchange2() {
+            renderChart(
+                'qyfb',
+                'pie9',
+                'tsqyfb2',
+                1,
+                function(value) { return value.split("（")[0]; }
+            );
+        }
+    </script>
+</head>
+
+<body>
+<!-- 把整体包裹起来 -->
+<div id="main_english_detail">
+        <input name="isnew" type="hidden" value="2" />
+        <input name="ischaracteristic" type="hidden" value="0" />
+        <!-- decoration -->
+        <div id="top-bg"></div>
+        <!--<div id="bottom-bg"></div>-->
+        <!-- nav1 -->
+        <div id="nav1" class="eng">
+            <div class="box">
+                <!-- left -->
+                <a href="javascript:;" id="gfwx">Official&nbsp;WeChat</a>
+                <a href="http://weibo.com/u/1644059164">Official&nbsp;Weibo</a>
+                <a href="javascript;;" onClick="javascript:window.open('http://www.invescogreatwall.com:9080/live800/chatClient/chatbox.jsp?companyID=8891&configID=5&skillId=1&enterurl=http%3A%2F%2Fwww%2Eigwfmc%2Ecom%2Findex%2Ehtm&pagereferrer=http%3A%2F%2Fwww%2Eigwfmc%2Ecom%2F&k=1','','width=778,height=520,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=yes');return false;">Online&nbsp;Customer&nbsp;Service</a>
+                <a href="/main/english/english-1-1.html">English</a>
+                <!-- right -->
+                <!--<form action="/main/search/search.html" method="get">
+                    <input type="text" name="search" placeholder="Fund&nbsp;Name/Code/Fund" />
+                    <input type="submit" value="" />
+                </form>-->
+            </div>
+        </div>
+        <!-- nav2 -->
+        <div id="nav2">
+            <div class="box">
+                <!-- left -->
+                <a href="/main/index/index.html" class="left"><img src="/front/images/i/logo.png" alt="logo"></a>
+                <!-- right -->
+                <a href="/main/english/english-1-1.html">Home</a>
+                <span></span>
+                <a href="/main/english/english-2-1.html">About Us</a>
+                <span></span>
+                <a href="/main/english/english-3-1.html" class="on">Products&Services</a>
+                <span></span>
+                <a href="/main/english/english-5-1.html">Contact Us</a>
+                <span></span>
+            </div>
+        </div>
+        <!-- brief -->
+        <div id="brief">
+            <div class="box">
+                <input type="hidden" value="2" id="isnew">
+                <input type="hidden" value="2" id="fundtype">
+                <p class="p1">Home > Fund Products > Invesco Great Wall CNI Robot Industry ETF</p>
+                <img src="/upload/detailImg/159559（英文版）.png" alt="" class="left" style="width:253px;">
+                <div class="right">
+                    <h1>Invesco Great Wall CNI Robot Industry ETF<span>（Fund Code：159559）</span><input type="hidden" value="159559" id="fundid"></h1>
+                    <p class="p2"><!-- --></p>
+
+<p class="p4" style="margin-top: 5px;"><span style="margin-right: 159px;">Latest NAV</span><span style="margin-right: 100px;">Change(%)</span>    <span>NAV Date：29-Sep-2026</span>
+
+</p>
+<p class="p5">
+    <span style="color: #000AD2;">1.1504</span>
+
+<span style="color: #000AD2; margin: 0 36px;">|</span>
+<span style="color: #d30547;">0.26%</span>
+</p>
+
+<table style="width:105%">
+    <tbody>
+    <tr>
+        <td>Inception Date：30-Nov-2023</td>
+    <td><span>AUM：</span>
+        <!-- <div class="btn">
+            <span class="question_mark">?</span>
+            <div class="wrap_warning">
+                <p>该基金规模为基金总资产净值，未区分下属分级基金，各分级基金规模请查看相应基金公告。</p>
+            </div>
+        </div> -->
+        <span>2,266,928,764.61（30-Jun-2026）</span>
+    </td>
+    </tr>
+    <tr>
+        <td>Subscription Status：Open for Subscription</td>
+<td>Redemption Status：Open for Redemption</td>
+</tr>
+<tr>
+    <td>Minimum Purchase Unit： 1 Million Units</td>
+<td>Purchase Fee：As per distributor's rules<!-- <!--
+                        <del>As per distributor's rules</del>
+                         <span style="cursor:pointer" onclick="window.open('/main/xjb/xianjinbao-1.html', '_blank')">代销机构规定</span>--></td>
+</tr>
+<tr>
+    <td>Risk Disclosure Letter：<span onclick="window.open('/data/Risk Disclosure Statement.pdf', '_blank')" class="clickspan">Click to view</span></td>
+    <td>PCF：<span  onclick="window.open('/main/english/etfpcf.html?fundcode=159559', '_blank')" class="clickspan"">Click to view</span></td>
+</tr>
+</tbody>
+</table>
+<!-- <p class="p6" style="margin-top: 0px; " style="display:none;">
+<a href="/main/etf/detail.html?fundcode=159559" style="margin-right: 26px;" target="_blank">申购/赎回清单</a>
+<a href="https://etfquery.igwfmc.com/" target="_blank">补券查询</a></p>
+-->
+</div>
+</div>
+</div>
+<!-- nav-float -->
+<div class="position-absolute eng" id="nav-float">
+    <div class="box">
+<ul>
+    <li data-anchor="2">Fund Overview</li>
+    <li data-anchor="4">Investment Returns</li>
+    <li data-anchor="5">NAV & Dividends</li>
+    <li data-anchor="19">Index Information</li>
+    <li data-anchor="6">Investment Portfolio</li>
+    <li data-anchor="7">Fees</li>
+    <li data-anchor="8">Fund Documents</li>
+</ul>
+
+
+</div>
+</div>
+
+
+<!-- Fund Overview -->
+<div class="anchor eng" id="l2">
+    <div class="box">
+        <h1><span>Fund Overview</span></h1>
+        <div id="tableDiv">
+            <table id="gwgmtable" style="width:360px;background:#fff;">
+                <tr>
+                    <td colspan="2" align="center" style="background:#e7edff;font-size:18px;">本基金过往规模</td>
+                </tr>
+                <tr>
+                    <td width="178px">日期</td>
+                    <td width="178px">基金规模</td>
+                </tr>
+                <tr>
+                    <td>30-Jun-2026</td>
+                    <td>2266928764.61元</td>
+                </tr>
+                <tr>
+                    <td>31-Mar-2026</td>
+                    <td>2639715497.43元</td>
+                </tr>
+                <tr>
+                    <td>31-Dec-2025</td>
+                    <td>3193065816.83元</td>
+                </tr>
+                <tr>
+                    <td>30-Sep-2025</td>
+                    <td>2599562688.79元</td>
+                </tr>
+                <tr>
+                    <td>30-Jun-2025</td>
+                    <td>535093336.69元</td>
+                </tr>
+                <tr>
+                    <td>31-Mar-2025</td>
+                    <td>430953311.52元</td>
+                </tr>
+                <tr>
+                    <td>31-Dec-2024</td>
+                    <td>87810011.18元</td>
+                </tr>
+                <tr>
+                    <td>30-Sep-2024</td>
+                    <td>54969804.22元</td>
+                </tr>
+                <tr>
+                    <td>30-Jun-2024</td>
+                    <td>50099629.04元</td>
+                </tr>
+                <tr>
+                    <td>31-Mar-2024</td>
+                    <td>51112661.30元</td>
+                </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="button" value="关闭" id="closeTable"></td>
+        </tr>
+        </table>
+    </div>
+    <table  id="jjgktable">
+        <tbody>
+        <tr>
+            <th>Fund Name</th>
+            <td>Invesco Great Wall CNI Robot Industry ETF</td>
+            <th>Fund Type</th>
+            <td>Index Fund</td>
+        </tr>
+        <tr>
+            <th>Fund Manager</th>
+            <td>Invesco Great Wall Fund Management Company Limited</td>
+            <th>Fund Code</th>
+            <td>159559</td>
+        </tr>
+        <tr>
+            <th>Fund Custodian</th>
+            <td>China Securities Co., Ltd.</td>
+            <th>Inception Date</th>
+            <td> 
+                30-Nov-2023
+            <input type="hidden" id="clrq" value="30-Nov-2023"></td>
+        </tr>
+        <tr>
+            <th>Latest AUM</th>
+            <td>2,266,928,764.61<span style="color: #989898; margin-right: 20px;">（2026-06-30）</span></td>
+            <th>Currency</th>
+            <td>CNY</td>
+        </tr>
+        <tr>
+            <th>Distribution Policy</th>
+            <td>Subject to Manager’s discretion</td>
+            <th>Benchmark</th>
+            <td>CNI Robot Index</td>
+        </tr>
+        <tr>
+            <th>Portfolio Allocation</th>
+            <td colspan="3">The Fund shall invest no less than 90% of its net asset value in constituent stocks and alternate constituent stocks of the benchmark index, and no less than 80% of its non-cash fund assets, except where restricted by laws and regulations.</td>
+        </tr>
+        <tr>
+            <th>Risk Characteristics</th>
+            <td colspan="3">Morningstar Risk Rating: Medium-High. Suitable for aggressive and moderately aggressive investors. This fund is an equity fund, with long-term average risk and expected returns higher than balanced funds, bond funds, and money market funds. It is an index fund that passively tracks the performance of the underlying index, and shares similar risk-return characteristics with the index and the stock market it represents.</td>
+        </tr>
+        <tr>
+            <th>Investment Objective</th>
+            <td colspan="3">To closely track the Index, pursuing the minimization of tracking deviation and tracking error, and thereby seek returns similar to those of the benchmark index.</td>
+        </tr>
+        <tr>
+            <th><div class="scop">Investment Scope</div></th>
+            <td colspan="3">The Fund primarily invests in constituent stocks and alternative constituent stocks of the benchmark index (including depositary receipts, as applicable). To better achieve its investment objectives, the Fund may also invest a small portion in non-constituent stocks (including stocks and depositary receipts listed on the main board, ChiNext, and other markets approved or registered by the China Securities Regulatory Commission (CSRC)), derivatives (index futures, stock options, etc.), bonds (including treasury bonds, financial bonds, corporate bonds, company bonds, local government bonds, publicly issued subordinated bonds, exchangeable bonds, convertible bonds, the pure bond portion of split-tranche convertible bonds, central bank bills, medium-term notes, short-term financing bills, ultra-short-term financing bills, government-supported agency bonds, government-supported bonds), asset-backed securities, bond repurchase agreements, bank deposits (including agreement deposits, time deposits, and other bank deposits), interbank certificates of deposit, money market instruments, and other financial instruments permitted for fund investment by the CSRC (provided they comply with relevant CSRC regulations). The Fund may engage in securities lending transactions for financing and securities lending under the provisions of relevant laws and regulations. The Fund's investment portfolio allocation shall be as follows: The Fund shall invest no less than 90% of its net asset value in constituent stocks and alternate constituent stocks of the benchmark index, and no less than 80% of its non-cash fund assets, except where restricted by laws and regulations. At the end of each trading day, after deducting the transaction margin required for stock index futures contracts and stock option contracts, the Fund shall maintain cash reserves equivalent to at least one times the transaction margin. Cash reserves shall not include settlement reserves, deposited margin, or receivable subscription funds.</td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="zhu" style="color:#4f5766; display:none;"></p>
+</div>
+</div>
+
+<!-- Investment Returns -->
+<div class="anchor" id="l4">
+    <div class="box">
+        <h1><span>Investment Returns</span></h1>
+        <h2>Performance
+            <span>As of 29-Sep-2026</span>
+    </h2>
+    <table>
+        <tbody>
+        <tr style="border: 1px solid #ddd;">
+            <th width="230px"></th>
+            <th>1W</th>
+            <th>1M</th>
+            <th>3M</th>
+            <th>6M</th>
+            <th>1Y</th>
+            <th>3Y</th>
+            <th>YTD</th>
+            <th>Inception Date</th>
+            <th>Since Inception</th>
+        </tr>
+        <tr style="border: 1px solid #ddd;">
+            <td>Fund Performance</td>
+            <td class="f-green">-3.33<i>%</i></td>
+        <td class="f-green">-3.93<i>%</i></td>
+<td class="f-green">-14.07<i>%</i></td>
+<td class="f-green">-7.54<i>%</i></td>
+<td class="f-green">-21.73<i>%</i></td>
+<td style="color: #4f5766;">--</td>
+<td class="f-green">-19.34<i>%</i></td>
+<td><span> 
+                       2023/11/30
+</span></td>
+<td class="f-red" width="130px">14.74<i>%</i></td>
+</tr>
+<tr style="border: 1px solid #ddd;">
+    <td>Benchmark Performance</td>
+    <td class="f-green">-3.13<i>%</i></td>
+<td class="f-green">-3.85<i>%</i></td>
+<td class="f-green">-14.95<i>%</i></td>
+<td class="f-green">-8.37<i>%</i></td>
+<td class="f-green">-24.13<i>%</i></td>
+<td style="color: #4f5766;">--</td>
+<td class="f-green">-20.06<i>%</i></td>
+<td><span>                        2023/11/30
+                        </span></td>
+<td class="f-red" width="130px">11.21<i>%</i></td>
+</tr>
+</tbody>
+</table>
+<h2>Historical Performance 
+    <span>As of 29-Sep-2026</span>
+</h2>
+<table>
+    <tbody>
+    <tr style="border: 1px solid #ddd;">
+        <th width="25%"></th>
+        <th width="35%">Fund Performance</th>
+        <th width="35%">Benchmark Performance</th>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+        <td>2026YTD</td>
+        <td>-19.34<i>%</i></td>
+    <td>-20.06<i>%</i></td>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+        <td>2025</td>
+        <td>35.39<i>%</i></td>
+    <td>36.99<i>%</i></td>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+        <td>2024</td>
+        <td>4.46<i>%</i></td>
+    <td>4.42<i>%</i></td>
+    </tr>
+    <tr style="border: 1px solid #ddd;">
+        <td>2023</td>
+        <td>0.60<i>%</i></td>
+    <td>-2.74<i>%</i></td>
+    </tr>
+</tbody>
+</table>
+<!-- <p class="zhu">注：期间收益数据来自晨星资讯，截至：
+2026-09-29
+，业绩比较基准数据来自财汇，截至：
+2026-09-29
+，本公司不保证其准确性，也不构成相关的业绩保证或投资建议。</p> -->
+<h2>Performance Chart</h2>
+<div id="income_div" style="width:990px;height:500px;"></div>
+</div>
+</div>
+
+<!-- NAV & Dividends -->
+<div class="anchor" id="l5">
+    <div class="box">
+        <h1><span>NAV & Dividends</span></h1>
+        <h2>Fund NAV Chart</h2>
+        <div id="nav_div" style="width:990px;height:500px;"></div>
+        <h2 id="lsnav">Historical NAV and Price Query</h2>
+        <form method="get">
+            <p class="p2">
+                <span>Start time</span>
+                <input type="text" name="d1" id="startDate" autocomplete="off">
+                <span>End time</span>
+                <input type="text" name="d2" id="endDate" autocomplete="off">
+                <input type="button" value="Query" id="checkLSJZ">
+                <input type="button" value="Download" id="downLSJZ" style="color: #fff;background: #2b4ed0;">
+            </p>
+        </form>
+        <!--   <div id="fenyeLSJZ" style="width:1000px;height:543px;"></div> -->
+        <div id="fenyeLSJZ"></div>
+
+        <h2>Fund Distribution History</h2>
+        <p class="p3">
+            Since inception, the fund has not made any distributions. The total distribution amount per 10 fund units is RMB 0.00.
+        </p>
+</div>
+</div>
+
+<!-- Index Information -->
+<div class="anchor" id="l9">
+    <div class="box">
+        <h1><span>Index Information</span></h1>
+        <h2 class="asdate"><span>As of 29-Sep-2026</span></h2>
+        <table class="indexfund">
+            <tr>
+                <th>Index Code</th>
+                <td>980022</td>
+                <th>Index Name</th>
+                <td>CNI Robot Index</td>
+            </tr>
+            <tr>
+                <th>Index Provider</th>
+                <td>Shenzhen Securities Information Co., Ltd.</td>
+                <th>Currency</th>
+                <td>CNY</td>
+            </tr>
+            <tr>
+                <th>Closing Price</th>
+                <td>2,121.32</td>
+                <th>Change</th>
+                <td style="color: #d30547;">4.92</td>
+            </tr>
+            <tr>
+                <th>Index Type</th>
+                <td>EQUITY</td>
+                <th>Change(%)</th>
+                <td style="color: #d30547;">0.23<em>%</em></td>
+            </tr>
+        </table>
+</div>
+</div>
+
+
+<!-- Investment Portfolio -->
+<div class="anchor" id="l6">
+    <div class="box">
+        <h1><span>Investment Portfolio</span></h1>
+        <h2 class="tzzh" style="background-image: none;">
+            <span>&nbsp;</span>
+            <form action="./" method="get" id="dateForm2">
+                <span>Source：</span>
+                <select id="paint_year2">
+                    <option>2026</option>
+                    <option>2025</option>
+                    <option>2024</option>
+            </select>
+            <select id="paint_month2"></select>
+            <span id="jiezhi2"> As of 30-Jun-2026</span>
+            </form>
+        </h2>
+        <div>
+            <div class="b3">
+                <table id="zcpz">
+                    <thead>
+                    <tr>
+                        <td colspan="4">
+                            <p>Asset Breakdown</p>
+                            <button title="Switch View" class="on"></button>
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody style="display: none;" id="pieone2">
+                    <tr>
+                        <td class="td1">No.</td>
+                        <td class="td2">Asset</td>
+                        <td class="td3">Percentage of Fund Net Assets (%)</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">1</td>
+                        <td class="td2">股票</td>
+                        <td class="td3">97.78</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">2</td>
+                        <td class="td2">现金</td>
+                        <td class="td3">1.26</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">3</td>
+                        <td class="td2">其他</td>
+                        <td class="td3">0.95</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">4</td>
+                        <td class="td2">基金</td>
+                        <td class="td3">0.00</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">5</td>
+                        <td class="td2">权证</td>
+                        <td class="td3">0.00</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">6</td>
+                        <td class="td2">债券</td>
+                        <td class="td3">0.00</td>
+                    </tr>
+
+                </tbody>
+                </table>
+                <p id="tszcpz2" class="no-bond"></p>
+                <div id="pie5" class="pie" style="width:490px;"></div>
+            </div>
+            <div class="b3">
+                <table id="hypz">
+                    <thead>
+                    <tr>
+                        <td colspan="4">
+                            <p>Sector Breakdown</p>
+                            <button title="Switch View" class="on"></button>
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody style="display: none;" id="pietwo2">
+                    <tr>
+                        <td class="td1">No.</td>
+                        <td class="td2">Sector</td>
+                        <td class="td3">Percentage of Fund Net Assets (%)</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">1</td>
+                        <td class="td2">制造业</td>
+                        <td class="td3">90.40</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">2</td>
+                        <td class="td2">信息传输、软件和信息技术服务业</td>
+                        <td class="td3">6.02</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">3</td>
+                        <td class="td2">科学研究和技术服务业</td>
+                        <td class="td3">2.53</td>
+                    </tr>
+                </tbody>
+                </table>
+                <p id="tshypz2" class="no-bond"></p>
+                <div id="pie6" class="pie" style="width:490px;"></div>
+            </div>
+            <!-- 两段对齐，兼容 IE7+ -->
+            <div class="justify-last"></div>
+        </div>
+        <div>
+            <div class="b3">
+                <table id="qyfb">
+                    <thead>
+                    <tr>
+                        <td colspan="4">
+                            <p>Regional Breakdown</p>
+                            <button title="Switch View" class="on"></button>
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody style="display: none;" id="piefive2">
+                    <tr>
+                        <td class="td1">No.</td>
+                        <td class="td2">Country (Region)</td>
+                        <td class="td3">Percentage of Fund Net Assets (%)</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p id="tsqyfb2" class="no-bond"></p>
+                <div id="pie9" class="pie" style="width:490px;"></div>
+            </div>
+            <div class="b3">
+                <table id="sdgp">
+                    <thead>
+                    <tr>
+                        <td colspan="4">
+                            <p>Top 10 Holdings</p>
+                            <button title="Switch View" class="on"></button>
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody style="display: none;" id="piethree2">
+                    <tr>
+                        <td class="td1">No.</td>
+                        <td class="td2">Ticker</td>
+                        <td class="td3">Name</td>
+                        <td class="td4">Percentage of Fund Net Assets (%)</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>002600</td>
+                        <td>领益智造</td>
+                        <td> 6.09</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>300024</td>
+                        <td>机器人</td>
+                        <td> 5.02</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>688017</td>
+                        <td>绿的谐波</td>
+                        <td> 4.9</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>002472</td>
+                        <td>双环传动</td>
+                        <td> 4.65</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>002747</td>
+                        <td>埃斯顿</td>
+                        <td> 4.11</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>603119</td>
+                        <td>浙江荣泰</td>
+                        <td> 3.9</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>300953</td>
+                        <td>震裕科技</td>
+                        <td> 3.89</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>300503</td>
+                        <td>昊志机电</td>
+                        <td> 3.65</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>000967</td>
+                        <td>盈峰环境</td>
+                        <td> 2.92</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>002050</td>
+                        <td>三花智控</td>
+                        <td> 2.8</td>
+                    </tr>
+                </tbody>
+                </table>
+                <p id="tssdgp2" class="no-bond"></p>
+                <div id="pie7" class="pie" style="width:490px;"></div>
+            </div>
+            <!-- 两段对齐，兼容 IE7+ -->
+            <div class="justify-last"></div>
+        </div>
+        <p class="zhu">Note: Portfolio data is source from Wind. The data presented here, such as the top 10 sector allocations, top 10 equity holdings, and top 5 bond holdings，are for reference only. The proportion data for each item here refers to its percentage of the fund's net asset value. The company does not guarantee data accuracy, and this information does not constitute any related performance guarantee or investment recommendation. For detailed information, please refer to the fund's quarterly, interim and annual report.</p>
+    </div>
+</div>
+<!-- 费率&优惠 -->
+<div class="anchor" id="l7">
+    <div class="box">
+        <h1><span>Fees</span></h1>
+
+        <table>
+            <tbody>
+            <tr>
+                <th colspan="3">Fee Information </th>
+            </tr>
+            <tr>
+                <td width="333px"><b>Management Fee/year</b></td>
+                <td width="333px"><b>Custodian Fee/year</b></td>
+                <td width="333px"><b>Sales Service Fee/year</b></td>
+            </tr>
+            <tr>
+
+                <td>0.5<em>%</em></td>
+        <td>0.1<em>%</em></td>
+        <td>0.00<em>%</em></td>
+        </tr>
+    </tbody>
+    </table>
+
+<table>
+    <tbody>
+    <tr>
+        <th colspan="10">Subscription And Redemption Fee Rate</th>
+    </tr>
+    <tr>
+        <td colspan="2"><b>Initial Subscription Fee</b></td>
+    <td colspan="2"><b>Purchase Fee</b></td>
+    <td colspan="2"><b>Redemption Fee</b></td>
+</tr>
+<tr>
+    <td>S<500,000 shares</td>
+    <td>0.80%</td>
+<td>S≥1,000,000 shares</td>
+<td>As per distributor's rules</td>
+<td>S≥1,000,000 shares</td>
+<td>As per distributor's rules</td>
+</tr>
+
+<tr>
+    <td>
+        500,000 shares ≤ S &lt; 1,000,000 shares
+    </td>
+    <td>0.50%</td>
+<td>
+</td>
+<td></td>
+<td>
+</td>
+<td></td>
+</tr>
+
+<tr>
+    <td>
+        S≥1,000,000 shares
+    </td>
+    <td>500 per transaction</td>
+<td>
+</td>
+<td></td>
+<td>
+</td>
+<td></td>
+</tr>
+
+
+
+
+
+</tbody>
+</table>
+</div>
+</div>
+
+
+<!-- Fund Documents -->
+<div class="anchor" id="l8">
+    <div class="box" style="overflow: initial;">
+        <h1><span>Fund Documents</span></h1>
+        <div id="fenye" style="min-height:240px"></div>
+    </div>
+</div>
+
+<!-- footer -->
+<div id="footer">
+    <div class="box">
+        <p><b style="font-size: 14px;">Important Information：</b>
+            <br><br>
+            Source: Fund performance data is sourced from Morningstar, benchmark data is sourced from Caihui, index information data is sourced from Hundsun JuYuan. The Company does not guarantee the accuracy of such data, nor does it constitute any performance guarantee or investment advice. Other data is sourced from Wind and IGW for reference only. The intraday price changes of the fund do not represent its performance. Detailed information shall be subject to disclosures in the fund's quarterly reports, semi-annual reports, annual reports, and other relevant disclosures.
+            <br><br>
+            The fund operation history in China is relatively short and cannot reflect all stages of the stock and bond market development. The fund's past performance is not indicative of its future performance. The performance of other funds managed by the fund manager does not guarantee the performance of this fund. Fund investment involves risks. Investors should fully understand the risk characteristics，pay attention to the appropriateness assessment opinions provided by the fund distributor, and make cautious investment decisions based on their own risk tolerance. Investors should carefully read the "Fund Contract," "Prospectus", "Key Facts Statement," and other legal documents to fully understand the product.
+            <br><br>
+            The English documents of this ETF provided on this website are made available solely for reference purposes and have been prepared in accordance with the requirements of the laws and regulations of the People’s Republic of China. They are intended to facilitate understanding by non-Chinese readers and do not constitute an offer or solicitation to purchase or sell any securities.
+            <br><br>
+            This ETF is governed by, and subject to, the laws of the People’s Republic of China. Any disputes arising in relation to this ETF shall be subject to the jurisdiction of the courts of the People’s Republic of China.
+            <br><br>
+            This website is the English version, in case of any discrepancies between the English version and the Chinese version, the Chinese version shall prevail.<br>
+        </p>
+    </div>
+</div>
+<!-- copyright -->
+<div id="copyright">
+    <div class="box">
+        <p>Invesco Great Wall. <a href="http://beian.miit.gov.cn" target="_blank">粤ICP备06065556号</a> 本网站支持IPv6
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030402003663" style="display:inline-block;text-decoration:none;  margin-bottom: -8px;"><img src="/front/images/wa.png" style="float:left;"/>粤公网安备 44030402003663号</a>
+        </p>
+        <p><a style="font-weight: 900;cursor: pointer;" onclick="window.open('/data/Risk Disclosure Statement.pdf', '_blank')">风险揭示书</a>|
+            <a style="font-weight: 900;cursor: pointer;" onclick="window.open('/data/证券投资基金投资人权益须知.pdf', '_blank')">投资者权益须知</a>|
+            <a style="font-weight: 900;cursor: pointer;" onclick="window.open('/upload/20191206/景顺长城基金隐私政策.pdf', '_blank')">隐私政策</a>|
+            <a style="font-weight: 900;cursor: pointer;" onclick="window.open('/upload/yjts/景顺长城基金管理有限公司客户应急处理提示.pdf', '_blank')">应急处理提示</a></p>
+        <p>
+            <a style="margin: 0;" href="http://szcert.ebs.org.cn/7b54be4e-ae91-4e0e-938c-75f17fac684e"><img src="/front/images/i/copyright.png" alt=""></a>
+
+        </p>
+    </div>
+</div>
+<!-- floating-tool -->
+<!--<ul id="f-tool" style="right: 320px;">
+    <li class="btn1">
+    <a href="http://www.invescogreatwall.com:9080/live800/chatClient/chatbox.jsp?companyID=8891&amp;configID=5&amp;skillId=1&amp;enterurl=http://www.igwfmc.com/index.htm&amp;pagereferrer=http://www.igwfmc.com/" target="_blank"></a>
+            -->
+<!--<div class="wrap_hint_feed_back">
+        <img src="/front/images/i/hint_feed_back.png">
+        <a href="javascript:void()" class="close_wrap_hint_feed_back">&times;</a>
+</div> -->
+<!--    </li>
+    <li class="btn2">
+        <div id="wx2" style="display: none;">
+            <img src="/front/images/i/rcode.jpg" alt="" class="qrcode">
+            <p>官方APP</p>
+        </div>
+    </li>
+    <li class="btn4">
+        <div id="wx3" style="display: none;">
+            <img src="/front/images/i/qwcode.png" alt="" class="qrcode">
+            <p>1V1专属服务经理</p>
+        </div>
+    </li>
+    <li class="btn3" onclick="backToTop()"></li>
+</ul> -->
+<!-- side-bar -->
+<dl id="side-bar">
+    <!--<img src="/front/images/i/triangle.png" alt="">
+ -->
+</dl>
+<div id="wx">
+    <img src="/front/images/i/float-qrcode.jpg" alt="" class="qrcode" >
+    <p>Official WeChat</p>
+</div>
+<!-- 把整体包裹起来 -->
+</div>
+<script type="text/javascript">
+    //项目主体页面 pageCode:页面路径编码,jsonParam:参数，isLoad:是否每次都加载
+    var _defaultPage = {"pageCode": "main/english/detail", "jsonParam":{},"isLoad":false};
+</script>
+<script type="text/javascript" src="/osoa/version.js"></script>
+<!--基础框架包 -->
+<script type="text/javascript" src="/thinkiveJs.min.js"></script>
+<script type="text/javascript">
+    laydate({ elem: '#startDate' });
+    laydate({ elem: '#endDate' });
+    laydate({ elem: '#newsStartDate' });
+    laydate({ elem: '#newsEndDate' });
+    $("#ljgm").hover(
+        function(){$(this).attr('style','background:#002080;color:#fff');},
+        function(){$(this).attr('style','background:#ffc600');
+        });
+    /* $("#checkSize").bind('click',function(){ $("#tableDiv").show();});
+    $("#closeTable").bind('click',function(){ $("#tableDiv").hide();});    */
+</script>
+</body>
+<script>
+    $("#gfwx").bind({
+        mouseenter:function(){ $("#wx").css('display','block');
+        },
+        mouseleave :function(){ $("#wx").css('display','none');
+        }
+    });
+    $("#wx").bind({
+        mouseenter:function(){ $("#wx").css('display','block');
+        },
+        mouseleave :function(){ $("#wx").css('display','none');
+        }
+    });
+    $("#f-tool .btn2").bind({
+        mouseenter:function(){ $("#wx2").css('display','block');
+        },
+        mouseleave :function(){ $("#wx2").css('display','none');
+        }
+    });
+</script>
+</html>

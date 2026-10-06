@@ -1,0 +1,66 @@
+[
+  {
+    "id": "szse_daily",
+    "url": "https://www.szse.cn/api/report/ShowReport?SHOWTYPE=xlsx&CATALOGID=scsj_fund_jjgm&TABKEY=tab1&txtStart=2026-08-31&txtEnd=2026-09-29&jjlb=ETF",
+    "bytes": 474141,
+    "captured_at": "2026-09-30T11:42:11.760348",
+    "sha256": "27099abb9ce56a3c608abd2bd2f10dd1fe07388d650ad088b440724910b1ec29",
+    "preview": "PK\u0003\u0004\u0014\u0000\b\b\b\u0000E]>]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0013\u0000\u0000\u0000[Content_Types].xml�S�n�0\u0010����*6�PU\u0015�C\u001f�\u0016��\u0003\\{�X�%"
+  },
+  {
+    "id": "szse_daily_json",
+    "url": "https://www.szse.cn/api/report/ShowReport/data?SHOWTYPE=JSON&CATALOGID=scsj_fund_jjgm&TABKEY=tab1&txtStart=2026-08-31&txtEnd=2026-09-29&jjlb=ETF&txtDMorJC=159039",
+    "bytes": 4438,
+    "captured_at": "2026-09-30T11:42:10.905841",
+    "sha256": "db7aa178ad455824d8adf803173f38aa78aa348858def8fe32c20e70b3a4c263",
+    "preview": "[{\"metadata\":{\"catalogid\":\"scsj_fund_jjgm\",\"name\":\"基金规模\",\"excel\":\"xlsx\","
+  },
+  {
+    "id": "cnindex_js",
+    "url": "https://www.cnindex.com.cn/js/pages/entry-index-detail.js",
+    "bytes": 281,
+    "captured_at": "2026-09-30T11:42:10.730372",
+    "sha256": "a86fe5f6e5f938a24cd0c0708989f4268c9c44351d7202b993220b8ea56c2137",
+    "preview": "/*\r\n* @description: require.js 指数系列入口\r\n* @author: yuanfan\r\n* @update"
+  },
+  {
+    "id": "js_pcf_js",
+    "url": "https://www.igwfmc.com/front/js/main/english/etfpcf.js",
+    "bytes": 1480,
+    "captured_at": "2026-09-30T11:42:10.749077",
+    "sha256": "60762f74f068d347b4d6dacae73931bbc9552174e6d6e4bf3903c87e02c8500d",
+    "preview": "<!DOCTYPE html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"renderer\" con"
+  },
+  {
+    "id": "js_pcf_js2",
+    "url": "https://www.igwfmc.com/main/english/etfpcf.js",
+    "bytes": 1480,
+    "captured_at": "2026-09-30T11:42:10.755724",
+    "sha256": "60762f74f068d347b4d6dacae73931bbc9552174e6d6e4bf3903c87e02c8500d",
+    "preview": "<!DOCTYPE html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"renderer\" con"
+  },
+  {
+    "id": "js_qreport",
+    "url": "https://www.igwfmc.com/main/jjcp/159559/detail.html",
+    "bytes": 1480,
+    "captured_at": "2026-09-30T11:42:10.762783",
+    "sha256": "60762f74f068d347b4d6dacae73931bbc9552174e6d6e4bf3903c87e02c8500d",
+    "preview": "<!DOCTYPE html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"renderer\" con"
+  },
+  {
+    "id": "js_holding_report",
+    "url": "https://fundf10.eastmoney.com/jjgg_159559_3.html",
+    "bytes": 35262,
+    "captured_at": "2026-09-30T11:42:10.906519",
+    "sha256": "0205cc3ab0d330c56695e966060400404dd97655bdd0045c1dcf3d69acdc20a2",
+    "preview": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w"
+  },
+  {
+    "id": "ha_latest_report",
+    "url": "https://fundf10.eastmoney.com/jjgg_159039_1.html",
+    "bytes": 41996,
+    "captured_at": "2026-09-30T11:42:10.907054",
+    "sha256": "a3667a7c4a4b5a8ffd0ff6143e5fc5714f3fbb1d5cfe1586c5afd401b84c9bd5",
+    "preview": "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w"
+  }
+]

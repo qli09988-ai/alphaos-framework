@@ -1,0 +1,31 @@
+{
+  "date": "2026-08-07",
+  "timezone": "Asia/Shanghai",
+  "ths_1m_rows": 241,
+  "ths_5m_rows": 48,
+  "sina_5m_rows": 48,
+  "ths_snapshot_rows": 241,
+  "missing_expected_times": 0,
+  "duplicate_times": 0,
+  "ohlc_invariant_errors": 0,
+  "sentinel_errors": 0,
+  "ths_1m_to_5m_differences": 0,
+  "ths_snapshot_cumulative_differences": 0,
+  "daily_ohlc": [
+    8.69,
+    9.52,
+    8.52,
+    9.17
+  ],
+  "ths_volume_shares": 166164370,
+  "ths_amount_cny": 1492756000,
+  "sina_volume_shares": "166104168",
+  "sina_amount_cny": "1492242134.9144",
+  "cross_source_price_diff_rows": 33,
+  "cross_source_max_price_diff": "0.020",
+  "sina_volume_shortfall_pct": "0.03623039042605824582008766380",
+  "sina_amount_shortfall_pct": "0.03442391694288952782638287838",
+  "zero_volume_minutes": [
+    "2026-08-07 14:59:00+08:00"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "leike-price-structure",
+      "title": "8/07最高9.52元；9.18附近仅有同一轮行情的受阻线索",
+      "queries": [
+        {
+          "id": "daily-bars",
+          "source": {
+            "label": "腾讯财经与搜狐证券历史日线",
+            "links": [
+              {
+                "label": "搜狐历史行情",
+                "url": "https://q.stock.sohu.com/cn/002413/lshq.shtml"
+              }
+            ],
+            "metricDefinitions": [
+              {
+                "label": "接近交易日",
+                "definition": "日内高低区间与9.0882至9.2718元相交；不等同于盘中触碰次数。"
+              }
+            ],
+            "filters": [
+              "证券：002413.SZ",
+              "主价格：不复权"
+            ],
+            "caveats": [
+              "49条日线；3个接近日属于1段连续行情。",
+              "历史完整分钟数据缺失，不能重建分钟回落路径。",
+              "搜狐与腾讯有两个日期的成交量相差1手，报告统一采用腾讯成交量。"
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "validation",
+                "title": "价格复核",
+                "detail": "49条OHLC在腾讯不复权与搜狐数据间一致；腾讯前复权与不复权价格亦一致。"
+              },
+              {
+                "kind": "calculation",
+                "title": "历史距离",
+                "detail": "(9.18/8.97−1)×100=2.34%；(9.52/8.97−1)×100=6.13%。"
+              }
+            ]
+          },
+          "reportingPeriod": "2026-07-20至2026-09-24",
+          "capturedAt": "2026-09-27T12:09:15.723842+00:00",
+          "columns": [
+            "date",
+            "high",
+            "close"
+          ],
+          "rows": [
+            {
+              "date": "2026-08-06",
+              "high": 9.23,
+              "close": 8.69
+            },
+            {
+              "date": "2026-08-07",
+              "high": 9.52,
+              "close": 9.17
+            },
+            {
+              "date": "2026-08-10",
+              "high": 9.21,
+              "close": 9.03
+            }
+          ],
+          "preview": {
+            "kind": "partial",
+            "note": "展示3个与观察带相交的交易日；完整日线49条。",
+            "totalRows": 49
+          }
+        }
+      ]
+    }
+  ]
+}

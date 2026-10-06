@@ -1,0 +1,63 @@
+--- alphaos_status_board.md (v0.1-working)
++++ alphaos_status_board.md (v0.1.1-working)
+@@ -1,6 +1,8 @@
+-# AlphaOS Status Board — v0.1
++# AlphaOS Status Board — v0.1.1-working
+ 
+-Last updated: 2026-09-20
++Last updated: 2026-09-26
++
++Framework: `alphaos_core_spec.md` v0.1.1-working；本轮交接 `2026-09-26-蓝箭事件驱动-01`。Working 增量版本，不代表 v0.1 已封板。
+ 
+ Purpose: show exactly where the project is, what is finished, and where v0.1 stops.
+ 
+@@ -30,13 +32,16 @@
+ | Company Position Engine | 🟡 v0.8 | 10-field structure established |
+ | Base Business / Optionality split | ✅ added | validated in real cases |
+ | Earnings Quality | ✅ added | filing-first, cash conversion |
+-| Expectation Engine | ✅ v0.1 usable | E1-E4 |
++| Expectation Engine | ✅ Approved 增量已合入 | E1-E4 + Event Progress vs Expectation Progress；非自动交易规则 |
+ | Reverse Expectation | ✅ v0.1 usable | reverse-implied future |
+ | Market Regime | ✅ conceptual v0.1 | needs live data integration |
+ | Execution Engine | 🟡 partial | sell taxonomy exists; buy logic not sealed |
+ | Risk & Position Engine | 🔴 unfinished | must be sealed before full live use |
+-| Thesis Card / Event Monitor | 🟡 partial | state-machine concept established |
+-| Data Requirement Mapping | 🔴 unfinished | source/frequency/backup mapping needed |
++| Thesis Card / Event Monitor | 🟡 partial | Router、Why Now?、C0–C7 已 Approved；持续更新与运行验收未完成 |
++| Data Requirement Mapping | 🟡 partial | thsdk 实时 / BaoStock 历史 / 公告新闻事件时间戳已定义；逐字段、频率、备援与生产验收待补 |
++| Relative Strength Controls | ✅ 方法 Approved | 市场/行业/事件篮子口径已加入；蓝箭实证控制组未齐 |
++| Market Leadership Monitor | 🧪 Experimental / Testing | None / Pre-Event / Confirmation / Exhaustion；未升 Core |
++| Catalyst Quality | 🟡 Proposed / Testing | Q0–Q3；未升 Core |
+ | Review / Evaluation Loop | 🔴 unfinished | required for controlled self-improvement |
+ | Market Discovery / Information Latency | ⚪ v0.2 backlog | real-time anomaly -> investigation |
+ | OpenClaw / lobster integration | ⚪ not yet | after v0.1 closure |
+@@ -89,6 +94,14 @@
+ 
+ Next after embodied-intelligence closure.
+ 
++### Case #003 — 蓝箭 / 鲁信 / 金风 2026-08-19
++Status: **回放已归档；控制组与事件时间轴待补；Leadership Testing**。
++
++- 8/17–18 金风在两股比较中持续更强；8/19 鲁信涨停收盘，金风涨停开盘回落至接近平盘；T+1 两者快速转弱。
++- “金风更像 Pre-Event Leader”为推断，不能在缺少市场/风电/事件篮子控制结果时判为独立事件领先。
++- v1 历史材料存在 non-wrapper provenance；具体开板/回封时间未确认。
++- 详见 Case Lab；下一次补齐控制组、官方事件内容/首次公开时间和原始审计日志后更新。无已核实未来事件日期，不安排自动任务。
++
+ ---
+ 
+ ## E. Current research stop rule
+@@ -135,3 +148,14 @@
+    - Review Loop
+ 4. Freeze AlphaOS v0.1
+ 5. Only then start v0.2 expansion and deeper live-data integrations
++
++
++---
++
++## H. 本轮合入与数据审计边界 — 2026-09-26
++
++CHG-007–CHG-012 已 Approved 并合入：Router、C0–C7、Event–Expectation 联动、Why Now?、Data Source Abstraction、Relative Strength Controls。授权为用户本次明确合入请求；不是旧聊天助手建议代替批准。
++
++数据职责：thsdk 当前游客 wrapper 仅用于当日/最近交易日盘面；BaoStock 承担历史日线与控制组输入；公告/新闻承担事件时间戳；AKShare 因该服务器东方财富网络故障暂不作底座；历史外盘/内盘/主动买卖字段降权。本次为审计材料归档，未重跑服务器测试。
++
++四项 v0.1 闭环仍未全部完成，Risk & Position、Review Loop 及执行买入逻辑仍待封板；本轮不改变既有研究顺序，不增加庞大 Event-Driven Engine。

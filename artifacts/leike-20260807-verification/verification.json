@@ -1,0 +1,37 @@
+{
+  "rows": 49,
+  "window_start": "2026-07-24",
+  "window_end": "2026-08-21",
+  "window_rows": 21,
+  "near_band": [
+    "9.0882",
+    "9.2718"
+  ],
+  "overlap_days": [
+    "2026-08-06",
+    "2026-08-07",
+    "2026-08-10"
+  ],
+  "high_in_band_days": [
+    "2026-08-06",
+    "2026-08-10"
+  ],
+  "close_in_band_days": [
+    "2026-08-07"
+  ],
+  "close_above_918": 0,
+  "volume_differences": [
+    {
+      "date": "2026-08-10",
+      "sohu_lots": "1320604",
+      "tencent_lots": "1320603.000"
+    },
+    {
+      "date": "2026-08-19",
+      "sohu_lots": "1094890",
+      "tencent_lots": "1094889.000"
+    }
+  ],
+  "ohlc_mismatches": 0,
+  "qfq_ohlc_mismatches": 0
+}

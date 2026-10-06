@@ -1,0 +1,1509 @@
+{
+  "repository": "qli09988-ai/alphaos-framework",
+  "branch": "freeze/alphaos-v0.1",
+  "baseline_remote_commit": "6e8b9bf7c46bff07dafa49ba27357fb2de0f8cc5",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 263,
+      "sha256": "8d6587648d109ef2b0772e3bb9733dda0b6bebee9e600801ba3e71f60dd2087d",
+      "git_blob_sha": "d7e34f4c42d0f5de445c4fa0823e899b08a4876c"
+    },
+    {
+      "path": "AlphaOS_工作方式与产品路线_建议稿.md",
+      "size": 7495,
+      "sha256": "d3c75a5b416e6d01e7d8e8c51440e9998739a319d61a170bf9c5a8bc4ae000b3",
+      "git_blob_sha": "c96fd51def0067e9d18d3fbaa65eb36bd6fbe30d"
+    },
+    {
+      "path": "FREEZE_v0.1.md",
+      "size": 3562,
+      "sha256": "5d6117513b44cc8e521783b1e85015ed2f709bee5a3a26a2ff4ffd3840206531",
+      "git_blob_sha": "b63fa44e15f22cd7f8f7809a9eb4a5f8478bd485"
+    },
+    {
+      "path": "HANDOFF_RUNTIME_v0.1.md",
+      "size": 3678,
+      "sha256": "896a6537ad42868896b187ebc13094de574a2e36fa389c8e2cde17bd02da5483",
+      "git_blob_sha": "fb6f05f48faac1fe57a4cb0d515975e88bf7df16"
+    },
+    {
+      "path": "README.md",
+      "size": 3951,
+      "sha256": "dfc10d0c0f9ed8c2f93c9d1e5e67af65a34998f02e3501cc883f27229c31ae64",
+      "git_blob_sha": "3b434df78468334faf3c46ec57b80a13d1636b06"
+    },
+    {
+      "path": "alphaos_backlog_changelog.md",
+      "size": 11727,
+      "sha256": "c15579c440fe44729a266fc7097eb9f4c7a9bac546c04ae2aa0b65ded49fc26c",
+      "git_blob_sha": "df025fe19b1ff476234ba0bffdf1b2a2967075a7"
+    },
+    {
+      "path": "alphaos_case_lab.md",
+      "size": 14630,
+      "sha256": "2e3ccdb5034d751999ed45e69efce364f272f0a2ab2a4368baad76c2914bc774",
+      "git_blob_sha": "2b9658a3a339e4e7dde07f96ca184e081cc59c2c"
+    },
+    {
+      "path": "alphaos_core_spec.md",
+      "size": 20893,
+      "sha256": "7ee1bd7ee2337416254982f16f2a7c8070d0067f5fa16064a81f6d9f530d3b11",
+      "git_blob_sha": "545101cbb07538277a53bcf1586dd375f56c9eae"
+    },
+    {
+      "path": "alphaos_personal_policy.md",
+      "size": 1922,
+      "sha256": "ee787f7100584506248a702ff0dafd69a4eafbccc13162395f47dd2a724d49b2",
+      "git_blob_sha": "808a02825ea3025200fafc0aa25a88f504567bb9"
+    },
+    {
+      "path": "alphaos_status_board.md",
+      "size": 7403,
+      "sha256": "9144a51eb43944395f06a39b2df4f5e0484f38b32e574e8d2837e984e4610889",
+      "git_blob_sha": "dd35a58427a390683f656a86f98e0ad4ac8d09ac"
+    },
+    {
+      "path": "alphaos_usage_protocol.md",
+      "size": 7479,
+      "sha256": "be2e393a8e69df838d66e52af7bf2095f4c8feb4664a692adbc1c3d779e13d02",
+      "git_blob_sha": "d509fcb37c3c4bbcc765f2f189ac81c6fa63fb53"
+    },
+    {
+      "path": "archives/AlphaOS_pre_20260926_lanjian_01.zip",
+      "size": 12407,
+      "sha256": "1df7f3ddfd844dd7e9d8f02a2edfd627030629aefe3d6abeb88bf17b7970cfe7",
+      "git_blob_sha": "c7b222aa2ab04cdb4cf5a2579357fe3c0918c18a"
+    },
+    {
+      "path": "archives/AlphaOS_v0.1_portable_docs.zip",
+      "size": 11551,
+      "sha256": "6940dd4401a3cb4746fd0c566d6b1fafd8816edd6bad3076fd45db801a4efba9",
+      "git_blob_sha": "e7f529dd0530255a4b38c02b8aa58ce8c3325b8b"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/README.diff",
+      "size": 1660,
+      "sha256": "976fd6a7a765cb6172eab4bbf5af2da01f5aa18187ee506d5be6beb6298bd494",
+      "git_blob_sha": "98d8d5e74209599440d820a0eb4d796eb3387dab"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/alphaos_backlog_changelog.diff",
+      "size": 6692,
+      "sha256": "19590a70c60fa19e6a2ea3982d1c78091fe5717d09d9b372e666216ea06de750",
+      "git_blob_sha": "5bde6cb9b75ac7b17767a0bdfad951eecc062fa2"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/alphaos_case_lab.diff",
+      "size": 10131,
+      "sha256": "1ff9356f6bf15ab2b281bf13277eeb5a5a8ad6e89da880dc460b92d983a0d69b",
+      "git_blob_sha": "a719fc85c82aa898f1e8cba49951cfb41d9dccaf"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/alphaos_core_spec.diff",
+      "size": 10553,
+      "sha256": "e7cee7cdbfdb40129aa93a90779de1b208f472a3bb03b149c49069409f77ebb3",
+      "git_blob_sha": "6fe2b78d944a700ac09f9de40e4c5bc7f91dccf6"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/alphaos_status_board.diff",
+      "size": 4019,
+      "sha256": "062a65248700a79f7e28eb9db0188a1450d61e47d3b9c686f33cb161f5f52286",
+      "git_blob_sha": "9521cb600e260d93c8357f8e2cab8c10b25121a2"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/alphaos_usage_protocol.diff",
+      "size": 3968,
+      "sha256": "4276d2c8b66bd2e3057b251c7cf5291516218e4f697a9be906c0476dcf8795f4",
+      "git_blob_sha": "ba18e1ec642d8248fcad5e82ce894e08cd6deae9"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/baseline_sha256.json",
+      "size": 681,
+      "sha256": "ad2f17e159338261295f752916fd4bf3b4e0a624fe78e6919673fbef9ad5eb14",
+      "git_blob_sha": "352ed2706b3cb3dc7b671766ab775475160d6c6e"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/case_lanjian_20260819.source.md",
+      "size": 17242,
+      "sha256": "17044537a9591c91b16206ab81f288f40a6d0a32325bff5d56ffff988ae0d02c",
+      "git_blob_sha": "4295bf99dffac16e6ec472a7556be3d8cbe90f8a"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/merge_docs.py",
+      "size": 17129,
+      "sha256": "c327419eb418d06b6367f3558e9e185988608772b9373a0a0eb0b47f32a126c0",
+      "git_blob_sha": "c812273caec6398b7925823e277ca78ad32a06f3"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/merge_records.py",
+      "size": 17869,
+      "sha256": "233d9c92e647090557e6fb093a86fad9490220a9d1a3be6848a0165891c1b1a8",
+      "git_blob_sha": "a67d09f59741025fc236056801f31e78971967da"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/merge_report.md",
+      "size": 5033,
+      "sha256": "721836946653afe703de483faa58a584267ece91b060a60665a7bf3762ff4821",
+      "git_blob_sha": "4963dd26578c853bd38be808f2663b4de4664fef"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/source_audit_excerpts.json",
+      "size": 9389,
+      "sha256": "ba9e159e4d31404df02768b22a4e47e3a42a162093ef9bb8985981e97acd2079",
+      "git_blob_sha": "8f03369d1c3629428bf2a8f6a569f1d140972400"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/verification.json",
+      "size": 1378,
+      "sha256": "3c386fd565f6beee7b193e1ca21667e68e2ff07736102d33b004f9fe202441a6",
+      "git_blob_sha": "e2bac84d585befe358cb5a17fee6082e60482eec"
+    },
+    {
+      "path": "artifacts/alphaos-advisor-transfer-20260926/00_军师阅读说明.md",
+      "size": 4357,
+      "sha256": "156dcfe61938b1a6c34abe3175264cd253fcbb58ffa11bbd850a581a2dd65125",
+      "git_blob_sha": "f0a469116b29c9d7977b85df42b8a849ee9f23cb"
+    },
+    {
+      "path": "artifacts/alphaos-advisor-transfer-20260926/AlphaOS_军师完整文档包_v0.1.1-working.md",
+      "size": 110531,
+      "sha256": "4557c3f6e9d036435c4526b0d75e66437a2157d296b6df4018739297f43ba5ab",
+      "git_blob_sha": "2eba643953b80bb7b7e447e42ee39ce4492504ec"
+    },
+    {
+      "path": "artifacts/alphaos-advisor-transfer-20260926/AlphaOS_军师文档包_v0.1.1-working_20260926.zip",
+      "size": 97940,
+      "sha256": "e20b0c7ba3c0c174c0d012879df1036c744cea3c2e6ee3124c000e4d9338b059",
+      "git_blob_sha": "f5c10493e620a5adbb67ce19773874206d26c10e"
+    },
+    {
+      "path": "artifacts/alphaos-advisor-transfer-20260926/manifest.json",
+      "size": 2289,
+      "sha256": "ad0c3789f7828c27c34ea6382c0e2c4cf4d47f90073b7e15191f63c2f9acd311",
+      "git_blob_sha": "3cdb6eb2e35914dee0ebf98ffc7b026b716cbc2d"
+    },
+    {
+      "path": "artifacts/alphaos-freeze-20261006/POST_FREEZE_AUDIT.md",
+      "size": 5443,
+      "sha256": "f252fa7c8cf0f0ccfbd01f4ba7786d9f5bfdcea11aaa46923b0aad9d69de2111",
+      "git_blob_sha": "22f78b211e61e804d80fbf42e0ee0b2b490fb3c6"
+    },
+    {
+      "path": "artifacts/alphaos-freeze-20261006/README.md.diff",
+      "size": 4563,
+      "sha256": "bb8f0cfadea8f4578373683b461615947f0cd7b569369d529b387bcdba15483b",
+      "git_blob_sha": "70a8f784c6a9aa1f9dae4a394272e56a461831ed"
+    },
+    {
+      "path": "artifacts/alphaos-freeze-20261006/alphaos_backlog_changelog.md.diff",
+      "size": 6066,
+      "sha256": "94ce081acf61bae904d9920aab27adbbd20b720c82b8bbbd93192385af2f89cd",
+      "git_blob_sha": "b283373912fc2c1ae566cf67543f0e2a36c96e19"
+    },
+    {
+      "path": "artifacts/alphaos-freeze-20261006/alphaos_case_lab.md.diff",
+      "size": 2454,
+      "sha256": "b9f6c03b98be4c63b04697746a8b829201fcc341fdd2fac35a32eb6a85a1ba10",
+      "git_blob_sha": "c48aaeb07b00af9440511c0a12602530056ccaa4"
+    },
+    {
+      "path": "artifacts/alphaos-freeze-20261006/alphaos_core_spec.md.diff",
+      "size": 8212,
+      "sha256": "eb6a40ab0f2e68452881ede57796e1218a31096d76fbb7b93aadf00232e6c38c",
+      "git_blob_sha": "85e5056bcc88fe34de1bdd872e1abad04be59be2"
+    },
+    {
+      "path": "artifacts/alphaos-freeze-20261006/alphaos_status_board.md.diff",
+      "size": 6487,
+      "sha256": "fd7283b6429eff19f773d05fbe6040db7bb496032a40f1139f44851b217afc5e",
+      "git_blob_sha": "50fcc0afc09779e6d6885e97da16ab4576e1a488"
+    },
+    {
+      "path": "artifacts/alphaos-freeze-20261006/alphaos_usage_protocol.md.diff",
+      "size": 5910,
+      "sha256": "5e863573eebde6721d045f65d5740b023a270060d198dcca4794fe62a6a63002",
+      "git_blob_sha": "5b1b71ebe1363155e00219b8588e7b4eaaaba48d"
+    },
+    {
+      "path": "artifacts/alphaos-freeze-20261006/baseline_sha256.json",
+      "size": 61435,
+      "sha256": "c4e1209ca8f1070ee8f26e568db03ff478d3e551928fdd5079d74fbb96efb971",
+      "git_blob_sha": "4f6adad55989fc8ea5ab61d83e5e908fd39e0c2b"
+    },
+    {
+      "path": "artifacts/alphaos-freeze-20261006/pre_freeze_documents.zip",
+      "size": 29017,
+      "sha256": "b5a20bb86c1ae8ae4a5d4dcba587fe43b0d833681960bee023bed2a2a76da228",
+      "git_blob_sha": "1bd0a4dcf5da436edf35ba922f417ca9661c0c59"
+    },
+    {
+      "path": "artifacts/alphaos-freeze-20261006/verification.json",
+      "size": 811,
+      "sha256": "362c070bcb4b8b4aee4c3eea0538b888e01c7d97570bf86b7028a51faf6af3a8",
+      "git_blob_sha": "506d6db0dd4c43494df95f46be24f0d02d0c47a9"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159039_20days.csv",
+      "size": 3610,
+      "sha256": "56be4176b3188f94a7fe2e05e7773ac09e0a044f5a33d45fd03144720b1ebdf7",
+      "git_blob_sha": "746ca8e40026ab5a07e3f31ac2e48da87da8dbca"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159039_20days.json",
+      "size": 9418,
+      "sha256": "d221fd06ff4cab0019d6c4b942175fa91ee12ee182285e5bc38cd4e8849213d8",
+      "git_blob_sha": "382aa36872d52e8a1dd328edb58420db013509d0"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159039_eastmoney.txt",
+      "size": 5973,
+      "sha256": "49c0234e9f4c707342cbe4e86c0489a38063762746209bab36da16a48cee5f46",
+      "git_blob_sha": "13ed551edba74ed1e1c01711e8590bc96546d57f"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159039_flow.txt",
+      "size": 7744,
+      "sha256": "5c69354b22ef96cac7fa3709dbb53b45d3aeaf61004bfcdbad7bf21ee6907eec",
+      "git_blob_sha": "a35e75238ca7e069e807069cf01bdb44bbb0ff9b"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159039_holdings.txt",
+      "size": 6779,
+      "sha256": "ff29b1b051e2b8ff07c21e86dfa6623fc7e2f48f6140ef89571ab77c168ed887",
+      "git_blob_sha": "acaa1ee93f024632d096eb7f65974640f0b7bcdb"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159039_nav.txt",
+      "size": 4478,
+      "sha256": "edb5ae0ff51b0ed8eb7b70b8d6d2460ce5cea65e1d866759650f946d20026e3d",
+      "git_blob_sha": "aed33097a94303dfdd1db689b2d33458339c318d"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159039_sohu.txt",
+      "size": 7233,
+      "sha256": "a0cb9e61c77804f9377b6ea06aa6a268d7db4e7cc7a5366df4b475dea80ec37b",
+      "git_blob_sha": "da99a4abdc451a555ec3e4cddaf8eb78776e4906"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159039_tencent.txt",
+      "size": 6002,
+      "sha256": "6d7b58426c2d65cf6b24aad76ed90089b43e8a340ba607cf080547d54a037178",
+      "git_blob_sha": "c775a8adfb20bd1b3b0726833fd2d6454a772d20"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159559_20days.csv",
+      "size": 3648,
+      "sha256": "54739116795c6a09e021c8e4e0f81f2f080fe352ff8ee15e5e61428a94ff57e9",
+      "git_blob_sha": "ac3fb458e8587e69800ee6e57619b6af490d2049"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159559_20days.json",
+      "size": 9456,
+      "sha256": "b12094622c2c4ba3fce3489f1967f8df43860b49924e2ecb8ac5622ce1a2b76b",
+      "git_blob_sha": "c3e20c9f739082fa81865ff10823f53a442d4fd8"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159559_PCF_20260930.csv",
+      "size": 5113,
+      "sha256": "fc397181dd41ae41d82bfc5cd2b4e6616a325b1e28e2c6135baad279582ed0d6",
+      "git_blob_sha": "c4238159661b01e37e0fc3105f95989d113b6979"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159559_eastmoney.txt",
+      "size": 13091,
+      "sha256": "564eb0b57ebebba1bb22893d553fe32ebd64cc6b2d10ca593c0607af60f23d5f",
+      "git_blob_sha": "5e5ce240ed74f568e592ba817231dda7d8838513"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159559_flow.txt",
+      "size": 13050,
+      "sha256": "68da3cc5948813eefbc4933871c355b4874dade9f672fd6b3dc8e1bc3ff2d242",
+      "git_blob_sha": "dafec4e4562026f08e1aac506f6fe911eaa037c7"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159559_holdings.txt",
+      "size": 52311,
+      "sha256": "372f5afe330af0e49cbb24e81978b16a5abb114566aa02702216c3e5f81b9ed7",
+      "git_blob_sha": "efad9e11d70adb0a590485a45575df0466b81a45"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159559_holdings_20260630.csv",
+      "size": 2940,
+      "sha256": "bc569cdbb7f6b3026101298c1165b45f1c98c9bacd8f3b48fce5838c928a9c47",
+      "git_blob_sha": "fb7cb45e8a1f0bbe01a54868204c17b80ac12fe5"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159559_nav.txt",
+      "size": 4479,
+      "sha256": "4de7f47f78721515781026ad16339832e3888be5b395d2f51afe66f3aa0fe40a",
+      "git_blob_sha": "0180c246d97683bee4e74970d85956e069d5f45d"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159559_sohu.txt",
+      "size": 206,
+      "sha256": "1e2ea44c8bb71ad3a3195b4625c66b931827a2eb5e4099533860bf4270f67bcb",
+      "git_blob_sha": "9430b71693e440b78066fc2b6690c3f8707d145f"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/159559_tencent.txt",
+      "size": 11346,
+      "sha256": "84db9134e9cc62a39e28f41354271685b6d9d3b57450fc4e2bde796a7394fadb",
+      "git_blob_sha": "1f8057e429612862e8c40b8f6569a5dbd8c48e10"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/980022_eastmoney.txt",
+      "size": 14759,
+      "sha256": "2d7216de549e46890fe38456cc52cbfad0e462cf38d26dfc58a3352eb91f5997",
+      "git_blob_sha": "1cf05c8509e5bcc657e9ca88835d94389f0700d8"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/980022_sohu.txt",
+      "size": 65,
+      "sha256": "7f6e57ad4c403f83f6c054f9873919173baab3cdeb216a0cf75a14645450c6b7",
+      "git_blob_sha": "b8215317b30a14df7642f41f4669ac08201e07a4"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/980022_tencent.txt",
+      "size": 1649,
+      "sha256": "b549b7f1948e0ce0c7c21eab4d64ebfa40e9a3019522efc6e988a2074941dfe4",
+      "git_blob_sha": "4b9c97fa504912927c53b1dacd59e8f6ab14bf18"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/ak_etf.txt",
+      "size": 17595,
+      "sha256": "e27bca79042081fd7e6e3251e431aae5b2e2dcf0930d3a38818a6009d94ea2fd",
+      "git_blob_sha": "23819f8fccf955094ecd6e80ea3bbd09eb04f6d5"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/ak_scale.txt",
+      "size": 4401,
+      "sha256": "e3eb46933bbf74846606d4e8e6b66e9f6d9b663f8d9bcb62ee532068056c78c6",
+      "git_blob_sha": "61f4823fba7431c84a628cb41293315649cac9f5"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/ak_szse.txt",
+      "size": 2132,
+      "sha256": "05d9087044e3284b8565e86d28a23bd7ff821c7c6bc2b966d1971d2d320ab034",
+      "git_blob_sha": "2965814c024730bbcc8f382477eb9b41c6ff2174"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/calculate.py",
+      "size": 5054,
+      "sha256": "2a6fa5036c8a3c65901848dfa1e9620e02d3e1c77d8ab38bd8d73651a5f433a3",
+      "git_blob_sha": "a59e6a5f07792f2d505e105a9c0c439c52c8c841"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/calculation_output.txt",
+      "size": 7575,
+      "sha256": "fb4d33d5635dd451a3f14ed636200db00cece3359c27cba0130a5bc060662891",
+      "git_blob_sha": "edef68a6afe453a21303262a5536725514566c32"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/calculations.json",
+      "size": 4272,
+      "sha256": "5ae872be4b2b4540bd2568f86a5508d02bbee82f34a65dc7299221a8a24509fe",
+      "git_blob_sha": "d549a4ae8ac6416b45bb5c4d53366a975e997458"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/cnindex_app.txt",
+      "size": 160259,
+      "sha256": "94cff360b9465032cc75e69beaabd03d95289265e9e0535e4fa484a45b30795a",
+      "git_blob_sha": "d757f6e3db40a9bd7dce3a45f44ee10abe977b96"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/cnindex_common.txt",
+      "size": 3722,
+      "sha256": "ed065c692f944638f2263ede751812e29bf2529c24a0d53f88a9b009bca68f47",
+      "git_blob_sha": "eed7fa6b42e59dac1343131215a8175a7cdb7715"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/cnindex_js.txt",
+      "size": 281,
+      "sha256": "a86fe5f6e5f938a24cd0c0708989f4268c9c44351d7202b993220b8ea56c2137",
+      "git_blob_sha": "b46626b3b2b10c1130de9c5f5ce9875f836cbe0c"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/cnindex_page.txt",
+      "size": 84490,
+      "sha256": "0ef05715c1571fbac98062d2e6174eb64eb0dacf3bfd41eb4edac52240e03f06",
+      "git_blob_sha": "1dd8a7bb926014fc11f1521e27ec0138abd220f7"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/em_f10_js.txt",
+      "size": 56037,
+      "sha256": "250d07de358a7b0fc3aba358b0dab916f2ad13bc16ddc023f834fb3d66b6d737",
+      "git_blob_sha": "a28f0138984273a93167c135c7fa650fb36d779c"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/fetch.py",
+      "size": 2200,
+      "sha256": "a03763fd5811010ed1345fe60626bc7db66e62996aca4c50916b05ea5692c4d1",
+      "git_blob_sha": "18f092ed8bfc74c306be4474105d37fe855ea936"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/fetch_more.py",
+      "size": 1490,
+      "sha256": "d743bb87ef3b456dcd105df2f5a1c26cfe1e114af9a72daeb986098573ac2453",
+      "git_blob_sha": "7e7e6778fb56491548cb64f91ecf7a0a450ec0d0"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/gg_a.txt",
+      "size": 10251,
+      "sha256": "8097b9d78d89cc7cca86c7e7e206b925498fe4c665563e27a17040e7ee23a456",
+      "git_blob_sha": "18b94d7632f4b195afdce447618471a4b00987b5"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/gg_b.txt",
+      "size": 4770,
+      "sha256": "4d7ce2a95ccb0e4db91517759e7136b8bbfae8288804a80e30313187001ee876",
+      "git_blob_sha": "fa095a4a9bf139dab70ff0c6759f95264c6e9fb5"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/ha_latest_report.txt",
+      "size": 41996,
+      "sha256": "a3667a7c4a4b5a8ffd0ff6143e5fc5714f3fbb1d5cfe1586c5afd401b84c9bd5",
+      "git_blob_sha": "ca0214eb3a747230d6ece49e7ae401e948205385"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/ha_mm_aug.pdf",
+      "size": 107119,
+      "sha256": "f89474d9501fb15634618d0a5808df51a6dd37feff5beab5358334a914623281",
+      "git_blob_sha": "bec52f764f41cb4bd51c477e80a435e5c39e4868"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/ha_mm_aug_text.txt",
+      "size": 592,
+      "sha256": "9f44f7b0c33fce6dc864ce620e266080873d2198e6d1bf79195c7fde4aac90bd",
+      "git_blob_sha": "80ddf8d2642eb3c1195d69b1605aa4dad2876c49"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/ha_mm_jul.pdf",
+      "size": 149757,
+      "sha256": "58da4442a6b2a487336fcb95d8c09f86663ec8bcab97391902a21b8fbf820be5",
+      "git_blob_sha": "9c788ea92b04646c99beec6ebc8bafa1cbc64ffe"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/ha_mm_jul_text.txt",
+      "size": 617,
+      "sha256": "b6fc85d14870daac05010b2d535b2f8d720d0d61e2c6c5e36330939a91c8c6f1",
+      "git_blob_sha": "fe52f3d49ef57340f632ad1f67380099ff132373"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/ha_official.txt",
+      "size": 61447,
+      "sha256": "9fc5bd9f24424b983c238caf0a3f8c8a388dc1c66fae45fc0d2eaa92be655df1",
+      "git_blob_sha": "56b4f330affe58d2c0d9648255888c51d5252460"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/ha_pcf_xml.txt",
+      "size": 28326,
+      "sha256": "2a0d1ebae5ffc89853393fa9dc6782eed723e8ef60a80b060c145ca856b0be8e",
+      "git_blob_sha": "5974aab40ac8a9fb21098704f326092be2daf32c"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/ha_prospectus.pdf",
+      "size": 657151,
+      "sha256": "229d508d4f716206b2d93871ca298c72625f026000ea7cb82440a2203f6f9899",
+      "git_blob_sha": "0c846774890ebe0e1d89bcc411d23f9aeac3757c"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/ha_prospectus_text.txt",
+      "size": 295986,
+      "sha256": "b7095b42788572128a1cdad42ba82fd5045818e7ee761d447d4f01113ee57649",
+      "git_blob_sha": "2813107fbd04fa2985f463e7ac8d7218ed91b31c"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/huaan_pcf.txt",
+      "size": 81657,
+      "sha256": "70f7e7971f40521d96097e94a1b6b5a892b1a540b091189a221cbc48e316ff38",
+      "git_blob_sha": "d776f32f6c05ad7e69f7935054bb8a371a8dde09"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/huaan_pcf_utf8.html",
+      "size": 85021,
+      "sha256": "06553005928ae6183dfe5d999283fadbe7b0e26795178a3ff614b051a3a461cc",
+      "git_blob_sha": "b7964fbda2077f249df3d9295115013140a27c0a"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/idx_history.txt",
+      "size": 2438,
+      "sha256": "ab734f59f76d6939efe1f15633ebb9c70e2700eadf29dc2af8d1597e0d74f283",
+      "git_blob_sha": "2ff1adb73179887c3756fb4b01dd8aafb688abb9"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/index_constituents_20260929.csv",
+      "size": 2371,
+      "sha256": "85aa5b9b6051754653575c393756af9859c683d15277b1bc0c0f1b157ac9c998",
+      "git_blob_sha": "9c35db2698f609343f9fc8c344dc6153011d0b65"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/index_history_full.txt",
+      "size": 16562,
+      "sha256": "a4c3f5ce0ecdd62ea2a8ae9471ce88158dbf46dbb66daafbb0a5f28268d9093f",
+      "git_blob_sha": "0c93d34550365ce5be1e59aea8444c89e691cc07"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/index_method.pdf",
+      "size": 1234834,
+      "sha256": "80612032de2b9c30a103cd9302a739ce86cbd7e0cec8000f2d3a58f693c68f89",
+      "git_blob_sha": "154be5dc1f1ccf9723e2ba9c2eddfe1d255e122b"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/index_sector.txt",
+      "size": 611,
+      "sha256": "2799e0ef079541a3210000e76bcb0e6be0b952a362fec74a92794cdd917eed9b",
+      "git_blob_sha": "c9428f1acdaf790346670a9234f50af756fbdedf"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/index_weights.txt",
+      "size": 6920,
+      "sha256": "63f095cbe58d71d152bd39be5fc0c170ba47238a52ca418dc2d4460c08dca397",
+      "git_blob_sha": "d45f3bfae28ec18f1d71570cfb0df692f1bbbd69"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/index_weights_start.txt",
+      "size": 6920,
+      "sha256": "63f095cbe58d71d152bd39be5fc0c170ba47238a52ca418dc2d4460c08dca397",
+      "git_blob_sha": "d45f3bfae28ec18f1d71570cfb0df692f1bbbd69"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/jingshun_product.txt",
+      "size": 1480,
+      "sha256": "60762f74f068d347b4d6dacae73931bbc9552174e6d6e4bf3903c87e02c8500d",
+      "git_blob_sha": "36da484af2852a75b733a8b59ba2eb9752f0a85b"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_cn.txt",
+      "size": 1480,
+      "sha256": "60762f74f068d347b4d6dacae73931bbc9552174e6d6e4bf3903c87e02c8500d",
+      "git_blob_sha": "36da484af2852a75b733a8b59ba2eb9752f0a85b"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_config.txt",
+      "size": 1678,
+      "sha256": "cf75eb7270db54be4dd426ec51d726b7020a159dcee468be527f31f29ee17cad",
+      "git_blob_sha": "e10893e61a9c11a5ea0f19ee7eabb5924c92c11f"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_etfservice.txt",
+      "size": 3451,
+      "sha256": "e5bfa4a070c0c9724c48d9173eab072d8018feb92f70ff40193dff10bd3f79cd",
+      "git_blob_sha": "204453686e1177c7c4d4bdea0e1bc64bb30a2456"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_holding_report.txt",
+      "size": 35262,
+      "sha256": "0205cc3ab0d330c56695e966060400404dd97655bdd0045c1dcf3d69acdc20a2",
+      "git_blob_sha": "86ced58dc8226487807098fb22265e2359e5d25b"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_interim.pdf",
+      "size": 1415778,
+      "sha256": "4da4e041baf0783d5366f13f5f446585860108c4aeee6afc8a11db17fb9ecc86",
+      "git_blob_sha": "913feec25d3b0b58591869e2246936aa971444e3"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_interim_text.txt",
+      "size": 101587,
+      "sha256": "844daa8cbe5481a60a5d671658963867a56fbf9fa541566034872df6ac2e0650",
+      "git_blob_sha": "24be5b1a80566cf0155be39267d8302f3f521008"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_pcf.txt",
+      "size": 5361,
+      "sha256": "2f62958289d800e3ba833ae75f98f06f112f85a0db94614ec87a2b950575e3c3",
+      "git_blob_sha": "d5c10dda49bf770d07a79b8f5b181595148730af"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_pcf_code.txt",
+      "size": 3771,
+      "sha256": "925c70dcf9861f5627f0a3f21d3852ce42ee696d92d1a48f6e5adaed1c15b65a",
+      "git_blob_sha": "74e4f974989644a24c99985fa8a1b52553c23505"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_pcf_current.txt",
+      "size": 12025,
+      "sha256": "7b6d3729db37caed6cfff8f573dac12aacc8e1ff8d1d3251e0798d83882bd607",
+      "git_blob_sha": "079af19fd5bef89549e9607b6e5c044a7beddf0e"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_pcf_export.csv",
+      "size": 1102,
+      "sha256": "a8d3198eb8f6d775a7c6df698761c1e327f76754c6a94dba56d0242819248636",
+      "git_blob_sha": "c796a1a6ddf20fb3d2b5ced2bb5074e736127484"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_pcf_export.txt",
+      "size": 7680,
+      "sha256": "f5f4ef0a1ec92b518fa797c648db58ba7fe9db20d2d61e45fc85f39082a2f947",
+      "git_blob_sha": "4af6aaf087e144f303de769444cba8885290f90e"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_pcf_info.txt",
+      "size": 66,
+      "sha256": "0027b757f4bc9a4bc37afa125b105b476c07491cc98b752fb692e8e36af79917",
+      "git_blob_sha": "1e841fb035e03df0a247449c99e89197061d31e1"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_pcf_js.txt",
+      "size": 1480,
+      "sha256": "60762f74f068d347b4d6dacae73931bbc9552174e6d6e4bf3903c87e02c8500d",
+      "git_blob_sha": "36da484af2852a75b733a8b59ba2eb9752f0a85b"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_pcf_js2.txt",
+      "size": 1480,
+      "sha256": "60762f74f068d347b4d6dacae73931bbc9552174e6d6e4bf3903c87e02c8500d",
+      "git_blob_sha": "36da484af2852a75b733a8b59ba2eb9752f0a85b"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_product.txt",
+      "size": 41788,
+      "sha256": "e6e1c88965a95932240031604a0f7768f2efa8c3ab55b4779b8b1291cc727c67",
+      "git_blob_sha": "5788663dc8c533853245e3abebb2e7fdf02998d3"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_qreport.txt",
+      "size": 1480,
+      "sha256": "60762f74f068d347b4d6dacae73931bbc9552174e6d6e4bf3903c87e02c8500d",
+      "git_blob_sha": "36da484af2852a75b733a8b59ba2eb9752f0a85b"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_think.txt",
+      "size": 230686,
+      "sha256": "f14e396588d3b1959829c9f8b6f84f49074c6052126b7fd93747a8d87d204738",
+      "git_blob_sha": "55608beb8769b1fa43d6642c2f96a2b2455e10aa"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/js_version.txt",
+      "size": 158,
+      "sha256": "f767a3bdcb16047917a1fcc89a271fd28612d750aff922631cbe481d42165ed8",
+      "git_blob_sha": "bface7abcbafe837b70fde8b18dd89989f97faa9"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/bin/runxlrd.py",
+      "size": 16145,
+      "sha256": "77908255f26d7e2f2118b214c0ac628a5c400e3e775a2afdf564b6e48062766f",
+      "git_blob_sha": "8ef9bedd27954fe5fea153b916a57830474da4d4"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd/__init__.py",
+      "size": 7320,
+      "sha256": "926b88133f1cbad6ad1a38d6dc499a0294c481c1e672c628d027161ffb61d8fd",
+      "git_blob_sha": "84d5f269016866bef2be052992bbea9bbeaab143"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd/biffh.py",
+      "size": 16651,
+      "sha256": "1a3b41a08f4f34811d6d99864ef7c343c1ee85988b25dda87dda36aa6ba7ce60",
+      "git_blob_sha": "07ac629113006008d047dfeb83da4d9e29c2e418"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd/book.py",
+      "size": 57527,
+      "sha256": "d4b1f1c9631be74641230525642e14b4815e9b9cbca3c337cc00dc74f085ffce",
+      "git_blob_sha": "6876a3e82ed545bf56e14e2e331e78d73279ec1f"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd/compdoc.py",
+      "size": 21091,
+      "sha256": "df191fb896cb44644c74f899541b160201a4b70ec99dafb0de9fe5713093e984",
+      "git_blob_sha": "412a89e7066669ca7b80c3ed8115623fd0fb2271"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd/formatting.py",
+      "size": 45573,
+      "sha256": "e8c87a18e33b1594e3d1c2781474a5d02568fbc227603bf6288653332704c3a4",
+      "git_blob_sha": "ca637b8193a9864c165249acb78ac2561c050d90"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd/formula.py",
+      "size": 94460,
+      "sha256": "72011735609a6152b3219c1aec85b4b43702d485f352f86a25750e2fbe57a1ac",
+      "git_blob_sha": "00e4464a0c8f02b906d1145617af9f59d36a3137"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd/info.py",
+      "size": 36,
+      "sha256": "030b2f2f9ed9fa598a0c368205f515a24c0cc0fbc92e7f638c6b6a3fd81ebcec",
+      "git_blob_sha": "eb7de6f4c7a32f2536859bc87607fdc8b7cc7593"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd/sheet.py",
+      "size": 106806,
+      "sha256": "9a1c04a84b5e508418f632b90b25fceecb6e9363265d444e35ff3a91940c858d",
+      "git_blob_sha": "a831398069d087f5f27f4655b42624c71bd22946"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd/timemachine.py",
+      "size": 1757,
+      "sha256": "ec2b54ec563a9905bb1d23f91633352bda487cd7b1542b7f3c95c6d8cdc51007",
+      "git_blob_sha": "a519299e151077f558fcc7e8385581fb4f8c3251"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd/xldate.py",
+      "size": 7934,
+      "sha256": "4beb9468b5fc91ab86cb64a45ff33e4be141aaa43a1fd11f4c0569bf914c5f42",
+      "git_blob_sha": "d84c650865b1efba235d9f34ea99084a34e1f82b"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd-2.0.2.dist-info/INSTALLER",
+      "size": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "git_blob_sha": "a1b589e38a32041e49332e5e81c2d363dc418d68"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd-2.0.2.dist-info/LICENSE",
+      "size": 3771,
+      "sha256": "b5a5dbce60265e305a815a6cb83ed07f24519d8ba644f2a307994488bced8815",
+      "git_blob_sha": "54acf3ca4c65279200a20b70ba96ceceef0c4ace"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd-2.0.2.dist-info/METADATA",
+      "size": 3513,
+      "sha256": "ae263dba4d616210bb2d709cd091ba453984314f79f8f50f44af864352656dec",
+      "git_blob_sha": "7c977b7c4276f606ddad70d69864604c2d2c8fea"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd-2.0.2.dist-info/RECORD",
+      "size": 1843,
+      "sha256": "601d52885d9a6d2edd0596f60eb57264c38781f33ba98da91762efd9f49f3c99",
+      "git_blob_sha": "acc4ba913c2ed61cafba04bee1762dd1a3ab6cc8"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd-2.0.2.dist-info/REQUESTED",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd-2.0.2.dist-info/WHEEL",
+      "size": 110,
+      "sha256": "5b367c7308e1f25d23b542cd8d8ab51e9afe582a824603ebfbe4d7e0fe48d56a",
+      "git_blob_sha": "b733a60d379c60aef4921d7e42a113fdc28300dc"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/local_lib/xlrd-2.0.2.dist-info/top_level.txt",
+      "size": 5,
+      "sha256": "9d9faddd273f0aa36c72d4b72fe577eaa5f00b90ee005be40758a7240a45fef3",
+      "git_blob_sha": "1a6410a56070231d13aae1cce29ac32bf3d2de83"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/manifest.json",
+      "size": 9857,
+      "sha256": "18b49afeb6a1d287b6db9b4076fb57f33f1f1e10098889427466f901044b8207",
+      "git_blob_sha": "0cd7d0699c82efdff6bf51ec920e3cd193a05fff"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/manifest_more.json",
+      "size": 3213,
+      "sha256": "ba0202446a912edd52306f23d99efe3fcd087f658d91062308de5ab3e40b7ec3",
+      "git_blob_sha": "027f106e33a6540746eb012a5aa1fa90d05252f7"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/methodology.md",
+      "size": 1804,
+      "sha256": "1b9c7fba3b1726d36027e39b1813eaaa3ccd9a74e4aa75446d2d0016bc22fe6b",
+      "git_blob_sha": "badca62aa8a8bff4606401212e4f5103896a0510"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/nav_js_a.txt",
+      "size": 18858,
+      "sha256": "f17a2964e258479f232c39f3fde7cf757a0a38501b4c52c04f4e842ee5735aad",
+      "git_blob_sha": "e1010b972c56b7bda867740da1857dc00db80ddc"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/nav_js_b.txt",
+      "size": 115720,
+      "sha256": "a078bac5695116d789ff52f62f27a1bbc533a01ddc64eefa2649597dfa23c6dd",
+      "git_blob_sha": "e46a96efd5fe666d9e2c8358512e004f99dccf0e"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/performance_20_60_120.csv",
+      "size": 1357,
+      "sha256": "c6bb48ad64887a6a4f65724fca06fc838ef109341ee990b42b9c4d66b40cfd84",
+      "git_blob_sha": "971c1f70f7c004920e61827f29204bc626fa5596"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/shares_szse.json",
+      "size": 3656,
+      "sha256": "622d876aa2213332c594c5746c32f49c259c2d694e3057ee55b14c493ad72e4e",
+      "git_blob_sha": "733e221c4a9a4c68a458e163b22460f78ee949f8"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/sina_a.txt",
+      "size": 243433,
+      "sha256": "6a7cef8ce009defc27c98c0df3902866757fdcd3cb9a28a2263f3605f7a3f4cf",
+      "git_blob_sha": "fbd0c5d87f618462398eb7b44da65b8da2023a5c"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/sina_b.txt",
+      "size": 243682,
+      "sha256": "c8255fdcda268d72d486a2b49d776ed702e37be58e45598b5b8d8bab44f9433a",
+      "git_blob_sha": "a86eb868c1744d7daea2dddbb85f5ea040b936de"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/snapshot.txt",
+      "size": 1437,
+      "sha256": "7abc538a4e9a281188da7563870b2bba0e6888c7fe54628cc63867a096ef3e43",
+      "git_blob_sha": "e146e378054045f58d52e778783b5c462b77f437"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/snapshot_final.txt",
+      "size": 983,
+      "sha256": "8a335f0c632aaab4f4ef801586d762f1d9f14a53c754b7eff944a577ba556375",
+      "git_blob_sha": "78bbc516a265706e947be38d8352fe685f392ff1"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/sohu_b_retry.txt",
+      "size": 537,
+      "sha256": "3c264d74770fd706d59c68d90ca1eb893ac379a666ff136f9acc66ca01daec02",
+      "git_blob_sha": "f60f5e72d17085f8fa933b7fef4efaaeefa3d69b"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/source_inventory.json",
+      "size": 5964,
+      "sha256": "21e62f47fd01101b45facf7d67af0442191b8fbd13024d760965610585af9a41",
+      "git_blob_sha": "b2d9c62c4ab65ef829e465bca8fdabda44da743c"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/szse_a_check.txt",
+      "size": 4398,
+      "sha256": "9140fd0137a6a7ae56ce253e9e22901a486257ff903a600d89ab9e3af69fbd6c",
+      "git_blob_sha": "d66a7cc19a072ee2eb3f11a2c1184a7d0b6c52a7"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/szse_b_check.txt",
+      "size": 4398,
+      "sha256": "4f8da85e35992f0028cb06d2710f4cac3bcf8d1df1f8fe9c04ccb23f8cf79e82",
+      "git_blob_sha": "73e301b25e776fa52b440bbf824b1601ca80d15a"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/szse_current.txt",
+      "size": 2226,
+      "sha256": "909a526f37ede9aad5fb563a8735ddde67db27e48ec4e0ff5871074118e4b710",
+      "git_blob_sha": "29b1fb113b21e4f9293da3c412bd6a37daa11c4c"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/szse_daily.txt",
+      "size": 474141,
+      "sha256": "27099abb9ce56a3c608abd2bd2f10dd1fe07388d650ad088b440724910b1ec29",
+      "git_blob_sha": "6e3217ae0d10f46db2cfa310f87a4c9b5c57fa2b"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/szse_daily_json.txt",
+      "size": 4438,
+      "sha256": "db7aa178ad455824d8adf803173f38aa78aa348858def8fe32c20e70b3a4c263",
+      "git_blob_sha": "08e9d9fb8d1836e5d89315b86c1615e25229ccb9"
+    },
+    {
+      "path": "artifacts/etf-comparison-20260930/szse_daily_page.txt",
+      "size": 8675,
+      "sha256": "d5086c31d9a9d3da1e5a28e3c5f516c997b4508b20dee99ccda33b1b75d3976b",
+      "git_blob_sha": "f2932e531b402f9c1fb28e126769123c8825e875"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/AlphaOS_雷科0807_日线与分钟完整证据包_v2.zip",
+      "size": 49977,
+      "sha256": "fae3781ba1a2211f21ae739b154bbb324cdaa2c1db70e3ccc0323282faadd72e",
+      "git_blob_sha": "ac3996971e2fe9da5710b3fa6ddccf8a1a8d8148"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/analyze.py",
+      "size": 13976,
+      "sha256": "8030dafc3a11e0bbd2078a310cf921c7bc1ad240011eb8fed40cc1c77b6a2d7c",
+      "git_blob_sha": "d383a7e470219c619964d601da44180585f3252a"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/daily_verified.csv",
+      "size": 3346,
+      "sha256": "70245cf76fcc4ecbf1fd0dfeae0c61e7635160aa2f98b842fa5c799f4f2f3a22",
+      "git_blob_sha": "022cfcaeaac23cb88a8abce8924ba583bb0c5fd7"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/eastmoney_1min_aug07.json",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/eastmoney_5min_aug07.json",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/eastmoney_daily_qfq.json",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/eastmoney_daily_unadjusted.json",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/fetch_evidence.py",
+      "size": 2193,
+      "sha256": "a53aa4cef3d0602a57a113d2f4c8d4964841231663755f24a43a5ba307a15a31",
+      "git_blob_sha": "71e198cc5281d8d3ba7fa096be3ba9aad74f89ce"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/fetch_ths_minutes.py",
+      "size": 3602,
+      "sha256": "fe05cdf190450510376b5ad8ed173d551c5a71283fa78c5697b325f06e91719c",
+      "git_blob_sha": "83833f4b8649f50a4f9c8240f464f290e5f6fdfa"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/cross_source_differences.json",
+      "size": 20278,
+      "sha256": "a820d114e095af35ef1c39f4e33b96a3cdef05ef80be5768a600dda14447f814",
+      "git_blob_sha": "c7fa52f8764580bf94e76022e216086e54969f06"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/minute_verification.json",
+      "size": 817,
+      "sha256": "e5c243bbc3b1e93cc2e1cca1174b721954c32e90ca12968094f13312ab03725c",
+      "git_blob_sha": "4b87682dc6b78b1389edb1d0e9a696cb8c760aea"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/sina_5m_aug07.csv",
+      "size": 3498,
+      "sha256": "04e65dbe421f68ac3a067a3c96a5ba02251fc6f195cc89c31066313ce2dbbe67",
+      "git_blob_sha": "b2bc9d5b79a8a62457c0602303883405dbf8184f"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/sina_5m_aug07.json",
+      "size": 8700,
+      "sha256": "2d8efaad00cdd0eddc249de0db852f4f5fedb699ca84b58be25e31dec6fe2606",
+      "git_blob_sha": "3a614569961be33b08da838dec007fb308699543"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/sina_5m_raw.txt",
+      "size": 261268,
+      "sha256": "ddac410feda3145a9f7af582868ef8de6119212105348a31ec7d8c704a267000",
+      "git_blob_sha": "2fa520c69c2624d3922bccf4c20aafc8da0adb87"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/sina_manifest.json",
+      "size": 693,
+      "sha256": "7736d4d51e3fad19db71af3e86b642d174f6273e4d44d51f7767ebcb603e2ae7",
+      "git_blob_sha": "0e6657c0950cfc057aebbab8b71f225d847d7605"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/ths_1m.json",
+      "size": 2539070,
+      "sha256": "cab7e15af773b9e1a622c7ba6b4385efa71e16bc93bb01a0226869a138cef4b0",
+      "git_blob_sha": "0624e1723eebf79d79b712668bc17d2685456448"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/ths_1m_aug07.csv",
+      "size": 14752,
+      "sha256": "61286d0cd0408a09b62a9d8bfcd297afbe43188ff6bad9771dfbf3826956911e",
+      "git_blob_sha": "7bd8e78e2f7a2445225ee7598c9dcd64d3ad7d6e"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/ths_1m_aug07.json",
+      "size": 51227,
+      "sha256": "67b5b5c36786cdf842f6f2cf3f5e144b18e79eff692f9cef49c9f33971b20c88",
+      "git_blob_sha": "a2a79eb9a4caf387963411de6f006af055aefb99"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/ths_5m.json",
+      "size": 2137363,
+      "sha256": "2e80027a712c60f42654031a91bd3709ca23733b14eafc6b774d06053f95d6c1",
+      "git_blob_sha": "dc1b6fe72ba46cd1840d75f91278d6b18839a1d2"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/ths_5m_aug07.csv",
+      "size": 3066,
+      "sha256": "faa19551cbf37f673165c61b19086c270308c842518f8d4b744b9cc46e272f60",
+      "git_blob_sha": "e0ab75d8570d0c0e9f5386e5b520f3c7d1423aa6"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/ths_5m_aug07.json",
+      "size": 10475,
+      "sha256": "a1669d0234eb9bf852652746c349e621908258371c272c18c86ce2ea0c0ecad7",
+      "git_blob_sha": "c7f4c15d3d7d9fb1539e8e95af140c2e7a05a7b7"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/ths_attempt_log.json",
+      "size": 2471,
+      "sha256": "45237a3f35f210c655345826a6ece8aa342ede3a31c5f88e361b5176debf1c3e",
+      "git_blob_sha": "c60572f38c83edce1cbe9fdabe19067a3b94617f"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/ths_min_snapshot.json",
+      "size": 46306,
+      "sha256": "6947abf99acc62dbab534aa40700ec8e94bece1ef51e025d0d33978d4326a708",
+      "git_blob_sha": "1232b0c63d79d139e266dd3d266b4d92d76bd755"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/minute_evidence/ths_snapshot_aug07.csv",
+      "size": 16500,
+      "sha256": "95c40c5a077998695e336f3132a44380b8073c04ce35fe9f7f92543cdc73e724",
+      "git_blob_sha": "d2e1b550fff69104139eaa7aaddb1be6ebebd337"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/package_minutes.py",
+      "size": 15831,
+      "sha256": "52d9aa45a95453b2337ed3e493a50a144e937aedaab5d56a4ec4d54b4a55d06f",
+      "git_blob_sha": "d0ffd1ec569c3cecd05d26b10ae45c3bf92ce63c"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/sohu_daily.json",
+      "size": 4860,
+      "sha256": "dc30539537ccc1a2f89f97267491e4756d09b18c5046acdece625e5daf56f052",
+      "git_blob_sha": "91989b44b8d461e855eefcebe9d20545d366fbed"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/source_manifest.json",
+      "size": 5525,
+      "sha256": "f2568d929886adc59aa9dcfe151b6377cf4e306a2a5e8eb6ca0dfcba0b0cb856",
+      "git_blob_sha": "5c86b6855db1614d0302b4a85541e4777a7b3c67"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/sources_receipt.json",
+      "size": 2467,
+      "sha256": "3100be1a05eee15ae16ac555901867a5e01e2fd558acf134f1c1e3bb024653a0",
+      "git_blob_sha": "74832ec53036d9e6e0168a386c3ab563eaa8fce9"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/tencent_daily.json",
+      "size": 4670,
+      "sha256": "4886c91d204a5c8bd6e595a1885dd66dd87515d105641dba930bc566aad9d975",
+      "git_blob_sha": "897e0035cc306ad1d7e13c7e7d844e7fc51a7280"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/tencent_daily_unadjusted.json",
+      "size": 4635,
+      "sha256": "5301e08d689fd5bb9830e269c8b972c06ef1a45e170eb4f088085aa08160d08e",
+      "git_blob_sha": "b533a274399e1f48daac6a662b966585dddaa7e0"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/verification.json",
+      "size": 659,
+      "sha256": "57f9c1d8edce6757499698d70f10c61cd692dce1692038a010ff030aa86d8ac3",
+      "git_blob_sha": "e54726885125f19eb87c7a36923cdc59608be644"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/交接包_manifest.json",
+      "size": 3478,
+      "sha256": "fc48db32c161d0ea3ae5333145c8aae2355452e16ea3aba34f0a4a3a92a7a5f4",
+      "git_blob_sha": "359d24c93810a019353024334824f787391f5cbc"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/发送至AlphaOS_chat_完整交接正文_v2.md",
+      "size": 84321,
+      "sha256": "c70ab9e8138bf4ae2e699c8fe5e1c9f95c2550968a19bb0007a50e8d921f74f6",
+      "git_blob_sha": "f6773dfa259a80cab42f2c7111ae01a38b10f68b"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/雷科防务_0807分钟数据补充核验.md",
+      "size": 9458,
+      "sha256": "bd31afcf143e97492b8faeec31347d71b6bf488b08e7cc5956f1d741076f3623",
+      "git_blob_sha": "c7c469051f66c3445bffb85fc8ad9ae197a5bc74"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/雷科防务_9.18压力假设核验.md",
+      "size": 14633,
+      "sha256": "0cc229c8c10e72fe6c5722fe5e684a235b16fdb46f305f9afcefe8e356559eb7",
+      "git_blob_sha": "1739326c6c4fb89629f9e7e627bb89d7d9ad7e91"
+    },
+    {
+      "path": "artifacts/leike-20260807-verification/雷科防务_9.18压力假设核验_v1_分钟补查前.md",
+      "size": 14476,
+      "sha256": "68c435588cc4e44c504097fa9e6e2a8b8bfd82cf4a2d2ed72ca740575e11e5f3",
+      "git_blob_sha": "eab6c4604ba3cfe91bd27f6ce87e78909309fca7"
+    },
+    {
+      "path": "artifacts/ths-validation/LOCAL_RUNTIME.md",
+      "size": 3053,
+      "sha256": "48b00d04833ca3b63106aaf1918a63d3a8f50407812a495f7c9fcbec51283c34",
+      "git_blob_sha": "96b91464b6e0ba68ff34a54dfcf24aa6f2c71bdb"
+    },
+    {
+      "path": "artifacts/ths-validation/api-static-check.json",
+      "size": 1332,
+      "sha256": "3c4ada86c6d3d3b1ada84f8e9f90963b29570b0457cf723ff21e5482127413b0",
+      "git_blob_sha": "e9d1cc705d5c82519455a28b2b7ac4ef1bcd69d8"
+    },
+    {
+      "path": "artifacts/ths-validation/clawhub-metadata.json",
+      "size": 23403,
+      "sha256": "3399380fe80c3b3bee51e73dcf986c6a26526b4a2148b40db840906bf0c5354f",
+      "git_blob_sha": "aab3658298714e3a8171fd72ab079ce873ff3d97"
+    },
+    {
+      "path": "artifacts/ths-validation/entrypoint-check.jsonl",
+      "size": 1948,
+      "sha256": "f65c6c87e67ef0b03895dc3da4a1dcc9938037574e1fa6d0fcdbfb95a84294a8",
+      "git_blob_sha": "5230a03ea01de874c4f12727647d21c32f57e467"
+    },
+    {
+      "path": "artifacts/ths-validation/goldwind-results.jsonl",
+      "size": 6386,
+      "sha256": "e6b4443fb05a409155558507d82c241157dd8574c4749b5fcc614c1d94c49429",
+      "git_blob_sha": "fe252ca40cbf1a25b75df9234003178ee8c976a0"
+    },
+    {
+      "path": "artifacts/ths-validation/luxin-results.jsonl",
+      "size": 6371,
+      "sha256": "3868bb41050d00ccdc47a7ae6ff159941b754bc00ee015b669818b1a7dcc3436",
+      "git_blob_sha": "271c9976a86b82ebd4db7111bd75fab71efe78db"
+    },
+    {
+      "path": "artifacts/ths-validation/openclaw-skill-info.json",
+      "size": 1383,
+      "sha256": "ddad180194b7e1a24f37fcb260619db015a352106ede339a2f066ce5c45afce2",
+      "git_blob_sha": "e3fe43b55309de90c6f70b43b86547af82b10e9e"
+    },
+    {
+      "path": "artifacts/ths-validation/pypi-metadata.json",
+      "size": 17276,
+      "sha256": "722b8336c3576b30e37f2d1bdcba75291dd719253f021fb487b9a77815c1973f",
+      "git_blob_sha": "72696e1a839566ddf98db44a446b59c5a539cde3"
+    },
+    {
+      "path": "artifacts/ths-validation/readonly_smoke.py",
+      "size": 5671,
+      "sha256": "46e0911421e3ca811676544285199a793f975ede4886f3877a5c863ca09bbca1",
+      "git_blob_sha": "4227f6a28d81dc2c2575579c2fc21adf352e0c20"
+    },
+    {
+      "path": "artifacts/ths-validation/run-readonly",
+      "size": 197,
+      "sha256": "51070755ec6c7bda949c9eecf361c053f6faf6c110099c72ffbf2a1717bf25ba",
+      "git_blob_sha": "fbcf5051ddfee828fdb94fb5bb408763b530c23e"
+    },
+    {
+      "path": "artifacts/ths-validation/staged-skill/SKILL.md",
+      "size": 20967,
+      "sha256": "c23622ed9b8a68ae16eeebcf8f739a56e6600375019f8404be6bd7cc1ae19660",
+      "git_blob_sha": "5e4a1eefef6899e05fd3a78f34260ed34e84b09c"
+    },
+    {
+      "path": "artifacts/ths-validation/staged-skill/_meta.json",
+      "size": 140,
+      "sha256": "14e81e4c05df37f8a17115e82c4f60e6d325fc412450025d5a86730db3b67ddf",
+      "git_blob_sha": "8c3038b591dc8094b70f86bc2b29877b359f5147"
+    },
+    {
+      "path": "artifacts/ths-validation/staged-skill/examples/01_minute_kline.py",
+      "size": 2755,
+      "sha256": "c85b4004598ca4e0603a05cbbc699b60ae5edac7bed5808bd281ca526dd70f1f",
+      "git_blob_sha": "cc7098e3fea29de2ee96806fb725f5486944316f"
+    },
+    {
+      "path": "artifacts/ths-validation/staged-skill/examples/02_sector_industry.py",
+      "size": 4353,
+      "sha256": "3c3a4553abcb3fb03ae32af19262a06669d52591b5a7011edd5e2c41109bd6ad",
+      "git_blob_sha": "dfead1a297d9471248c5950a1584d900cf46b0b9"
+    },
+    {
+      "path": "artifacts/ths-validation/staged-skill/examples/03_multi_stock_compare.py",
+      "size": 4892,
+      "sha256": "35d62393db060019b6f9d4730d727d0c5e240c8f5b5f1dd787989e66581bd71f",
+      "git_blob_sha": "5ce2e46ca8493bc3233f5782454f239c20e59149"
+    },
+    {
+      "path": "artifacts/ths-validation/staged-skill/examples/04_bigorder_auction.py",
+      "size": 6124,
+      "sha256": "198fc6fa3c10e51dd0ad4a457febfd6f9625b4f2bb4dbc02e1f474e6cc5814f4",
+      "git_blob_sha": "c6c68bf8a27b2dbdf0a96a04fc1c5136e295e6b2"
+    },
+    {
+      "path": "artifacts/ths-validation/staged-skill/examples/05_wencai_nlp.py",
+      "size": 14337,
+      "sha256": "85b587d534e3802648710a1b411cb19293f119206cabd31229733d5052c1bbf4",
+      "git_blob_sha": "9ec6961e108c6b529683c0e56c0810c2cb7301e8"
+    },
+    {
+      "path": "artifacts/ths-validation/staged-skill/skill-card.md",
+      "size": 2317,
+      "sha256": "8909eeab72c19cd7feb9ab338cb4d04a1f8188d2d8ceb8c825a226698507b196",
+      "git_blob_sha": "7c899146374be4a08d52140aa61fe370d091b8b5"
+    },
+    {
+      "path": "artifacts/ths-validation/ths-advanced-analysis-1.0.4.zip",
+      "size": 20881,
+      "sha256": "735da3226fdabda1c6c471c6d7191c1d9c216b5d6d889eb8ba7da84d37b7f3c9",
+      "git_blob_sha": "7fcd7159147a3bcd8114b85dcf3afd5846d986e7"
+    },
+    {
+      "path": "artifacts/ths-validation/thsdk-pypi-description.md",
+      "size": 11391,
+      "sha256": "5e0f804d74164df99c9dbccdb9b46365e0fce3f22273ee937c56f9bd9f62e10d",
+      "git_blob_sha": "9a1feefee1f868ba1b72db1b4e65e7230191ce68"
+    },
+    {
+      "path": "artifacts/ths-validation/核验报告.md",
+      "size": 5906,
+      "sha256": "7edbf498643a6415650a977d092d24e2c746822a732a7dd4e66bbe65fb296bab",
+      "git_blob_sha": "bd938f8dcb3d6847d4d0715200015a4e4c29c49d"
+    },
+    {
+      "path": "deployment/alphaos-case-luxin/index.html",
+      "size": 38081,
+      "sha256": "5d7a1d2be1b2628e93d516d28cafb7029525a6375b12a146e056d8e8aa3fc33e",
+      "git_blob_sha": "12980cf84d6438d7c1fa2018b42cbc5c131dc031"
+    },
+    {
+      "path": "deployment/alphaos-upload.json",
+      "size": 50865,
+      "sha256": "d48e363600028e4407952e864ba3384a41ffd73e028a66a7ffe7edc9d54488d8",
+      "git_blob_sha": "f56113558d7bb9b016cef7a4b4a52ae0021bf3ee"
+    },
+    {
+      "path": "handoffs/2026-09-26-蓝箭事件驱动-01.md",
+      "size": 10822,
+      "sha256": "d399f87a82d70af6fa23d7a92d436f27cfe1d2b1dd3d62297105ceb1f383ff19",
+      "git_blob_sha": "082e07e672abb5da8fa18d1a26abbce899bfb86d"
+    },
+    {
+      "path": "templates/AlphaOS_增量交接单.md",
+      "size": 1106,
+      "sha256": "6176f9b4a702e11e421ff901841f29edce9868f730fb95fa2e7b62ecbbbe6c68",
+      "git_blob_sha": "599edf2b73f5124d5f0efdefbd1a89d28286c530"
+    }
+  ],
+  "retained_locally_not_published": [
+    ".DS_Store",
+    "AGENTS.md",
+    "artifacts/etf-comparison-20260930/local_lib/bin/__pycache__/runxlrd.cpython-312.pyc",
+    "artifacts/etf-comparison-20260930/local_lib/xlrd/__pycache__/__init__.cpython-312.pyc",
+    "artifacts/etf-comparison-20260930/local_lib/xlrd/__pycache__/biffh.cpython-312.pyc",
+    "artifacts/etf-comparison-20260930/local_lib/xlrd/__pycache__/book.cpython-312.pyc",
+    "artifacts/etf-comparison-20260930/local_lib/xlrd/__pycache__/compdoc.cpython-312.pyc",
+    "artifacts/etf-comparison-20260930/local_lib/xlrd/__pycache__/formatting.cpython-312.pyc",
+    "artifacts/etf-comparison-20260930/local_lib/xlrd/__pycache__/formula.cpython-312.pyc",
+    "artifacts/etf-comparison-20260930/local_lib/xlrd/__pycache__/info.cpython-312.pyc",
+    "artifacts/etf-comparison-20260930/local_lib/xlrd/__pycache__/sheet.cpython-312.pyc",
+    "artifacts/etf-comparison-20260930/local_lib/xlrd/__pycache__/timemachine.cpython-312.pyc",
+    "artifacts/etf-comparison-20260930/local_lib/xlrd/__pycache__/xldate.cpython-312.pyc",
+    "artifacts/ths-validation/__pycache__/readonly_smoke.cpython-313.pyc",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/LICENSE",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/MANIFEST.in",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/PKG-INFO",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/README.md",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/requirements.txt",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/setup.cfg",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/setup.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/_constants.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/base.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/catalog.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/domestic.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/_helpers.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/big_order_flow.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/block.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/block_constituents.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/call_auction.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/call_auction_anomaly.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/codes_by_block.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/codes_by_market.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/complete_ths_code.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/concept.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/corporate_action.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/dde.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/depth.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/depth_details.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/forex.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/help.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/hs300.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/industry.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/intraday_data.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/ipo.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/kline.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/loop.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/market_data_block.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/market_data_bond.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/market_data_cn.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/market_data_forex.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/market_data_fund.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/market_data_future.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/market_data_hk.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/market_data_index.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/market_data_uk.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/market_data_us.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/min_snapshot.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/news.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/query_data.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/run_all_examples.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/search_symbols.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/test_thsdk.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/tick_level1.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/tick_super_level1.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/webapp/README.md",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/webapp/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/webapp/__main__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/webapp/app.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/webapp/screenshots/case_search_symbols.png",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/examples/wencai_nlp.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/darwin/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/darwin/amd64/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/darwin/amd64/hq.dylib",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/darwin/arm64/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/darwin/arm64/hq.dylib",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/linux/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/linux/amd64/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/linux/amd64/hq.so",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/linux/arm64/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/linux/arm64/hq.so",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/windows/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/libs/windows/hq.dll",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/market_queries.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/misc_api.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/query_configs.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/response.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/thsdk.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk/validators.py",
+    "artifacts/ths-validation/sdk-source/thsdk-1.7.18/thsdk.egg-info/SOURCES.txt",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/LICENSE",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/MANIFEST.in",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/PKG-INFO",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/README.md",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/pyproject.toml",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/setup.cfg",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/setup.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/_apis/__init__.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/_apis/_base.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/_apis/account.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/_apis/market_data.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/_apis/news.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/_apis/rankings.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/_apis/securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/_apis/wencai.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/_method_manifest.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/_qr_display.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/_runtime.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/_temporary_accounts.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/api.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/constants.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/account_permissions.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/add_account_watchlist_group_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/add_account_watchlist_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/analyze_security_limit_up.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/auth.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/auth_qrcode.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/block_constituents.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/calculate_security_realtime_statistics.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/check_market_timeline_readiness.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/clear_account_watchlist.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/complete_ths_code.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/corporate_action.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/create_account_watchlist_group.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/delete_account_watchlist_group.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/depth.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/get_account_watchlist.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/get_account_watchlist_groups.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/get_market_metadata.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/get_market_security_names.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/get_price.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/get_security_concept_tags.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/get_security_industry.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/get_security_popularity_rank.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/get_security_price_limit_events.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/get_security_short_term_highlights.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/get_security_trading_timeline.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/intraday_data.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/klines.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_block_constituents.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_block_descriptions.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_commodity_stock_linkage_news.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_futures_related_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_hot_block_calendar_events.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_hot_event_news.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_index_call_auction_quotes.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_industry_children.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_market_call_auction_unusual_events.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_market_change_events.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_market_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_market_short_term_events.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_news_flash_items.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_news_items.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_related_security_performances.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_securities_by_realtime_signal.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_ah_relations.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_block_memberships.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_call_auction_quotes.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_corporate_actions.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_daily_capital_flows.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_daily_k_lines_with_previous_close.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_extended_hours_intraday_bars.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_extended_hours_ticks.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_financial_snapshots.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_futures_relations.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_industry_mappings.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_intraday_bars.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_k_lines.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_link_relations.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_news_events.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_news_markers.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_option_greeks.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_order_books.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_price_volume_levels.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_research_reports.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_ticks.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_security_time_and_sales_ticks.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_wencai_expression_fields.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/list_wencai_hot_blocks.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/logout.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/loop.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/market_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/method_inventory.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/news.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/query_wencai.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/query_wencai_realtime_fields.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/query_wencai_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/rank_block_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/rank_block_securities_by_industry.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/rank_block_securities_by_wencai_field.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/rank_constituents_by_performance_contribution.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/rank_related_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/rank_securities_by_popularity.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/rank_securities_by_realtime_statistic.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/remove_account_watchlist_group_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/remove_account_watchlist_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/rename_account_watchlist_group.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/replace_account_watchlist_group_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/replace_account_watchlist_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/resolve_block.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/resolve_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/resolve_wencai_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/search_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/search_symbols.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/sort_securities.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/sort_securities_by_industry.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/tick_level1.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/wencai_nlp.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/workflow_account_group_edit.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/workflow_account_watchlist.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/workflow_concept_block.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/workflow_ths_industry_levels.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/examples/workflow_wencai_stock_pool.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/exceptions.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/libs/darwin/amd64/hq.dylib",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/libs/darwin/arm64/hq.dylib",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/libs/linux/amd64/hq.so",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/libs/linux/arm64/hq.so",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/libs/windows/amd64/hq.dll",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/py.typed",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk/session.py",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk.egg-info/PKG-INFO",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk.egg-info/SOURCES.txt",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk.egg-info/dependency_links.txt",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk.egg-info/not-zip-safe",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk.egg-info/requires.txt",
+    "artifacts/ths-validation/sdk-source/thsdk-2.0.2/thsdk.egg-info/top_level.txt",
+    "artifacts/ths-validation/thsdk-1.7.18.tar.gz",
+    "artifacts/ths-validation/thsdk-2.0.2.tar.gz"
+  ],
+  "manifest_self_hash": "excluded to avoid circularity"
+}

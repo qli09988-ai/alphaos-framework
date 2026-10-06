@@ -1,0 +1,962 @@
+[
+  {
+    "time": "2026-08-07 09:35:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "9831400",
+        "sina": "9838200",
+        "ths_minus_sina": "-6800"
+      },
+      "amount": {
+        "ths": "84880592",
+        "sina": "84942811.7697",
+        "ths_minus_sina": "-62219.7697"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 09:40:00+08:00",
+    "differences": {
+      "low": {
+        "ths": "8.56",
+        "sina": "8.550",
+        "ths_minus_sina": "0.010"
+      },
+      "close": {
+        "ths": "8.66",
+        "sina": "8.650",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "4658700",
+        "sina": "4617000",
+        "ths_minus_sina": "41700"
+      },
+      "amount": {
+        "ths": "40108672",
+        "sina": "39751153.2907",
+        "ths_minus_sina": "357518.7093"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 09:45:00+08:00",
+    "differences": {
+      "high": {
+        "ths": "8.65",
+        "sina": "8.660",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "3208600",
+        "sina": "3211900",
+        "ths_minus_sina": "-3300"
+      },
+      "amount": {
+        "ths": "27666476",
+        "sina": "27693589.0336",
+        "ths_minus_sina": "-27113.0336"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 09:50:00+08:00",
+    "differences": {
+      "high": {
+        "ths": "8.65",
+        "sina": "8.670",
+        "ths_minus_sina": "-0.020"
+      },
+      "volume": {
+        "ths": "3956700",
+        "sina": "3940500",
+        "ths_minus_sina": "16200"
+      },
+      "amount": {
+        "ths": "34004470",
+        "sina": "33865952.2818",
+        "ths_minus_sina": "138517.7182"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 09:55:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "2244700",
+        "sina": "2243800",
+        "ths_minus_sina": "900"
+      },
+      "amount": {
+        "ths": "19299460",
+        "sina": "19290823.0521",
+        "ths_minus_sina": "8636.9479"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 10:00:00+08:00",
+    "differences": {
+      "low": {
+        "ths": "8.55",
+        "sina": "8.540",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "2645201",
+        "sina": "2646001",
+        "ths_minus_sina": "-800"
+      },
+      "amount": {
+        "ths": "22661390",
+        "sina": "22668608.9209",
+        "ths_minus_sina": "-7218.9209"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 10:05:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "1815100",
+        "sina": "1810900",
+        "ths_minus_sina": "4200"
+      },
+      "amount": {
+        "ths": "15630910",
+        "sina": "15594789.0048",
+        "ths_minus_sina": "36120.9952"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 10:10:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "8.6",
+        "sina": "8.590",
+        "ths_minus_sina": "0.010"
+      },
+      "close": {
+        "ths": "8.6",
+        "sina": "8.610",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "1227700",
+        "sina": "1227200",
+        "ths_minus_sina": "500"
+      },
+      "amount": {
+        "ths": "10553690",
+        "sina": "10549469.1749",
+        "ths_minus_sina": "4220.8251"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 10:15:00+08:00",
+    "differences": {
+      "high": {
+        "ths": "8.62",
+        "sina": "8.630",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "1514300",
+        "sina": "1514600",
+        "ths_minus_sina": "-300"
+      },
+      "amount": {
+        "ths": "13035290",
+        "sina": "13037833.0087",
+        "ths_minus_sina": "-2543.0087"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 10:20:00+08:00",
+    "differences": {
+      "close": {
+        "ths": "8.6",
+        "sina": "8.610",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "1544300",
+        "sina": "1549800",
+        "ths_minus_sina": "-5500"
+      },
+      "amount": {
+        "ths": "13313080",
+        "sina": "13360367.0458",
+        "ths_minus_sina": "-47287.0458"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 10:25:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "8.61",
+        "sina": "8.600",
+        "ths_minus_sina": "0.010"
+      },
+      "close": {
+        "ths": "8.59",
+        "sina": "8.600",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "1107350",
+        "sina": "1099450",
+        "ths_minus_sina": "7900"
+      },
+      "amount": {
+        "ths": "9515870",
+        "sina": "9447852.1046",
+        "ths_minus_sina": "68017.8954"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 10:30:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "8.6",
+        "sina": "8.590",
+        "ths_minus_sina": "0.010"
+      },
+      "close": {
+        "ths": "8.57",
+        "sina": "8.560",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "1294450",
+        "sina": "1292250",
+        "ths_minus_sina": "2200"
+      },
+      "amount": {
+        "ths": "11089340",
+        "sina": "11070343.8179",
+        "ths_minus_sina": "18996.1821"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 10:35:00+08:00",
+    "differences": {
+      "close": {
+        "ths": "8.58",
+        "sina": "8.570",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "894400",
+        "sina": "892200",
+        "ths_minus_sina": "2200"
+      },
+      "amount": {
+        "ths": "7665200",
+        "sina": "7646377.0481",
+        "ths_minus_sina": "18822.9519"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 10:40:00+08:00",
+    "differences": {
+      "low": {
+        "ths": "8.57",
+        "sina": "8.560",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "1374750",
+        "sina": "1383450",
+        "ths_minus_sina": "-8700"
+      },
+      "amount": {
+        "ths": "11806210",
+        "sina": "11881094.0637",
+        "ths_minus_sina": "-74884.0637"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 10:45:00+08:00",
+    "differences": {
+      "close": {
+        "ths": "8.58",
+        "sina": "8.590",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "802900",
+        "sina": "798400",
+        "ths_minus_sina": "4500"
+      },
+      "amount": {
+        "ths": "6895980",
+        "sina": "6857198.0553",
+        "ths_minus_sina": "38781.9447"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 10:50:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "683200",
+        "sina": "871200",
+        "ths_minus_sina": "-188000"
+      },
+      "amount": {
+        "ths": "5860240",
+        "sina": "7471293.9756",
+        "ths_minus_sina": "-1611053.9756"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 10:55:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "8.58",
+        "sina": "8.570",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "778000",
+        "sina": "587400",
+        "ths_minus_sina": "190600"
+      },
+      "amount": {
+        "ths": "6673330",
+        "sina": "5039892.9863",
+        "ths_minus_sina": "1633437.0137"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 11:00:00+08:00",
+    "differences": {
+      "close": {
+        "ths": "8.56",
+        "sina": "8.570",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "618900",
+        "sina": "624900",
+        "ths_minus_sina": "-6000"
+      },
+      "amount": {
+        "ths": "5302030",
+        "sina": "5353403.0740",
+        "ths_minus_sina": "-51373.0740"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 11:05:00+08:00",
+    "differences": {
+      "close": {
+        "ths": "8.57",
+        "sina": "8.560",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "786400",
+        "sina": "782100",
+        "ths_minus_sina": "4300"
+      },
+      "amount": {
+        "ths": "6733900",
+        "sina": "6697056.2339",
+        "ths_minus_sina": "36843.7661"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 11:10:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "569900",
+        "sina": "565600",
+        "ths_minus_sina": "4300"
+      },
+      "amount": {
+        "ths": "4882310",
+        "sina": "4845488.0483",
+        "ths_minus_sina": "36821.9517"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 11:15:00+08:00",
+    "differences": {
+      "amount": {
+        "ths": "6080050",
+        "sina": "6080053.9927",
+        "ths_minus_sina": "-3.9927"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 11:20:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "875800",
+        "sina": "877400",
+        "ths_minus_sina": "-1600"
+      },
+      "amount": {
+        "ths": "7526970",
+        "sina": "7540728.1419",
+        "ths_minus_sina": "-13758.1419"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 11:25:00+08:00",
+    "differences": {
+      "high": {
+        "ths": "8.64",
+        "sina": "8.650",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "990800",
+        "sina": "989600",
+        "ths_minus_sina": "1200"
+      },
+      "amount": {
+        "ths": "8543340",
+        "sina": "8533040.9946",
+        "ths_minus_sina": "10299.0054"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 11:30:00+08:00",
+    "differences": {
+      "low": {
+        "ths": "8.63",
+        "sina": "8.620",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "1001500",
+        "sina": "1001000",
+        "ths_minus_sina": "500"
+      },
+      "amount": {
+        "ths": "8658140",
+        "sina": "8653821.9482",
+        "ths_minus_sina": "4318.0518"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 13:05:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "8.64",
+        "sina": "8.630",
+        "ths_minus_sina": "0.010"
+      },
+      "close": {
+        "ths": "8.63",
+        "sina": "8.640",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "1054800",
+        "sina": "1062400",
+        "ths_minus_sina": "-7600"
+      },
+      "amount": {
+        "ths": "9112060",
+        "sina": "9177655.1584",
+        "ths_minus_sina": "-65595.1584"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 13:10:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "8.64",
+        "sina": "8.630",
+        "ths_minus_sina": "0.010"
+      },
+      "high": {
+        "ths": "8.64",
+        "sina": "8.650",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "773200",
+        "sina": "765600",
+        "ths_minus_sina": "7600"
+      },
+      "amount": {
+        "ths": "6672580",
+        "sina": "6606983.0352",
+        "ths_minus_sina": "65596.9648"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 13:15:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "825900",
+        "sina": "845400",
+        "ths_minus_sina": "-19500"
+      },
+      "amount": {
+        "ths": "7133420",
+        "sina": "7301919.1180",
+        "ths_minus_sina": "-168499.1180"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 13:20:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "1055600",
+        "sina": "1036100",
+        "ths_minus_sina": "19500"
+      },
+      "amount": {
+        "ths": "9135330",
+        "sina": "8966834.8287",
+        "ths_minus_sina": "168495.1713"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 13:25:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "520400",
+        "sina": "544900",
+        "ths_minus_sina": "-24500"
+      },
+      "amount": {
+        "ths": "4502120",
+        "sina": "4714047.8665",
+        "ths_minus_sina": "-211927.8665"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 13:30:00+08:00",
+    "differences": {
+      "close": {
+        "ths": "8.65",
+        "sina": "8.660",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "585100",
+        "sina": "573200",
+        "ths_minus_sina": "11900"
+      },
+      "amount": {
+        "ths": "5058770",
+        "sina": "4955835.9534",
+        "ths_minus_sina": "102934.0466"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 13:35:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "875800",
+        "sina": "868800",
+        "ths_minus_sina": "7000"
+      },
+      "amount": {
+        "ths": "7590750",
+        "sina": "7530254.0081",
+        "ths_minus_sina": "60495.9919"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 13:40:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "880000",
+        "sina": "881100",
+        "ths_minus_sina": "-1100"
+      },
+      "amount": {
+        "ths": "7620700",
+        "sina": "7630152.9426",
+        "ths_minus_sina": "-9452.9426"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 13:45:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "8.65",
+        "sina": "8.660",
+        "ths_minus_sina": "-0.010"
+      },
+      "close": {
+        "ths": "8.67",
+        "sina": "8.680",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "1066000",
+        "sina": "1069600",
+        "ths_minus_sina": "-3600"
+      },
+      "amount": {
+        "ths": "9241130",
+        "sina": "9272576.0210",
+        "ths_minus_sina": "-31446.0210"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 13:50:00+08:00",
+    "differences": {
+      "high": {
+        "ths": "8.69",
+        "sina": "8.700",
+        "ths_minus_sina": "-0.010"
+      },
+      "close": {
+        "ths": "8.69",
+        "sina": "8.680",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "855300",
+        "sina": "849700",
+        "ths_minus_sina": "5600"
+      },
+      "amount": {
+        "ths": "7429720",
+        "sina": "7381122.7774",
+        "ths_minus_sina": "48597.2226"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 13:55:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "8.68",
+        "sina": "8.690",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "1097300",
+        "sina": "1094600",
+        "ths_minus_sina": "2700"
+      },
+      "amount": {
+        "ths": "9510820",
+        "sina": "9487318.8898",
+        "ths_minus_sina": "23501.1102"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 14:00:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "896900",
+        "sina": "907300",
+        "ths_minus_sina": "-10400"
+      },
+      "amount": {
+        "ths": "7762280",
+        "sina": "7852127.9372",
+        "ths_minus_sina": "-89847.9372"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 14:05:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "8.64",
+        "sina": "8.630",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "748400",
+        "sina": "736600",
+        "ths_minus_sina": "11800"
+      },
+      "amount": {
+        "ths": "6460310",
+        "sina": "6358348.0483",
+        "ths_minus_sina": "101961.9517"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 14:10:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "8.64",
+        "sina": "8.630",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "6296200",
+        "sina": "6328100",
+        "ths_minus_sina": "-31900"
+      },
+      "amount": {
+        "ths": "54790830",
+        "sina": "55068719.5581",
+        "ths_minus_sina": "-277889.5581"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 14:15:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "27916000",
+        "sina": "28155900",
+        "ths_minus_sina": "-239900"
+      },
+      "amount": {
+        "ths": "251259060",
+        "sina": "253482791.5740",
+        "ths_minus_sina": "-2223731.5740"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 14:20:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "9.22",
+        "sina": "9.210",
+        "ths_minus_sina": "0.010"
+      },
+      "low": {
+        "ths": "9.16",
+        "sina": "9.150",
+        "ths_minus_sina": "0.010"
+      },
+      "close": {
+        "ths": "9.49",
+        "sina": "9.500",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "26427917",
+        "sina": "26271417",
+        "ths_minus_sina": "156500"
+      },
+      "amount": {
+        "ths": "246924520",
+        "sina": "245518807.5690",
+        "ths_minus_sina": "1405712.4310"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 14:25:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "9.49",
+        "sina": "9.500",
+        "ths_minus_sina": "-0.010"
+      },
+      "low": {
+        "ths": "9.22",
+        "sina": "9.210",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "14745400",
+        "sina": "14758100",
+        "ths_minus_sina": "-12700"
+      },
+      "amount": {
+        "ths": "137806450",
+        "sina": "137896900.9472",
+        "ths_minus_sina": "-90450.9472"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 14:30:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "9.26",
+        "sina": "9.270",
+        "ths_minus_sina": "-0.010"
+      },
+      "high": {
+        "ths": "9.26",
+        "sina": "9.270",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "7056702",
+        "sina": "6937800",
+        "ths_minus_sina": "118902"
+      },
+      "amount": {
+        "ths": "64949380",
+        "sina": "63846993.1598",
+        "ths_minus_sina": "1102386.8402"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 14:35:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "9.2",
+        "sina": "9.190",
+        "ths_minus_sina": "0.010"
+      },
+      "low": {
+        "ths": "9.14",
+        "sina": "9.130",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "5690300",
+        "sina": "5741300",
+        "ths_minus_sina": "-51000"
+      },
+      "amount": {
+        "ths": "52249790",
+        "sina": "52719331.3311",
+        "ths_minus_sina": "-469541.3311"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 14:40:00+08:00",
+    "differences": {
+      "volume": {
+        "ths": "3109900",
+        "sina": "3105600",
+        "ths_minus_sina": "4300"
+      },
+      "amount": {
+        "ths": "28612430",
+        "sina": "28574251.6564",
+        "ths_minus_sina": "38178.3436"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 14:45:00+08:00",
+    "differences": {
+      "high": {
+        "ths": "9.24",
+        "sina": "9.250",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "4113800",
+        "sina": "4073900",
+        "ths_minus_sina": "39900"
+      },
+      "amount": {
+        "ths": "37957710",
+        "sina": "37589467.4459",
+        "ths_minus_sina": "368242.5541"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 14:50:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "9.22",
+        "sina": "9.230",
+        "ths_minus_sina": "-0.010"
+      },
+      "high": {
+        "ths": "9.23",
+        "sina": "9.240",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "4392300",
+        "sina": "4418700",
+        "ths_minus_sina": "-26400"
+      },
+      "amount": {
+        "ths": "40434800",
+        "sina": "40676829.4874",
+        "ths_minus_sina": "-242029.4874"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 14:55:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "9.2",
+        "sina": "9.190",
+        "ths_minus_sina": "0.010"
+      },
+      "close": {
+        "ths": "9.16",
+        "sina": "9.170",
+        "ths_minus_sina": "-0.010"
+      },
+      "volume": {
+        "ths": "4747700",
+        "sina": "4730100",
+        "ths_minus_sina": "17600"
+      },
+      "amount": {
+        "ths": "43573600",
+        "sina": "43411205.5471",
+        "ths_minus_sina": "162394.4529"
+      }
+    }
+  },
+  {
+    "time": "2026-08-07 15:00:00+08:00",
+    "differences": {
+      "open": {
+        "ths": "9.16",
+        "sina": "9.170",
+        "ths_minus_sina": "-0.010"
+      },
+      "low": {
+        "ths": "9.16",
+        "sina": "9.150",
+        "ths_minus_sina": "0.010"
+      },
+      "volume": {
+        "ths": "5299600",
+        "sina": "5274300",
+        "ths_minus_sina": "25300"
+      },
+      "amount": {
+        "ths": "48580500",
+        "sina": "48348618.9857",
+        "ths_minus_sina": "231881.0143"
+      }
+    }
+  }
+]

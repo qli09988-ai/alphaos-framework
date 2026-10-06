@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>景顺长城基金管理有限公司</title>
+    <meta name="keywords" content="景顺长城,景顺长城基金, 景顺基金,景顺长城基金官网,基金官网,新基金,费率优惠,网上交易,基金产品,基金定投,基金净值,净值查询 ,基金投资理财,开放式基金净值,认购,量化新动力,001974,景顺长城量化新动力股票型证券投资基金,MSCI,MSCI A股国际指数">
+    <meta name="description" content="景顺长城，股票投资专家。曾多次获得金牛基金公司称号，旗下股票基金多次赢得年度股基收益冠军，景顺长城基金官网直接申购、定投费率优惠低至1折！">
+    <link rel="stylesheet" href="/front/style/style/404.css">
+</head>
+
+<body>
+    <div class="box">
+        <img src="/front/images/i/404/banner.png" class="banner">
+        <p class="p_404">404</p>
+        <p class="p_sorry">很抱歉，您要查看的页面不存在或已删除！</p>
+        <p class="p_check">请检查您输入的网址是否正确，或者点击其他链接继续浏览网站。</p>
+        <p class="wrap_btn">
+            <a href="http://www.igwfmc.com/" class="btn btn_1">返回网站首页</a>
+            <a href="javascript: history.back();" class="btn btn_2">返回上级页面</a>
+        </p>
+    </div>
+</body>
+
+</html>

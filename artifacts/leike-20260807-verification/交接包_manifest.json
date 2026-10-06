@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-09-27T20:24:43.118271+08:00",
+  "scope": "002413 history verification; minute rows limited to 2026-08-07",
+  "files": [
+    {
+      "file": "雷科防务_9.18压力假设核验.md",
+      "bytes": 14633,
+      "sha256": "0cc229c8c10e72fe6c5722fe5e684a235b16fdb46f305f9afcefe8e356559eb7"
+    },
+    {
+      "file": "雷科防务_0807分钟数据补充核验.md",
+      "bytes": 9458,
+      "sha256": "bd31afcf143e97492b8faeec31347d71b6bf488b08e7cc5956f1d741076f3623"
+    },
+    {
+      "file": "daily_verified.csv",
+      "bytes": 3346,
+      "sha256": "70245cf76fcc4ecbf1fd0dfeae0c61e7635160aa2f98b842fa5c799f4f2f3a22"
+    },
+    {
+      "file": "verification.json",
+      "bytes": 659,
+      "sha256": "57f9c1d8edce6757499698d70f10c61cd692dce1692038a010ff030aa86d8ac3"
+    },
+    {
+      "file": "source_manifest.json",
+      "bytes": 5525,
+      "sha256": "f2568d929886adc59aa9dcfe151b6377cf4e306a2a5e8eb6ca0dfcba0b0cb856"
+    },
+    {
+      "file": "tencent_daily_unadjusted.json",
+      "bytes": 4635,
+      "sha256": "5301e08d689fd5bb9830e269c8b972c06ef1a45e170eb4f088085aa08160d08e"
+    },
+    {
+      "file": "tencent_daily.json",
+      "bytes": 4670,
+      "sha256": "4886c91d204a5c8bd6e595a1885dd66dd87515d105641dba930bc566aad9d975"
+    },
+    {
+      "file": "sohu_daily.json",
+      "bytes": 4860,
+      "sha256": "dc30539537ccc1a2f89f97267491e4756d09b18c5046acdece625e5daf56f052"
+    },
+    {
+      "file": "minute_evidence/ths_1m_aug07.csv",
+      "bytes": 14752,
+      "sha256": "61286d0cd0408a09b62a9d8bfcd297afbe43188ff6bad9771dfbf3826956911e"
+    },
+    {
+      "file": "minute_evidence/ths_5m_aug07.csv",
+      "bytes": 3066,
+      "sha256": "faa19551cbf37f673165c61b19086c270308c842518f8d4b744b9cc46e272f60"
+    },
+    {
+      "file": "minute_evidence/sina_5m_aug07.csv",
+      "bytes": 3498,
+      "sha256": "04e65dbe421f68ac3a067a3c96a5ba02251fc6f195cc89c31066313ce2dbbe67"
+    },
+    {
+      "file": "minute_evidence/ths_snapshot_aug07.csv",
+      "bytes": 16500,
+      "sha256": "95c40c5a077998695e336f3132a44380b8073c04ce35fe9f7f92543cdc73e724"
+    },
+    {
+      "file": "minute_evidence/ths_1m_aug07.json",
+      "bytes": 51227,
+      "sha256": "67b5b5c36786cdf842f6f2cf3f5e144b18e79eff692f9cef49c9f33971b20c88"
+    },
+    {
+      "file": "minute_evidence/ths_5m_aug07.json",
+      "bytes": 10475,
+      "sha256": "a1669d0234eb9bf852652746c349e621908258371c272c18c86ce2ea0c0ecad7"
+    },
+    {
+      "file": "minute_evidence/sina_5m_aug07.json",
+      "bytes": 8700,
+      "sha256": "2d8efaad00cdd0eddc249de0db852f4f5fedb699ca84b58be25e31dec6fe2606"
+    },
+    {
+      "file": "minute_evidence/ths_min_snapshot.json",
+      "bytes": 46306,
+      "sha256": "6947abf99acc62dbab534aa40700ec8e94bece1ef51e025d0d33978d4326a708"
+    },
+    {
+      "file": "minute_evidence/ths_attempt_log.json",
+      "bytes": 2471,
+      "sha256": "45237a3f35f210c655345826a6ece8aa342ede3a31c5f88e361b5176debf1c3e"
+    },
+    {
+      "file": "minute_evidence/sina_manifest.json",
+      "bytes": 693,
+      "sha256": "7736d4d51e3fad19db71af3e86b642d174f6273e4d44d51f7767ebcb603e2ae7"
+    },
+    {
+      "file": "minute_evidence/minute_verification.json",
+      "bytes": 817,
+      "sha256": "e5c243bbc3b1e93cc2e1cca1174b721954c32e90ca12968094f13312ab03725c"
+    },
+    {
+      "file": "minute_evidence/cross_source_differences.json",
+      "bytes": 20278,
+      "sha256": "a820d114e095af35ef1c39f4e33b96a3cdef05ef80be5768a600dda14447f814"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+define("osoa/scripts/main/english/etfpcf",function(require, exports, module){
+	require("osoa/scripts/utils/juicer/juicerUtil");
+	var result = require("osoa/scripts/utils/resultVoUtil");
+	var pageId = "#main_english_etfpcf";
+	var etfService = require("osoa/scripts/service/etf/etfService");
+	var fundInfoService = require("osoa/scripts/service/fund/FundInfoService");
+	require("osoa/scripts/utils/juicer/juicerUtil");
+	var layer = require("layerUtils");
+	var resultVoUtil = require("osoa/scripts/utils/resultVoUtil");
+	var load = require("osoa/scripts/utils/load");
+	var fundcode = "";
+	var  fundname  = "";
+
+	
+	function init(param){
+		fundcode = param.fundcode;
+		//测试
+		GetEtfStockExtendList(fundcode)
+	}
+	
+	function bindPageEvent(){
+	}
+	
+	function destroy(){ 
+	}
+	
+	
+	if (typeof String.prototype.startsWith !== 'function') {
+    	String.prototype.startsWith = function(prefix) {
+        	return this.slice(0, prefix.length) === prefix;
+    	};
+	}
+	
+	//获取成分股信息内容
+	function  GetEtfStockExtendList(c_fundcode){
+		var callback = function(resultVo){
+			if(resultVo.getErrorNo() == 0){
+				var result = resultVo.getResults();
+				if(result && result.length>0){
+					//取第一条数据的名称信息
+					var c_fundid = result[0].c_fundid;
+					var fundengnm = result[0].fundengnm;
+					var d_tradingday = result[0].d_tradingday;
+					$("#nameAndCode").html(fundengnm+"<span>（Fund Code："+c_fundid+"）</span>");
+					$("#tradingday").html("As of "+ formatDateEn(d_tradingday));
+					//配置导出链接
+					$("#daochu").attr("href","/servlet/exportPcf?fundid="+c_fundid);
+					$("#daochu").attr("download",c_fundid+"_"+d_tradingday+".xls");
+					// 重组数据：每2条一组，每组包含left和right
+					var groupedData = [];
+					// 计算左侧需要的长度（确保覆盖所有元素，右侧不足时补null）
+					var leftLength = Math.ceil(result.length / 2);
+					for (var i = 0; i < leftLength; i++) {
+					  groupedData.push({
+							left: result[i], // 左侧：前半部分
+    						right: result[leftLength + i] || null // 右侧：后半部分（超出范围补null）
+					  });
+					}
+					$("#cfgxxnr").getTemplateHtml("template/etf/etfList_en",groupedData);
+				}else{
+					$("#cfgxxnr tobdy").html('<tr><td colspan="4">暂无数据</tr>')
+				}
+				
+			} else {
+				layer.iAlert(resultVo.getErrorInfo());
+			}
+		};
+		etfService.GetEtfStockExtendList(callback,c_fundcode);
+	}
+	
+	/**
+	 * 日期格式转换：2024-12-23  转成 23-Dec-2024
+	 */
+	function formatDateEn(originalDate) {
+		if(originalDate){
+		  var str = String(originalDate); // 转为字符串处理
+		  str = str.replace(/-/g, "");
+		  // 1. 解析原始日期（支持字符串或数字，如 '20241223' 或 20241223）
+		  var year = parseInt(str.slice(0, 4), 10); // 前4位：年
+		  var month = parseInt(str.slice(4, 6), 10) - 1; // 中间2位：月（减1，因Date月份从0开始）
+		  var day = parseInt(str.slice(6, 8), 10); // 后2位：日
+		
+		  // 2. 创建Date对象
+		  var date = new Date(year, month, day);
+		
+		  // 3. 定义月份缩写（英文）
+		  var monthAbbr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+		
+		  // 4. 提取并拼接格式
+		  var abbr = monthAbbr[date.getMonth()]; // 月份缩写
+		  var dateNum = date.getDate(); // 日期（1-31）
+		  var fullYear = date.getFullYear(); // 完整年份
+		
+		  return  dateNum+ "-" + abbr+ "-" +fullYear;
+		}else{
+			return "";
+		}
+	}
+	    
+    var index = {
+    	"init" : init,
+    	"bindPageEvent" : bindPageEvent,
+    	"destroy" : destroy
+    	};
+    
+	    //瀵瑰鏆撮湶鎺ュ彛
+	    module.exports=index;
+	});

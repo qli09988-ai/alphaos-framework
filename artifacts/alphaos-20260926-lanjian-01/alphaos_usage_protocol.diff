@@ -1,0 +1,72 @@
+--- alphaos_usage_protocol.md (v0.1-working)
++++ alphaos_usage_protocol.md (v0.1.1-working)
+@@ -1,4 +1,7 @@
+ # AlphaOS Usage Protocol
++
++Version: v0.1.1-working  
++Last updated: 2026-09-26
+ 
+ Use this file when giving AlphaOS to another model/platform.
+ 
+@@ -10,12 +13,15 @@
+ 2. `alphaos_status_board.md`
+ 3. `alphaos_case_lab.md`
+ 4. `alphaos_backlog_changelog.md`
++5. 本文件；再读 `handoffs/` 中相关增量交接单；模板见 `templates/AlphaOS_增量交接单.md`。
+ 
+ ---
+ 
+ ## 2. Source-of-truth rule
+ 
+ `alphaos_core_spec.md` is authoritative.
++
++以同一版本的一组文件为准，当前 v0.1.1-working / 2026-09-26。`archives/` 是历史快照，`deployment/` 是旧案例展示，`artifacts/` 是证据/差异，不是平行主档。旧名 `AlphaOS_Specification_v0.1.md` 本次未找到正文，不据聊天提及覆盖现有主档。
+ 
+ Do NOT:
+ - treat an old chat answer as a formal rule;
+@@ -26,7 +32,9 @@
+ 
+ ## 3. When analyzing a new company
+ 
+-Default order:
++先读取 Thesis Type Router，判断 Industrial / Event-Driven / Asset Realization / Hybrid，并填写 Why Now?。Event-Driven / Asset Realization 先核对事件事实、权益传导与兑现条件，再走 Expectation / Market Regime / Execution / Risk；CV 不适用时写 N/A。Hybrid 分开研究主业与可选项，避免重复计价。
++
++Industrial 及 Hybrid 的产业部分沿用以下顺序：
+ 
+ 1. Industry / Direction
+ 2. Lifecycle
+@@ -63,7 +71,8 @@
+ ## 5. State updates
+ 
+ A company card should change only when new evidence changes:
+-- CV
++- CV（适用时）
++- Event State / substage / event_status（适用时）
+ - Thesis strength
+ - Expectation
+ - risk / action
+@@ -95,3 +104,24 @@
+ > Preserve version boundaries.  
+ > When you find a framework gap, record it as a proposed change first.  
+ > Distinguish facts, calculations, inference, hypotheses, and missing evidence.
++
++
++---
++
++## 8. 本轮批准边界与材料处理
++
++- CHG-007–CHG-012 为 Approved；市场领先分类保持 Experimental/Testing，Catalyst Quality 保持 Proposed/Testing，Pre-Event Leader 阈值保持 Proposed/Testing。Approved Candidate 是候选，不等于 Approved，未经明确批准不得加入正式行为。
++- 实验标签可附于研究卡的独立区；不得当作正式过滤器、买入信号、退出规则或仓位参数。没有证据不能为了填满字段而强行分类。
++- Event Progress 和 Expectation Progress 分开维护；C0–C7 与 E1–E4 不做数字运算，业务现实状态独立记录。
++- 历史控制组优先使用经口径核验的 BaoStock 日线；thsdk 当前游客 wrapper 负责当日盘面，休市快照不得冒充实时。当前服务器 AKShare/东方财富故障记录在案，作为底座须重新验收。
++- 公告/新闻保留首次发布时间与采集时间；没有官方文件就不把旧聊天中的“当前阶段”和时间窗口写成事实。
++- 历史外盘/内盘/主动买卖数据降权，non-wrapper 历史材料只作待核验资料；不绕过 run-readonly 补抓。
++- 个股相对市场/行业/事件篮子使用一致窗口；固定控制组，不事后选样；缺失项写 Unavailable。
++
++## 9. 增量合入与版本冲突
++
++沿用 `templates/AlphaOS_增量交接单.md` 的全部字段：核对交接编号是否重复 → 比较基准版本/哈希与目标文件 → 保存旧版 → 按批准边界合入 → 同步版本/状态板/Case Lab/Change Log → 记录合入结果和差异。
++
++案例 FACT 表示材料报告了什么，同时注明是否独立核实；CALCULATION 写输入、单位、公式与结果；INFERENCE/HYPOTHESIS 不能写成事实。服务器转述报告不等于本次重测。
++
++同名不同内容必须保留与说明冲突，不能按修改时间静默覆盖。`sources/` 及同步项目文件只读；当前根目录六份文档有原 ZIP 解包记录，属于可编辑本地主档。本轮保留备份与逐文件 diff，不新建另一套框架。

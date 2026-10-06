@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-06",
+  "checks": {
+    "A": true,
+    "B": true,
+    "D": true,
+    "E": true,
+    "F": true,
+    "C": true,
+    "personal_and_case_excluded_from_core": true,
+    "case_acceptance": true,
+    "unchanged_router": true,
+    "unchanged_expectation": true,
+    "unchanged_rs": true,
+    "unchanged_event": true,
+    "only_six_existing_documents_changed": true,
+    "local_links": true
+  },
+  "changed_existing_files": [
+    "alphaos_case_lab.md",
+    "alphaos_status_board.md",
+    "alphaos_usage_protocol.md",
+    "README.md",
+    "alphaos_core_spec.md",
+    "alphaos_backlog_changelog.md"
+  ],
+  "preserved_existing_files": 424,
+  "broken_local_links": [],
+  "scope": "Document coverage, boundaries, unchanged approved sections, hashes and links; not market research or runtime acceptance"
+}

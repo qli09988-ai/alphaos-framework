@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>景顺长城基金管理有限公司</title>
+<link rel="stylesheet" type="text/css" href="/front/style/style.css">
+<link rel="stylesheet" type="text/css" href="/front/style/style/init.css">
+<style>
+.whitebox{
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+	width: 940px;
+	min-height: 500px;
+	margin-bottom: 60px;
+	padding: 17px 30px 25px;
+	background: #fff;
+}
+.fund_info{
+	width: 940px;
+}
+.fund_tit{
+	border-bottom: none;
+}
+.fund_tit h2 {
+	color: #000AD2;
+}
+.query_box {
+	float: right;
+}
+.info_table th, .info_table td{
+	font-size: 12px;
+	border: 1px solid #dedede;
+}
+</style>
+</head>
+<body>
+<!--content start-->
+  <div id="main_zxzx_info-1"> 
+	<!-- decoration -->
+	<div id="top-bg"></div>
+	<!--<div id="bottom-bg"></div>-->
+	<!-- nav1 -->
+	<div id="nav1" class="eng">
+		<div class="box">
+			<!-- left -->
+			<a href="javascript:;" id="gfwx">Official&nbsp;WeChat</a>
+			<a href="http://weibo.com/u/1644059164">Official&nbsp;Weibo</a>
+			<a href="javascript;;" onClick="javascript:window.open('http://www.invescogreatwall.com:9080/live800/chatClient/chatbox.jsp?companyID=8891&configID=5&skillId=1&enterurl=http%3A%2F%2Fwww%2Eigwfmc%2Ecom%2Findex%2Ehtm&pagereferrer=http%3A%2F%2Fwww%2Eigwfmc%2Ecom%2F&k=1','','width=778,height=520,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=yes');return false;">Online&nbsp;Customer&nbsp;Service</a>
+			<a href="/main/english/english-1-1.html">English</a>
+			<!-- right -->
+			<!--<form action="/main/search/search.html" method="get">
+				<input type="text" name="search" placeholder="Fund&nbsp;Name/Code/Fund" />
+				<input type="submit" value="" />
+			</form>-->
+		</div>
+	</div>
+	<!-- nav2 -->
+	<div id="nav2">
+		<div class="box">
+			<!-- left -->
+			<a href="/main/index/index.html" class="left"><img src="/front/images/i/logo.png" alt="logo"></a>
+			<!-- right -->
+			<a href="/main/english/english-1-1.html">Home</a>
+			<span></span>
+			<a href="/main/english/english-2-1.html">About Us</a>
+			<span></span>
+			<a href="/main/english/english-3-1.html" class="on">Products&Services</a>
+			<span></span>
+			<a href="/main/english/english-5-1.html">Contact Us</a>
+			<span></span>
+		</div>
+	</div>
+
+	<div id="bodyContent">
+		<div class="whitebox" id="main_english_etfpcf">
+			<div class="fund_info">
+				<div class="fund_tit">
+					<h2 id="nameAndCode">--（Fund Code：--）</h2>
+				</div>
+				<div class="info_tit">
+					<span class="line"></span><h3>PCF</h3>
+				</div>
+				<div class="query_box">
+					<span id="tradingday" style="color: #8A92A9;font-size: 14px;"></span>
+					<a href="javascript:void(0);" class="query_btn" id="daochu" style="margin-left:10px;display;color: #fff;background: #2b4ed0;font-size:14px;">Download</a>
+				</div>
+				<div class="info_table" id="cfgxxnr">
+					<table >
+						<tr>
+							<th>Ticker</th>
+							<th>Name</th>
+							<th>Weight (%)</th>
+							<th>Ticker</th>
+							<th>Name</th>
+							<th>Weight (%)</th>
+						</tr>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	 </div>
+    <!-- copyright -->
+    <div id="copyright">
+        <div class="box">
+            <p>Invesco Great Wall. <a href="http://beian.miit.gov.cn" target="_blank">粤ICP备06065556号</a> 本网站支持IPv6
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030402003663" style="display:inline-block;text-decoration:none;  margin-bottom: -8px;"><img src="/front/images/wa.png" style="float:left;"/>粤公网安备 44030402003663号</a>
+            </p>
+            <p><a style="font-weight: 900;cursor: pointer;" onclick="window.open('/data/Risk Disclosure Statement.pdf', '_blank')">风险揭示书</a>|
+                <a style="font-weight: 900;cursor: pointer;" onclick="window.open('/data/证券投资基金投资人权益须知.pdf', '_blank')">投资者权益须知</a>|
+                <a style="font-weight: 900;cursor: pointer;" onclick="window.open('/upload/20191206/景顺长城基金隐私政策.pdf', '_blank')">隐私政策</a>|
+                <a style="font-weight: 900;cursor: pointer;" onclick="window.open('/upload/yjts/景顺长城基金管理有限公司客户应急处理提示.pdf', '_blank')">应急处理提示</a></p>
+            <p>
+                <a style="margin: 0;" href="http://szcert.ebs.org.cn/7b54be4e-ae91-4e0e-938c-75f17fac684e"><img src="/front/images/i/copyright.png" alt=""></a>
+
+            </p>
+        </div>
+    </div>
+</div>
+<!--content end-->
+ <script type="text/javascript">
+  //项目主体页面 pageCode:页面路径编码,jsonParam:参数，isLoad:是否每次都加载
+  var _defaultPage ={"pageCode": "main/english/etfpcf", "jsonParam":{},"isLoad":false};
+ </script>   
+ 
+ <script type="text/javascript" src="/osoa/version.js"></script>
+  <!--基础框架包 -->
+ <script type="text/javascript" src="/thinkiveJs.min.js"></script>
+
+</body>
+</html>

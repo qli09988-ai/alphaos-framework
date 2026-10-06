@@ -1,0 +1,128 @@
+[
+  {
+    "file": "shares_szse.json",
+    "data_asof": "2026-08-31 to 2026-09-29",
+    "description": "SZSE ETF outstanding shares",
+    "url": "https://www.szse.cn/api/report/ShowReport?SHOWTYPE=xlsx&CATALOGID=scsj_fund_jjgm&TABKEY=tab1&txtStart=2026-08-31&txtEnd=2026-09-29&jjlb=ETF",
+    "sha256": "622d876aa2213332c594c5746c32f49c259c2d694e3057ee55b14c493ad72e4e"
+  },
+  {
+    "file": "index_history_full.txt",
+    "data_asof": "2026-02-02 to 2026-09-29",
+    "description": "CNI price index",
+    "url": "https://hq.cnindex.com.cn/market/market/getIndexDailyDataWithDataFormat?indexCode=980022&startDate=2026-02-01&endDate=2026-09-29",
+    "sha256": "a4c3f5ce0ecdd62ea2a8ae9471ce88158dbf46dbb66daafbb0a5f28268d9093f"
+  },
+  {
+    "file": "index_weights.txt",
+    "data_asof": "2026-09-29",
+    "description": "CNI 50 names, top10 weights only",
+    "url": "https://www.cnindex.com.cn/sample-detail/detail?indexcode=980022&dateStr=2026-09-29&pageNum=1&rows=100&isFirstCall=1",
+    "sha256": "63f095cbe58d71d152bd39be5fc0c170ba47238a52ca418dc2d4460c08dca397"
+  },
+  {
+    "file": "index_sector.txt",
+    "data_asof": "2026-09-29",
+    "description": "CNI industries",
+    "url": "https://hq.cnindex.com.cn/market/market-distribute/trade?indexcode=980022&lang=zh_CN",
+    "sha256": "2799e0ef079541a3210000e76bcb0e6be0b952a362fec74a92794cdd917eed9b"
+  },
+  {
+    "file": "index_method.pdf",
+    "data_asof": "retrieved 2026-09-30",
+    "description": "CNI methodology",
+    "url": "https://www.cnindex.com.cn/docs/gz_980022.pdf",
+    "sha256": "80612032de2b9c30a103cd9302a739ce86cbd7e0cec8000f2d3a58f693c68f89"
+  },
+  {
+    "file": "ha_pcf_xml.txt",
+    "data_asof": "2026-09-30",
+    "description": "Huaan PCF; prior NAV 2026-09-29",
+    "url": "https://www.huaan.com.cn/etf/159039/etffiledownload.jsp?etffilename=pcf_159039_20260930.xml",
+    "sha256": "2a0d1ebae5ffc89853393fa9dc6782eed723e8ef60a80b060c145ca856b0be8e"
+  },
+  {
+    "file": "js_pcf_current.txt",
+    "data_asof": "2026-09-30",
+    "description": "IGW PCF not actual holdings",
+    "url": "https://www.igwfmc.com/servlet/json?funcNo=901140&fundcode=159559",
+    "sha256": "7b6d3729db37caed6cfff8f573dac12aacc8e1ff8d1d3251e0798d83882bd607"
+  },
+  {
+    "file": "js_interim.pdf",
+    "data_asof": "2026-06-30",
+    "description": "IGW 2026 interim report",
+    "url": "https://pdf.dfcfw.com/pdf/H2_AN202608271828554747_1.pdf",
+    "sha256": "4da4e041baf0783d5366f13f5f446585860108c4aeee6afc8a11db17fb9ecc86"
+  },
+  {
+    "file": "js_product.txt",
+    "data_asof": "NAV 2026-09-29",
+    "description": "IGW official product",
+    "url": "https://www.igwfmc.com/main/english/product/159559/detail.html",
+    "sha256": "e6e1c88965a95932240031604a0f7768f2efa8c3ab55b4779b8b1291cc727c67"
+  },
+  {
+    "file": "snapshot_final.txt",
+    "data_asof": "2026-09-30 source times 11:56:30 and 11:56:24 CST",
+    "description": "Tencent snapshot fetched 11:57 CST, not closing prices",
+    "url": "https://qt.gtimg.cn/q=sz159039,sz159559",
+    "sha256": "8a335f0c632aaab4f4ef801586d762f1d9f14a53c754b7eff944a577ba556375"
+  },
+  {
+    "file": "nav_js_a.txt",
+    "data_asof": "through 2026-09-29",
+    "description": "Eastmoney NAV, latest crosschecked issuer",
+    "url": "https://fund.eastmoney.com/pingzhongdata/159039.js",
+    "sha256": "f17a2964e258479f232c39f3fde7cf757a0a38501b4c52c04f4e842ee5735aad"
+  },
+  {
+    "file": "159039_eastmoney.txt",
+    "data_asof": "through 2026-09-29",
+    "description": "Eastmoney daily prices",
+    "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=0.159039&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61&klt=101&fqt=0&beg=20260201&end=20260930",
+    "sha256": "49c0234e9f4c707342cbe4e86c0489a38063762746209bab36da16a48cee5f46"
+  },
+  {
+    "file": "159039_tencent.txt",
+    "data_asof": "through 2026-09-29",
+    "description": "Tencent OHLC crosscheck",
+    "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159039,day,2026-02-01,2026-09-30,240,",
+    "sha256": "6d7b58426c2d65cf6b24aad76ed90089b43e8a340ba607cf080547d54a037178"
+  },
+  {
+    "file": "159039_flow.txt",
+    "data_asof": "through 2026-09-29",
+    "description": "Eastmoney secondary-market MAIN flow, NOT subscription",
+    "url": "https://push2his.eastmoney.com/api/qt/stock/fflow/daykline/get?lmt=140&klt=101&secid=0.159039&fields1=f1,f2,f3,f7&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f62,f63",
+    "sha256": "5c69354b22ef96cac7fa3709dbb53b45d3aeaf61004bfcdbad7bf21ee6907eec"
+  },
+  {
+    "file": "nav_js_b.txt",
+    "data_asof": "through 2026-09-29",
+    "description": "Eastmoney NAV, latest crosschecked issuer",
+    "url": "https://fund.eastmoney.com/pingzhongdata/159559.js",
+    "sha256": "a078bac5695116d789ff52f62f27a1bbc533a01ddc64eefa2649597dfa23c6dd"
+  },
+  {
+    "file": "159559_eastmoney.txt",
+    "data_asof": "through 2026-09-29",
+    "description": "Eastmoney daily prices",
+    "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=0.159559&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61&klt=101&fqt=0&beg=20260201&end=20260930",
+    "sha256": "564eb0b57ebebba1bb22893d553fe32ebd64cc6b2d10ca593c0607af60f23d5f"
+  },
+  {
+    "file": "159559_tencent.txt",
+    "data_asof": "through 2026-09-29",
+    "description": "Tencent OHLC crosscheck",
+    "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159559,day,2026-02-01,2026-09-30,240,",
+    "sha256": "84db9134e9cc62a39e28f41354271685b6d9d3b57450fc4e2bde796a7394fadb"
+  },
+  {
+    "file": "159559_flow.txt",
+    "data_asof": "through 2026-09-29",
+    "description": "Eastmoney secondary-market MAIN flow, NOT subscription",
+    "url": "https://push2his.eastmoney.com/api/qt/stock/fflow/daykline/get?lmt=140&klt=101&secid=0.159559&fields1=f1,f2,f3,f7&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f62,f63",
+    "sha256": "68da3cc5948813eefbc4933871c355b4874dade9f672fd6b3dc8e1bc3ff2d242"
+  }
+]

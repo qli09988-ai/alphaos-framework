@@ -1,0 +1,2 @@
+var _sysVersion = "1.1.6"; //瀹氫箟鐗堟湰鍙�
+var _project_configuration_path = "/osoa/configuration.js"; //瀹氫箟閰嶇疆鏂囦欢鐨勮矾寰�

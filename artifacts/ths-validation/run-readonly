@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+cd /root/.openclaw/venvs/ths-advanced-analysis-1.7.18
+exec timeout 150 env -i PATH=/usr/bin:/bin TZ=Asia/Shanghai PYTHONDONTWRITEBYTECODE=1 ./bin/python -B readonly_smoke.py "$@"

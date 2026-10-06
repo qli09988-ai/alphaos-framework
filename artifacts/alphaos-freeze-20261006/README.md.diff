@@ -1,0 +1,67 @@
+--- before/README.md
++++ after/README.md
+@@ -1,7 +1,7 @@
+-# AlphaOS Portable Docs
++# AlphaOS Framework v0.1 — FROZEN
+ 
+-Version: v0.1.1-working  
+-Last updated: 2026-09-26  
++Version: AlphaOS Framework v0.1 FROZEN  
++Human Approval / Freeze date: 2026-10-06  
+ Purpose: keep AlphaOS portable across ChatGPT, Claude, DeepSeek, local agents, OpenClaw, etc.
+ 
+ ## Files
+@@ -11,15 +11,21 @@
+ - `alphaos_case_lab.md` — real-world cases used to pressure-test the framework
+ - `alphaos_backlog_changelog.md` — gaps, proposed changes, and approved version changes
+ - `alphaos_usage_protocol.md` — how any model/agent should use these files without causing memory drift
++- `alphaos_personal_policy.md` — 独立的个人风险参数，不是普适市场规则
++- `FREEZE_v0.1.md` — 批准范围、排除项与封版说明
++- `HANDOFF_RUNTIME_v0.1.md` — Work / OpenClaw 启动与读写权限
++- [Post-Freeze Audit](artifacts/alphaos-freeze-20261006/POST_FREEZE_AUDIT.md) — 变更、核验与 GitHub 发布状态
+ 
+ - `templates/AlphaOS_增量交接单.md` — 既有模板，保持原样
+ - `handoffs/2026-09-26-蓝箭事件驱动-01.md` — 本轮增量交接与合入结果
+ 
+ ## Current revision
+ 
+-唯一当前主档仍为本目录 `alphaos_core_spec.md`；本轮 Approved：Router、C0–C7、Event–Expectation、Why Now?、数据源抽象、相对强弱控制组。Market Leadership 与 Catalyst Quality 仍为 Proposed/Testing，定义放在 Case Lab / Backlog，不是 Core 正式规则。
++`alphaos_core_spec.md` 是 **Core Sole Source of Truth**；旧 `AlphaOS_Specification_v0.1.md` 不是当前权威，不能覆盖 Core。
+ 
+-v0.1.1-working 是 v0.1 的文档增量修订，不代表风险/仓位、持续监控和评估闭环已完成。
++2026-10-06 用户正式批准 Final Approval Set 并冻结 Framework v0.1。既有 CHG-001–012 保留；Execution、Risk、Thesis Card / Monitor、Data Discipline、Review Loop 按 CHG-013 合入；个人参数独立。Market Leadership / Catalyst Quality 等实验项不进入正式 Core 行为。
++
++此前 `v0.1.1-working` 是文档增量标识，本次正式发布名为 Framework v0.1，保留全部已批准内容。下一阶段：**OpenClaw Runtime MVP → Data Adapters / Schema / Validator / Risk Code → Shadow Mode**。
+ 
+ [增量交接单](handoffs/2026-09-26-蓝箭事件驱动-01.md) · [合入与冲突报告](artifacts/alphaos-20260926-lanjian-01/merge_report.md)
+ 
+@@ -33,15 +39,22 @@
+ 
+ Any new rule must follow:
+ 
+-`Case finding -> Gap -> Proposed change -> Review -> Approved change -> Core Spec update`
++`Case Finding → Gap → Proposed Change → Review → Human Approval → Core Update`
+ 
+ This prevents memory drift and “chat-based rule mutation”.
+ 
++## GitHub / OpenClaw 同步
++
++GitHub 是 AlphaOS 文档与云端 OpenClaw 的**同步桥梁 / 版本库**。
++
++- 仓库：[qli09988-ai/alphaos-framework](https://github.com/qli09988-ai/alphaos-framework)
++- 冻结分支：`freeze/alphaos-v0.1`；入口：[冻结文档](https://github.com/qli09988-ai/alphaos-framework/tree/freeze/alphaos-v0.1)
++- Work / OpenClaw 启动时从 GitHub 读取当前冻结版本，记录实际 commit；依照 [Runtime Handoff](HANDOFF_RUNTIME_v0.1.md) 读取 Core、[Personal Policy](alphaos_personal_policy.md)、Usage、Status 和案例记录。
++- 默认只读 Core；AI may propose changes but may not self-approve or silently mutate Core。
++- Core 修改须走上述治理流程；Missing 不补造，仓位由确定性 Risk Engine 计算。
++- 先检查分支及未提交改动，再同步；禁止静默覆盖分叉或强推。不能以 push 成功推定云服务器已部署。
++- 没有既定 tag 策略，本次不创建 tag；不创建 PR。冻结分支的实际发布结果及提交 SHA 以封版审计和远端记录为准。
++
+ ## Migration
+ 
+-When moving to a new platform/model, provide these files first and instruct the model:
+-
+-> Read `alphaos_core_spec.md` first. Treat it as the source of truth.  
+-> Use `alphaos_status_board.md` to continue from the current project state.  
+-> Use `alphaos_case_lab.md` only as evidence/cases, not as formal rules.  
+-> Do not promote anything in `alphaos_backlog_changelog.md` into Core Spec unless explicitly marked Approved.
++迁移平台/模型时提供同一 GitHub commit 的整组文档，并使用 [Usage Protocol](alphaos_usage_protocol.md) 的读取顺序。Case / Backlog 是证据和候选项，不是平行规则源。历史工作路线建议稿和旧交接按各自日期解释，不覆盖当前冻结状态。

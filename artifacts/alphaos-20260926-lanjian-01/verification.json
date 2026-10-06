@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-26",
+  "version": "v0.1.1-working",
+  "checks": {
+    "same_version_and_date": true,
+    "approved_ids_in_core_and_log": true,
+    "all_event_states": true,
+    "experimental_definitions_outside_core": true,
+    "handoff_15_fields": true,
+    "baseline_hashes_match_backup": true,
+    "template_unchanged": true,
+    "baseline_equals_original_archive": true,
+    "case_arithmetic": true,
+    "source_copy_unchanged": true,
+    "sources_directory_empty": true,
+    "local_links_resolve": true
+  },
+  "broken_links": [],
+  "limits": "Document and arithmetic verification only; no independent market data or remote runtime retest.",
+  "current_sha256": {
+    "README.md": "867c79e386e5938bf70248c96a8f6a78edf2c074894c628c88542212f58a467c",
+    "alphaos_core_spec.md": "748e929ccff9f1590541364edc11e1bbb2757ec658ee753a51b8c6e23d1c2b54",
+    "alphaos_status_board.md": "6bd1ca2ae8fe574b5c3f101e533fe85ee2a8c3619550d6c96be40a69ff6ae1bf",
+    "alphaos_case_lab.md": "1b77d2c796f1bb86f19b1600f025eeb3edc380b50c42638745a761c78124285d",
+    "alphaos_backlog_changelog.md": "28179328624bdd2ee163bf191acf0a1798390b0e0bb03ee603c3e284a4017302",
+    "alphaos_usage_protocol.md": "b9f513d94ed5f946dc295c10439f3abdf86d339fe82a5fb5a8653d5f1a5606f9",
+    "handoffs/2026-09-26-蓝箭事件驱动-01.md": "d399f87a82d70af6fa23d7a92d436f27cfe1d2b1dd3d62297105ceb1f383ff19"
+  }
+}

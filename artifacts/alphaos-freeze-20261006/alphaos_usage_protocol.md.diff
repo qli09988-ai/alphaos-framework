@@ -1,0 +1,106 @@
+--- before/alphaos_usage_protocol.md
++++ after/alphaos_usage_protocol.md
+@@ -1,7 +1,7 @@
+ # AlphaOS Usage Protocol
+ 
+-Version: v0.1.1-working  
+-Last updated: 2026-09-26
++Version: AlphaOS Framework v0.1 FROZEN  
++Last updated: 2026-10-06
+ 
+ Use this file when giving AlphaOS to another model/platform.
+ 
+@@ -9,11 +9,16 @@
+ 
+ ## 1. Reading order
+ 
+-1. `alphaos_core_spec.md`
+-2. `alphaos_status_board.md`
+-3. `alphaos_case_lab.md`
+-4. `alphaos_backlog_changelog.md`
+-5. 本文件；再读 `handoffs/` 中相关增量交接单；模板见 `templates/AlphaOS_增量交接单.md`。
++Work / OpenClaw 启动时先同步并锁定 GitHub 当前冻结提交，再按同一 commit 读取：
++
++1. `HANDOFF_RUNTIME_v0.1.md` 与 `FREEZE_v0.1.md`
++2. `alphaos_core_spec.md`（Core Sole Source of Truth）
++3. `alphaos_personal_policy.md`
++4. 本文件与 `alphaos_status_board.md`
++5. `alphaos_case_lab.md` 与 `alphaos_backlog_changelog.md`
++6. `README.md`；再读相关 `handoffs/`、`templates/AlphaOS_增量交接单.md` 和证据 artifacts。
++
++连接失败时记录实际使用的本地 commit 与新鲜度，不能宣称已取得 GitHub 最新版本。
+ 
+ ---
+ 
+@@ -21,7 +26,7 @@
+ 
+ `alphaos_core_spec.md` is authoritative.
+ 
+-以同一版本的一组文件为准，当前 v0.1.1-working / 2026-09-26。`archives/` 是历史快照，`deployment/` 是旧案例展示，`artifacts/` 是证据/差异，不是平行主档。旧名 `AlphaOS_Specification_v0.1.md` 本次未找到正文，不据聊天提及覆盖现有主档。
++以同一版本的一组文件为准，当前 AlphaOS Framework v0.1 FROZEN / 2026-10-06。`archives/` 是历史快照，`deployment/` 是旧案例展示，`artifacts/` 是证据/差异，不是平行主档。旧名 `AlphaOS_Specification_v0.1.md` 本次未找到正文，不据聊天提及覆盖现有主档。
+ 
+ Do NOT:
+ - treat an old chat answer as a formal rule;
+@@ -66,18 +71,15 @@
+ 
+ Use first-party filings before secondary reporting for financial facts.
+ 
++Missing is Missing：禁止补造；事实必须保留 source / timestamp / freshness / provenance。Risk / 仓位数字必须来自确定性 Risk Engine 及其可追溯输入，LLM 不得自编。
++
+ ---
+ 
+ ## 5. State updates
+ 
+-A company card should change only when new evidence changes:
+-- CV（适用时）
+-- Event State / substage / event_status（适用时）
+-- Thesis strength
+-- Expectation
+-- risk / action
++卡片固定字段与类型扩展字段引用 Core §15。只在 **新事实 / 状态迁移 / 交易动作 / Shock / Deadline Miss** 五类触发时更新；状态迁移保留前后值、证据和时间。
+ 
+-“No news” can itself become negative evidence if a time-sensitive thesis repeatedly fails to progress.
++“No news” can itself become negative evidence if a time-sensitive thesis repeatedly fails to progress；须关联原先记录的确认窗口 / Deadline Miss，不虚构到期日。
+ 
+ ---
+ 
+@@ -88,7 +90,7 @@
+ 1. update the relevant Case Lab entry;
+ 2. add any new gap to Backlog;
+ 3. update Status Board if project progress changed;
+-4. update Core Spec ONLY for approved rules;
++4. Core 默认只读；仅执行用户明确批准且范围可追溯的版本变更，不自批；
+ 5. increment version when formal behavior changes.
+ 
+ ---
+@@ -98,7 +100,7 @@
+ Use:
+ 
+ > You are continuing development of AlphaOS.  
+-> Read the attached AlphaOS files in this order: Core Spec, Status Board, Case Lab, Backlog/Change Log, Usage Protocol.  
++> Read the pinned GitHub frozen commit using the reading order in this protocol, including Runtime Handoff and Personal Policy.  
+ > Treat Core Spec as the authoritative framework.  
+ > Do not silently merge case observations or backlog ideas into Core Spec.  
+ > Preserve version boundaries.  
+@@ -125,3 +127,21 @@
+ 案例 FACT 表示材料报告了什么，同时注明是否独立核实；CALCULATION 写输入、单位、公式与结果；INFERENCE/HYPOTHESIS 不能写成事实。服务器转述报告不等于本次重测。
+ 
+ 同名不同内容必须保留与说明冲突，不能按修改时间静默覆盖。`sources/` 及同步项目文件只读；当前根目录六份文档有原 ZIP 解包记录，属于可编辑本地主档。本轮保留备份与逐文件 diff，不新建另一套框架。
++
++
++## 10. Freeze 后 Runtime / Work / OpenClaw 权限
++
++| 层 | 默认权限 | 可写边界 |
++|---|---|---|
++| Core / Freeze 文件 | 只读 | 仅执行明确 Human Approval 的版本更新；AI 不自批 |
++| Personal Policy | 读取已批准参数 | 参数变动需用户批准并独立记录，不能反向改写通用 Core |
++| Case / Decision Snapshot / Outcome | 按任务增量读写 | 保留事实、计算、推断、Missing 与证据；不升级为正式规则 |
++| Runtime 适配、Schema、Validator、Risk Code、日志 | 在授权任务范围内实现、修复、记录 | 不因运行问题改变 Core；确定性数值输出，缺输入写 Missing |
++| Backlog / Status / Handoff | 记录进度、Bug、Finding 与 Proposed Change | 不得自行标 Approved 或伪造部署/推送成功 |
++| 历史 handoffs / artifacts / archives / sources | 读取 | 既有历史证据不覆盖、不删除；同步项目文件只读 |
++
++**AI may propose changes but may not self-approve or silently mutate Core.**
++
++Core 变更：`Case Finding → Gap → Proposed Change → Review → Human Approval → Core Update`；Validation 按 Core §17 执行，更新版本与批准记录。Freeze 后问题进入 Runtime Bug / Case Finding / CHG for v0.1.1 or v0.2。
++
++GitHub 是文档与云端 OpenClaw 的同步桥梁 / 版本库。工作前检查 branch、commit 和未提交修改；有分叉先比较，不能覆盖用户工作，不 force push。Work 提交后核实远端 commit，再通知使用方；OpenClaw 不因 main 名称或最新时间而自动采用未批准内容。同步本身不意味着服务器已部署。

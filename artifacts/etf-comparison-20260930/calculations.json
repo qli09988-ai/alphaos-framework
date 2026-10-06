@@ -1,0 +1,151 @@
+{
+  "159039": {
+    "shares_start": 1012461422.0,
+    "shares_end": 1196461422.0,
+    "shares_change": 184000000.0,
+    "net_sub_est": 149127200.0,
+    "main_flow": -38800567.0,
+    "subscription_positive_days": 17,
+    "subscription_negative_days": 3,
+    "main_positive_days": 6,
+    "aum_end": 951904707.3432,
+    "mean_turnover": 3.2003727142815754,
+    "mean_abs_premium": 0.12898284627901768,
+    "max_abs_premium": 0.2949852507374562,
+    "nav_return20": -5.387085265786662
+  },
+  "159559": {
+    "shares_start": 1938576622.0,
+    "shares_end": 1777576622.0,
+    "shares_change": -161000000.0,
+    "net_sub_est": -189996300.0,
+    "main_flow": 8333414.0,
+    "subscription_positive_days": 3,
+    "subscription_negative_days": 16,
+    "main_positive_days": 9,
+    "aum_end": 2044924145.9488,
+    "mean_turnover": 2.3542000345326675,
+    "mean_abs_premium": 0.08568734398809619,
+    "max_abs_premium": 0.2532972311992454,
+    "nav_return20": -5.246684787085076
+  },
+  "metrics": [
+    {
+      "code": "159039",
+      "days": 20,
+      "start": "2026-08-31",
+      "end": "2026-09-29",
+      "price_return": -5.357142857142849,
+      "vol_ann": 20.532890357780737,
+      "mdd": -6.0714285714285605,
+      "avg_amount": 29113861.5893,
+      "nav_return": -5.387085265786662,
+      "nav_te": 0.5851260512726364,
+      "nav_mean_abs_td": 0.01901099237717141,
+      "index_return": -5.459006533170008
+    },
+    {
+      "code": "159559",
+      "days": 20,
+      "start": "2026-08-31",
+      "end": "2026-09-29",
+      "price_return": -5.193734542456729,
+      "vol_ann": 21.012565615078145,
+      "mdd": -6.1830173124484915,
+      "avg_amount": 51867233.07105,
+      "nav_return": -5.246684787085076,
+      "nav_te": 0.6714384748541348,
+      "nav_mean_abs_td": 0.024355584555188492,
+      "index_return": -5.459006533170008
+    },
+    {
+      "code": "980022",
+      "days": 20,
+      "start": "2026-08-31",
+      "end": "2026-09-29",
+      "price_return": -5.459006533170008,
+      "vol_ann": 20.454464967653337,
+      "mdd": -6.397971451430484,
+      "avg_amount": 19295270415.3545
+    },
+    {
+      "code": "159039",
+      "days": 60,
+      "start": "2026-07-06",
+      "end": "2026-09-29",
+      "price_return": -24.213536701620587,
+      "vol_ann": 42.82930823648711,
+      "mdd": -25.73879885605338,
+      "avg_amount": 49363479.9902,
+      "nav_return": -24.18524871355061,
+      "nav_te": 0.5582889678389812,
+      "nav_mean_abs_td": 0.02370273697181513,
+      "index_return": -24.28545903578775
+    },
+    {
+      "code": "159559",
+      "days": 60,
+      "start": "2026-07-06",
+      "end": "2026-09-29",
+      "price_return": -23.33333333333334,
+      "vol_ann": 42.509899362820036,
+      "mdd": -25.33333333333333,
+      "avg_amount": 112379553.91876666,
+      "nav_return": -23.214524095581357,
+      "nav_te": 1.3090609792694248,
+      "nav_mean_abs_td": 0.04287678756672723,
+      "index_return": -24.28545903578775
+    },
+    {
+      "code": "980022",
+      "days": 60,
+      "start": "2026-07-06",
+      "end": "2026-09-29",
+      "price_return": -24.28545903578775,
+      "vol_ann": 42.38265572545019,
+      "mdd": -25.980979362864975,
+      "avg_amount": 29868947196.134
+    },
+    {
+      "code": "159559",
+      "days": 120,
+      "start": "2026-04-07",
+      "end": "2026-09-29",
+      "price_return": -4.405652535328364,
+      "vol_ann": 44.54350028723065,
+      "mdd": -29.73651191969887,
+      "avg_amount": 140832042.10245,
+      "nav_return": -4.507346227276498,
+      "nav_te": 1.0256825236619576,
+      "nav_mean_abs_td": 0.03366833963413436,
+      "index_return": -5.6040452483710474
+    },
+    {
+      "code": "980022",
+      "days": 120,
+      "start": "2026-04-07",
+      "end": "2026-09-29",
+      "price_return": -5.6040452483710474,
+      "vol_ann": 43.41990023542356,
+      "mdd": -29.627951551263422,
+      "avg_amount": 42259407883.82142
+    }
+  ],
+  "verification": {
+    "159039": {
+      "overlap": 72,
+      "ohlc_differences": []
+    },
+    "159559": {
+      "overlap": 160,
+      "ohlc_differences": []
+    },
+    "980022": {
+      "source": "CNI official daily history",
+      "close_differences_beyond_rounding": [],
+      "overlap": 160
+    }
+  },
+  "nav_corr_20": 0.9998855245620768,
+  "nav_corr_60": 0.9995741191371087
+}

@@ -1,0 +1,30 @@
+{
+  "url": "https://quotes.sina.cn/cn/api/jsonp_v2.php/=/CN_MarketDataService.getKLineData?symbol=sz002413&scale=5&ma=no&datalen=1970",
+  "captured_at": "2026-09-27T12:19:47.670258+00:00",
+  "returncode": 0,
+  "bytes": 261268,
+  "rows": 1970,
+  "first": [
+    {
+      "day": "2026-07-29 14:55:00",
+      "open": "7.910",
+      "high": "7.930",
+      "low": "7.910",
+      "close": "7.930",
+      "volume": "812963",
+      "amount": "6438846.9615"
+    }
+  ],
+  "last": [
+    {
+      "day": "2026-09-24 15:00:00",
+      "open": "8.970",
+      "high": "8.970",
+      "low": "8.970",
+      "close": "8.970",
+      "volume": "618400",
+      "amount": "5547048.0005"
+    }
+  ],
+  "target_rows": 48
+}

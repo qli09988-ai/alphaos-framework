@@ -1,0 +1,52 @@
+{
+  "market_data_cn": {
+    "file": "market_queries.py",
+    "line": 35,
+    "signature": "self, ths_code: Any, query_key: str='基础数据'"
+  },
+  "call_auction_anomaly": {
+    "file": "misc_api.py",
+    "line": 10,
+    "signature": "self, market: str='USHA'"
+  },
+  "search_symbols": {
+    "file": "misc_api.py",
+    "line": 38,
+    "signature": "self, pattern: str, needmarket: str=''"
+  },
+  "intraday_data": {
+    "file": "domestic.py",
+    "line": 11,
+    "signature": "self, ths_code: str"
+  },
+  "tick_level1": {
+    "file": "domestic.py",
+    "line": 23,
+    "signature": "self, ths_code: str"
+  },
+  "min_snapshot": {
+    "file": "domestic.py",
+    "line": 55,
+    "signature": "self, ths_code: str, date: Optional[str]=None, buffer_size: int=1024 * 1024 * 2"
+  },
+  "depth": {
+    "file": "domestic.py",
+    "line": 85,
+    "signature": "self, ths_code: Union[str, list]"
+  },
+  "call_auction": {
+    "file": "domestic.py",
+    "line": 89,
+    "signature": "self, ths_code: str"
+  },
+  "big_order_flow": {
+    "file": "domestic.py",
+    "line": 99,
+    "signature": "self, ths_code: str"
+  },
+  "klines": {
+    "file": "domestic.py",
+    "line": 120,
+    "signature": "self, ths_code: str, start_time: Optional[datetime]=None, end_time: Optional[datetime]=None, adjust: str='', interval: str='day', count: int=-1"
+  }
+}

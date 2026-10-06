@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AlphaOS Case Study 001｜鲁信创投：从蓝箭IPO风声到事件驱动决策</title>
+<style>
+:root {
+  --bg:#f5f7fb;
+  --paper:#ffffff;
+  --ink:#111827;
+  --muted:#667085;
+  --line:#e5e7eb;
+  --accent:#3056d3;
+  --accent-2:#17307a;
+  --soft:#eef3ff;
+  --green:#067647;
+  --green-bg:#ecfdf3;
+  --amber:#b54708;
+  --amber-bg:#fff7ed;
+  --red:#b42318;
+  --red-bg:#fff1f0;
+  --purple:#6941c6;
+  --purple-bg:#f4f3ff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+  line-height:1.72;font-size:16px;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{
+  position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
+}
+.topbar-inner{max-width:1180px;margin:auto;padding:10px 22px;display:flex;gap:16px;align-items:center;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:.03em}
+.top-actions{display:flex;gap:10px}
+button{
+  border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;
+  cursor:pointer;color:var(--ink);font-weight:600
+}
+.hero{
+  background:linear-gradient(135deg,#0d1637 0%,#172554 55%,#233b99 100%);
+  color:#fff;padding:84px 22px 72px;
+}
+.hero-inner{max-width:1120px;margin:auto}
+.kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;opacity:.78;font-weight:800}
+h1{font-size:clamp(34px,5vw,62px);line-height:1.1;margin:16px 0 18px;letter-spacing:-.035em;max-width:940px}
+.hero p{font-size:20px;max-width:860px;color:#d8e1ff;margin:0}
+.hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.pill{display:inline-flex;align-items:center;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);font-size:13px}
+.layout{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:250px 1fr;gap:34px;padding:36px 22px 80px}
+nav.toc{position:sticky;top:70px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.toc-title{font-size:13px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.toc a{display:block;color:#344054;padding:7px 8px;border-radius:8px;font-size:14px}
+.toc a:hover{background:var(--soft);text-decoration:none;color:var(--accent)}
+main{min-width:0}
+section{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:32px;margin-bottom:24px}
+h2{font-size:28px;line-height:1.25;margin:0 0 18px;letter-spacing:-.02em}
+h3{font-size:21px;margin:30px 0 12px}
+h4{font-size:17px;margin:22px 0 8px}
+.lead{font-size:19px;color:#344054}
+.note{font-size:14px;color:var(--muted)}
+.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:18px 0}
+.qcard{padding:16px 12px;border:1px solid var(--line);border-radius:14px;text-align:center;font-weight:750;background:#fbfcfe}
+.status-card{border:1px solid #b9c8ff;background:linear-gradient(180deg,#f3f6ff,#fff);border-radius:16px;padding:22px;margin:18px 0}
+.status-row{display:grid;grid-template-columns:140px 1fr;gap:12px;padding:9px 0;border-bottom:1px dashed #dbe3ff}
+.status-row:last-child{border-bottom:none}
+.label{color:var(--muted);font-weight:700}
+.value{font-weight:700}
+.tag{display:inline-block;padding:3px 8px;border-radius:999px;font-size:12px;font-weight:800;margin-right:6px;vertical-align:1px}
+.fact{color:#175cd3;background:#eff8ff}
+.calc{color:var(--purple);background:var(--purple-bg)}
+.infer{color:var(--green);background:var(--green-bg)}
+.hyp{color:var(--amber);background:var(--amber-bg)}
+.missing{color:var(--red);background:var(--red-bg)}
+.callout{border-left:4px solid var(--accent);background:var(--soft);padding:16px 18px;border-radius:0 12px 12px 0;margin:18px 0}
+.callout strong{display:block;margin-bottom:4px}
+.formula{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#0b1020;color:#e6edff;padding:16px 18px;border-radius:12px;overflow:auto;white-space:pre-wrap;line-height:1.55}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+th,td{border-bottom:1px solid var(--line);padding:12px 10px;text-align:left;vertical-align:top}
+th{color:#475467;background:#f9fafb;font-size:13px}
+.up{color:var(--green);font-weight:800}
+.down{color:var(--red);font-weight:800}
+.timeline{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin:22px 0}
+.stage{border:1px solid var(--line);border-radius:12px;padding:12px 8px;text-align:center;background:#fff;min-height:88px}
+.stage .code{font-weight:900;color:var(--accent);font-size:13px}
+.stage.current{border:2px solid var(--accent);background:var(--soft);box-shadow:0 8px 24px rgba(48,86,211,.12)}
+.arrowline{text-align:center;color:var(--muted);font-size:13px;margin-top:-10px;margin-bottom:12px}
+.chart-box{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;margin:18px 0}
+svg{width:100%;height:auto;display:block}
+.axis-label{font-size:11px;fill:#667085}
+.value-label{font-size:12px;fill:#344054;font-weight:700}
+.dot{fill:#3056d3;stroke:#fff;stroke-width:2}
+.price-line{fill:none;stroke:#3056d3;stroke-width:3}
+.price-area{fill:#3056d3;opacity:.08}
+.rule-box{display:grid;grid-template-columns:1fr 72px 1fr;gap:16px;align-items:center;margin:24px 0}
+.rule-side{border:1px solid var(--line);border-radius:16px;padding:18px}
+.rule-mid{font-size:28px;text-align:center;font-weight:900;color:var(--accent)}
+.good{border-color:#abefc6;background:#f6fef9}
+.bad{border-color:#fecdca;background:#fffafa}
+.exit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.exit-card{border:1px solid var(--line);border-radius:14px;padding:16px}
+.exit-code{font-size:12px;font-weight:900;color:var(--accent);letter-spacing:.05em}
+.source-list{padding-left:0;list-style:none}
+.source-list li{padding:14px 0;border-bottom:1px solid var(--line)}
+.source-list p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.source-id{display:inline-block;width:34px;color:var(--muted);font-weight:900}
+.quality{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:14px 0}
+.quality div{border-radius:10px;padding:10px;text-align:center;font-size:13px;font-weight:800}
+.footer{max-width:1180px;margin:0 auto 50px;padding:0 22px;color:var(--muted);font-size:13px}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  nav.toc{position:relative;top:auto}
+  .grid-5{grid-template-columns:1fr 1fr}
+  .timeline{grid-template-columns:repeat(4,1fr)}
+  .rule-box{grid-template-columns:1fr}
+  .rule-mid{transform:rotate(90deg)}
+}
+@media (max-width:600px){
+  section{padding:22px}
+  .grid-5,.exit-grid,.quality{grid-template-columns:1fr}
+  .timeline{grid-template-columns:1fr 1fr}
+  .status-row{grid-template-columns:1fr}
+}
+@media print{
+  .topbar,nav.toc,.top-actions{display:none!important}
+  body{background:#fff}
+  .layout{display:block;max-width:none;padding:0}
+  section{border:none;break-inside:avoid;padding:20px 0}
+  .hero{padding:40px 0;background:#fff;color:#111}
+  .hero p{color:#444}
+  .hero-inner{max-width:none}
+  .pill{color:#111;border-color:#ccc}
+  a{color:#111;text-decoration:none}
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">AlphaOS / Case Study 001</div>
+    <div class="top-actions">
+      <button onclick="window.print()">打印 / 导出 PDF</button>
+      <button onclick="window.scrollTo({top:0,behavior:'smooth'})">回到顶部</button>
+    </div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Event-Driven Investment Research · Decision Trail</div>
+    <h1>鲁信创投：从“蓝箭IPO风声”到事件驱动决策</h1>
+    <p>一个用户听到市场风声后，AlphaOS 如何把“概念关联”拆成：真实性、穿透价值、资产兑现、市场预期、入场条件、收益/风险与退出条件。</p>
+    <div class="hero-meta">
+      <span class="pill">标的：鲁信创投 600783.SH</span>
+      <span class="pill">数据截止：2026-09-20</span>
+      <span class="pill">最后市场收盘：2026-09-18</span>
+      <span class="pill">案例类型：Event-Driven / Asset Realization</span>
+      <span class="pill">用途：研究展示，不构成投资建议</span>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+<nav class="toc">
+  <div class="toc-title">目录</div>
+  <a href="#question">00 用户问题</a>
+  <a href="#snapshot">01 最终状态卡</a>
+  <a href="#method">02 研究方法与证据纪律</a>
+  <a href="#step1">03 Step 1 穿透价值</a>
+  <a href="#step2">04 Step 2 IPO资产包</a>
+  <a href="#step3">05 Step 3 催化链</a>
+  <a href="#step4">06 Step 4 市场预期</a>
+  <a href="#step5">07 Step 5 入场条件</a>
+  <a href="#step6">08 Step 6 收益/风险与卖点</a>
+  <a href="#lessons">09 对AlphaOS的启发</a>
+  <a href="#gaps">10 未解决问题</a>
+  <a href="#sources">11 来源</a>
+</nav>
+
+<main>
+<section id="question">
+  <h2>00｜用户真正的问题，不是“蓝箭好不好”</h2>
+  <p class="lead">当用户问“鲁信创投怎么样？好像跟蓝箭IPO相关”，这通常意味着：用户已经听到风声，但尚不知道这条信息是否足以形成交易决策。</p>
+  <div class="grid-5">
+    <div class="qcard">能买吗？</div>
+    <div class="qcard">什么时候买？</div>
+    <div class="qcard">大概能涨多少？</div>
+    <div class="qcard">是不是一定涨？</div>
+    <div class="qcard">什么时候卖？</div>
+  </div>
+  <div class="callout">
+    <strong>研究起点</strong>
+    “蓝箭IPO → 鲁信受益”只是一个叙事起点。要形成决策，必须继续追问：鲁信到底持有多少经济权益？价值已在账上反映多少？市场已经提前交易多少？下一次状态跃迁是什么？
+  </div>
+</section>
+
+<section id="snapshot">
+  <h2>01｜最终状态卡：先给答案，再展开推导</h2>
+  <div class="status-card">
+    <div class="status-row"><div class="label">当前状态</div><div class="value">🟡 重点观察；尚未出现高质量事件买点</div></div>
+    <div class="status-row"><div class="label">核心事实</div><div class="value">蓝箭IPO真实推进，最新公开审核状态仍为“已问询”；鲁信体系三只基金合计持有蓝箭0.89%，但公司曾明确提示穿透后对财务及经营成果影响较小。</div></div>
+    <div class="status-row"><div class="label">价值主体</div><div class="value">不是“单押蓝箭”，而是“IPO资产包 + 退出能力 + 创投平台溢价”；蓝箭更像高关注度催化剂。</div></div>
+    <div class="status-row"><div class="label">当前预期</div><div class="value">8月事件亢奋已经明显释放；但以2026H1归母净资产为基准，市场仍给予较高资产溢价。</div></div>
+    <div class="status-row"><div class="label">最重要触发</div><div class="value">蓝箭由“已问询”进入更高审核节点，或其他核心IPO项目出现实质状态跃迁，同时鲁信股价没有提前明显抢跑。</div></div>
+    <div class="status-row"><div class="label">失效/降级</div><div class="value">事件长期不推进；IPO资产包兑现明显变慢；股价上涨幅度远超可解释的NAV增量；或市场进入高风险退潮。</div></div>
+  </div>
+  <p class="note">这张卡是 Decision Mode。下面保留完整的“研究决策轨迹”，让专业读者看到每一步为什么发生，而不是只看最终结论。</p>
+</section>
+
+<section id="method">
+  <h2>02｜研究方法：先给证据分层，避免“故事越聊越真”</h2>
+  <p>本案例不把所有公开材料视为同等可信。每个结论按以下标签表达：</p>
+  <div class="quality">
+    <div class="fact">FACT<br>公开事实</div>
+    <div class="calc">CALCULATION<br>计算</div>
+    <div class="infer">INFERENCE<br>推断</div>
+    <div class="hyp">HYPOTHESIS<br>工作假设</div>
+    <div class="missing">MISSING<br>缺失证据</div>
+  </div>
+  <p><span class="tag fact">FACT</span>2026H1 鲁信归母净资产为 <strong>45.5117亿元</strong>，归母净利润约 <strong>1.9577亿元</strong>；投资收益约1.6128亿元，公允价值变动收益约1.5090亿元。来源：公司半年报 <a href="#s1">[S1]</a>。</p>
+  <p><span class="tag fact">FACT</span>截至2026H1，公司及参股基金/投资平台共有 <strong>27个拟IPO项目</strong>，其中13个已被交易所受理、14个处于辅导期；2026H1退出回笼资金3.71亿元。<a href="#s2">[S2]</a></p>
+  <p><span class="tag fact">FACT</span>鲁信创投曾在异常波动公告中明确提示：三只参股基金合计持有蓝箭0.89%，<strong>股权穿透后对公司财务状况和经营成果影响较小</strong>。<a href="#s5">[S5]</a></p>
+  <div class="callout">
+    <strong>因此，本案例不能把“0.89%”直接当成鲁信上市公司自身持股比例。</strong>
+    基金层持股比例、鲁信在基金中的经济权益、会计计量、锁定期、退出价格和收益分配都要继续穿透。
+  </div>
+</section>
+
+<section id="step1">
+  <h2>03｜Step 1：蓝箭到底给鲁信值多少钱？</h2>
+  <h3>3.1 先拆掉最容易误导的口号</h3>
+  <p><span class="tag fact">FACT</span>公司口径是“三只参股基金合计持有蓝箭0.89%”，不是“鲁信创投直接持有蓝箭0.89%”。<a href="#s5">[S5]</a></p>
+  <p><span class="tag fact">FACT</span>蓝箭招股书披露，成都鲁信菁蓉贰期是其股东之一；招股书同时披露了该基金的合伙人结构。<a href="#s3">[S3]</a></p>
+
+  <h3>3.2 工作穿透值：约0.43%，但不作为公司确认口径</h3>
+  <p><span class="tag calc">CALCULATION</span>公开市场存在一套对三只基金逐层穿透后的重构，得到鲁信对蓝箭的有效经济权益约 <strong>0.4334%</strong>。<a href="#s7">[S7]</a></p>
+  <p><span class="tag missing">MISSING</span>这一数值不是鲁信公司直接披露的最终经济权益口径；基金份额变化、GP/LP间接权益、收益分配机制等均可能影响精确值。因此本文只把 <strong>≈0.43%</strong> 当作“工作估算”，不用它制造精确目标价。</p>
+
+  <div class="formula">工作估算：
+蓝箭估值 × 鲁信穿透经济权益 ≈ 对应蓝箭权益价值
+
+若以 0.43% 为工作估算：
+300亿元 × 0.43% ≈ 1.29亿元
+500亿元 × 0.43% ≈ 2.15亿元
+1000亿元 × 0.43% ≈ 4.30亿元
+
+注意：
+“权益总价值” ≠ “新增NAV”
+还要扣除/比较当前已经计入账面或公允价值的部分，
+并考虑基金层收益分配、锁定、税费、退出价格等。</div>
+
+  <h3>3.3 这一步改变了什么？</h3>
+  <p><span class="tag infer">INFERENCE</span>即使给予蓝箭很高的估值，单一蓝箭项目对鲁信整体价值的解释力也可能只是数亿元级；而鲁信本身是百亿元市值公司。因此“蓝箭IPO影子股”不能自动推出“鲁信有巨大未计价价值”。</p>
+  <p><span class="tag infer">INFERENCE</span>研究问题必须从“蓝箭值多少钱”升级为：“<strong>整个IPO资产包有多大兑现潜力？蓝箭在其中到底是什么角色？</strong>”</p>
+</section>
+
+<section id="step2">
+  <h2>04｜Step 2：真正的价值主体，从“蓝箭”升级为“IPO资产包”</h2>
+  <p><span class="tag fact">FACT</span>2026H1鲁信及相关基金/平台共有27个拟IPO项目，其中13个已受理、14个辅导；珞石机器人于2026年7月9日在港交所上市，思朗科技于7月7日获科创板受理。<a href="#s2">[S2]</a></p>
+  <p><span class="tag fact">FACT</span>2026H1公司控股/参股基金及投资平台共59个，总认缴规模228.65亿元，到位资金162.35亿元；报告期退出回笼资金3.71亿元。<a href="#s2">[S2]</a></p>
+
+  <div class="callout">
+    <strong>Thesis 发生第一次重构</strong>
+    初始叙事：鲁信 = 蓝箭IPO影子股。<br/>
+    重构后：鲁信 = <strong>一篮子未上市/拟上市资产 + 退出能力</strong>；蓝箭 = 高关注度催化，而非全部价值主体。
+  </div>
+
+  <h3>4.1 为什么不能把所有IPO后的市值都当“新增价值”？</h3>
+  <p><span class="tag fact">FACT</span>创投公司的资产会通过长期股权投资、交易性金融资产、其他非流动金融资产等方式进入报表；鲁信2026H1本身已经确认了较大的投资收益和公允价值变动收益。<a href="#s1">[S1]</a></p>
+  <p><span class="tag infer">INFERENCE</span>IPO更像“估值透明度 + 流动性 + 退出通道”的状态提升，而不是让一项资产从0突然变成全部市值。因此必须计算<strong>增量NAV</strong>，而不是“IPO后市值 × 持股比例”这么简单。</p>
+
+  <h3>4.2 Reverse Expectation：市场已经为未来付了多少？</h3>
+  <p><span class="tag calc">CALCULATION</span>2026H1归母净资产45.5117亿元；以9月18日收盘15.35元和7.4436亿股总股本计算，市值约114.3亿元。对应约2.51倍PB，市场价格较账面归母净资产高约68.8亿元。</p>
+  <div class="formula">市场隐含溢价（仅作框架观察）：
+市值 ≈ 15.35 × 7.4436亿股 ≈ 114.3亿元
+H1归母净资产 ≈ 45.5亿元
+差额 ≈ 68.8亿元
+
+这个差额不能全部叫“蓝箭溢价”；
+它同时包含：未上市资产成长、退出能力、未来投资能力、
+平台属性、主题偏好以及情绪溢价。</div>
+  <p><span class="tag infer">INFERENCE</span>所以真正的问题不是“蓝箭能贡献4亿元，所以鲁信被低估”，而是：<strong>整个资产包和未来退出能力，是否足以长期支撑市场已经给予的高于账面净资产的溢价。</strong></p>
+</section>
+
+<section id="step3">
+  <h2>05｜Step 3：把“IPO快了”改造成可监控的 Catalyst Ladder</h2>
+  <p><span class="tag fact">FACT</span>蓝箭最新公开IPO审核状态仍为“已问询”；2026年3月因财务资料过期需补充，6月29日更新财务资料后继续推进。尚未进入上市委会议。<a href="#s4">[S4]</a></p>
+
+  <div class="timeline">
+    <div class="stage"><div class="code">C0</div><strong>市场传闻</strong><br><span class="note">尚无正式流程</span></div>
+    <div class="stage"><div class="code">C1</div><strong>辅导</strong><br><span class="note">开始制度化准备</span></div>
+    <div class="stage"><div class="code">C2</div><strong>受理</strong><br><span class="note">正式进入审核</span></div>
+    <div class="stage current"><div class="code">C3</div><strong>已问询</strong><br><span class="note">蓝箭当前</span></div>
+    <div class="stage"><div class="code">C4</div><strong>上市委/聆讯</strong><br><span class="note">关键状态跃迁</span></div>
+    <div class="stage"><div class="code">C5</div><strong>注册/发行</strong><br><span class="note">确定性再提高</span></div>
+    <div class="stage"><div class="code">C6</div><strong>上市</strong><br><span class="note">流动性打开</span></div>
+    <div class="stage"><div class="code">C7</div><strong>解禁/退出</strong><br><span class="note">真正实现收益</span></div>
+  </div>
+  <div class="arrowline">事件越往右，确定性通常提高；但市场往往也会提前交易，所以“确定性最高”不等于“赔率最好”。</div>
+
+  <h3>5.1 为什么鲁信不是 Single Event Bet？</h3>
+  <p><span class="tag infer">INFERENCE</span>蓝箭是最吸睛的事件，但鲁信同时拥有多个拟IPO项目，因此更准确的描述是 <strong>Portfolio of Catalysts</strong>。一个项目延迟不必然击穿整个Thesis；但如果多个项目的兑现速度一起变慢，资产包逻辑会明显降级。</p>
+
+  <h3>5.2 事件状态的核心观察</h3>
+  <p>AlphaOS不需要每天重写研报，而应监控“有没有项目发生离散状态跃迁”。对蓝箭而言，当前最重要的是：</p>
+  <div class="callout"><strong>C3 → C4</strong> 从“已问询”进入上市委/更高确定性审核节点。状态跃迁发生后，再重新计算NAV影响、市场反应和赔率。</div>
+</section>
+
+<section id="step4">
+  <h2>06｜Step 4：好消息是真的，为什么买进去仍可能亏？</h2>
+  <p><span class="tag fact">FACT</span>鲁信创投8月19日收于20.19元、涨10.03%；8月20日跌7.78%，8月21日跌8.16%，8月24日再跌5.85%；9月18日收15.35元。<a href="#s6">[S6]</a></p>
+
+  <div class="chart-box">
+    <strong>鲁信创投｜事件高点后的价格路径（收盘价，元）</strong>
+    <svg viewBox="0 0 900 250" role="img" aria-label="鲁信创投2026年8月19日至9月18日部分收盘价走势">
+      <line x1="48" y1="216" x2="852" y2="216" stroke="#e5e7eb"/>
+      <path d="M48.0,34.0 L121.1,93.0 L194.2,150.2 L267.3,187.8 L340.4,175.4 L413.5,197.2 L486.5,193.8 L559.6,208.5 L632.7,190.8 L705.8,191.9 L778.9,204.7 L852.0,216.0 L852.0,216 L48.0,216 Z" class="price-area"/>
+      <path d="M48.0,34.0 L121.1,93.0 L194.2,150.2 L267.3,187.8 L340.4,175.4 L413.5,197.2 L486.5,193.8 L559.6,208.5 L632.7,190.8 L705.8,191.9 L778.9,204.7 L852.0,216.0" class="price-line"/>
+      <text x="48.0" y="240" text-anchor="middle" class="axis-label">08/19</text>
+<circle cx="48.0" cy="34.0" r="4.5" class="dot"/>
+<text x="48.0" y="24.0" text-anchor="middle" class="value-label">20.19</text>
+<text x="121.1" y="240" text-anchor="middle" class="axis-label">08/20</text>
+<circle cx="121.1" cy="93.0" r="4.5" class="dot"/>
+<text x="194.2" y="240" text-anchor="middle" class="axis-label">08/21</text>
+<circle cx="194.2" cy="150.2" r="4.5" class="dot"/>
+<text x="267.3" y="240" text-anchor="middle" class="axis-label">08/24</text>
+<circle cx="267.3" cy="187.8" r="4.5" class="dot"/>
+<text x="559.6" y="240" text-anchor="middle" class="axis-label">09/04</text>
+<circle cx="559.6" cy="208.5" r="4.5" class="dot"/>
+<text x="852.0" y="240" text-anchor="middle" class="axis-label">09/18</text>
+<circle cx="852.0" cy="216.0" r="4.5" class="dot"/>
+<text x="852.0" y="206.0" text-anchor="middle" class="value-label">15.35</text>
+    </svg>
+    <p class="note">图表仅展示部分交易日用于说明事件后的预期释放，不用于技术分析。数据来源：[S6]。</p>
+  </div>
+
+  <p><span class="tag calc">CALCULATION</span>从20.19元到15.35元，回撤约 <strong>-24.0%</strong>。按7.4436亿股估算，对应市值约从150.3亿元回到114.3亿元，约36亿元市值溢价被挤掉。</p>
+
+  <h3>6.1 第二次Thesis重构：从“消息真假”升级为“消息被交易多少”</h3>
+  <p><span class="tag infer">INFERENCE</span>蓝箭相关进展可以是真实利好，但如果资金已经提前把未来价值和情绪溢价交易进去，利好落地当天甚至可能接近阶段性卖点。</p>
+  <div class="callout">
+    <strong>这揭示了事件驱动投资的核心矛盾：</strong>
+    事实变好 ≠ 股票赔率变好。必须同时看 <strong>Event Progress</strong> 和 <strong>Expectation Progress</strong>。
+  </div>
+  <p><span class="tag infer">INFERENCE</span>从8月高位回落后，短线事件亢奋明显释放；但以9月18日价格对H1净资产计算，PB仍约2.51倍，因此“跌了24%”不能自动等同于“便宜了”。</p>
+</section>
+
+<section id="step5">
+  <h2>07｜Step 5：什么时候才进入“可考虑买入窗口”？</h2>
+  <p class="lead">AlphaOS不应该给一个机械价格答案，例如“15元以下可以买”。对于事件驱动资产，更稳健的表达是条件型 Entry State。</p>
+
+  <table>
+    <thead><tr><th>事件状态</th><th>市场预期</th><th>AlphaOS动作状态</th><th>逻辑</th></tr></thead>
+    <tbody>
+      <tr><td>没有实质推进</td><td>股价明显上涨</td><td><strong>不追 / 降级</strong></td><td>Expectation跑在Event前面</td></tr>
+      <tr><td>没有实质推进</td><td>股价继续冷却</td><td><strong>观察</strong></td><td>赔率可能改善，但缺少新证据</td></tr>
+      <tr><td>出现关键状态跃迁</td><td>股价未明显抢跑</td><td><strong>进入可考虑窗口</strong></td><td>确定性提高速度大于预期扩张速度</td></tr>
+      <tr><td>出现关键状态跃迁</td><td>股价已提前亢奋</td><td><strong>等待释放</strong></td><td>利好可能已被定价</td></tr>
+    </tbody>
+  </table>
+
+  <div class="rule-box">
+    <div class="rule-side good">
+      <strong>赔率改善</strong>
+      <p>Event Progress ↑<br/>Expectation Progress → / 慢</p>
+      <p class="note">事实推进比价格更快。</p>
+    </div>
+    <div class="rule-mid">&gt;</div>
+    <div class="rule-side bad">
+      <strong>赔率恶化</strong>
+      <p>Expectation Progress ↑↑<br/>Event Progress → / 慢</p>
+      <p class="note">股价比事件更快。</p>
+    </div>
+  </div>
+
+  <h3>7.1 当前为什么仍是“重点观察”？</h3>
+  <p><span class="tag fact">FACT</span>蓝箭仍在C3已问询，没有新的公开C4状态跃迁。<a href="#s4">[S4]</a></p>
+  <p><span class="tag calc">CALCULATION</span>价格已从8月事件高位明显回落，但仍交易在约2.51倍H1 PB附近。</p>
+  <p><span class="tag infer">INFERENCE</span>因此当前是“预期降温了，但新证据还没来”的组合。比8月事件亢奋时更值得跟踪，但还不足以单靠价格回撤升级成高质量入场状态。</p>
+
+  <h3>7.2 入场条件矩阵</h3>
+  <p><strong>A｜事件向前：</strong>蓝箭C3→C4，或其他核心IPO项目出现实质状态跃迁，或真实退出/NAV兑现增强。</p>
+  <p><strong>B｜不能明显抢跑：</strong>若状态跃迁前股价已连续大涨、成交极度放大，则赔率可能已被提前吃掉。</p>
+  <p><strong>C｜价值要撑得住：</strong>重新测算新增NAV，比较“资产价值变化”和“市值变化”，避免2亿元价值增量换来20亿元市值扩张。</p>
+  <p><strong>D｜市场环境：</strong>高预期创投资产对风险偏好敏感；Market Regime必须作为最终闸门，而不是事后解释。</p>
+</section>
+
+<section id="step6">
+  <h2>08｜Step 6：可能赚多少、亏多少？什么时候卖？</h2>
+  <h3>8.1 不给“目标价神谕”，只做条件敏感性</h3>
+  <p>下面以2026H1每股归母净资产约 <strong>6.11元</strong> 为静态基准，对PB做敏感性演示。它的作用是帮助理解“市场溢价压缩/扩张会怎样影响价格”，<strong>不是预测未来目标价</strong>。</p>
+  <table>
+    <thead><tr><th>情景</th><th>需要发生什么</th><th>PB敏感性</th><th>对应价格</th><th>相对15.35元</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>压力情景</strong></td>
+        <td>IPO进展停滞 / 主题退潮 / 估值溢价收缩</td>
+        <td>2.0×</td>
+        <td>¥12.23</td>
+        <td class="down">-20.3%</td>
+      </tr>
+      <tr>
+        <td><strong>当前附近</strong></td>
+        <td>没有关键新增证据，维持现有资产包预期</td>
+        <td>2.5×</td>
+        <td>¥15.29</td>
+        <td class="down">-0.4%</td>
+      </tr>
+      <tr>
+        <td><strong>温和改善</strong></td>
+        <td>多个IPO推进，但市场未进入事件亢奋</td>
+        <td>2.8×</td>
+        <td>¥17.12</td>
+        <td class="up">+11.5%</td>
+      </tr>
+      <tr>
+        <td><strong>强催化</strong></td>
+        <td>蓝箭或核心项目出现实质状态跃迁，风险偏好配合</td>
+        <td>3.0×</td>
+        <td>¥18.34</td>
+        <td class="up">+19.5%</td>
+      </tr>
+      <tr>
+        <td><strong>事件亢奋</strong></td>
+        <td>重新接近8月高预期状态，仅作敏感性参照</td>
+        <td>3.3×</td>
+        <td>¥20.18</td>
+        <td class="up">+31.4%</td>
+      </tr></tbody>
+  </table>
+  <p class="note">PB仅是简化观察轴。创投公司的真实价值还要考虑投资组合公允价值、未上市资产、退出节奏、费用、税项、投资能力与市场风险偏好。</p>
+
+  <h3>8.2 为什么“+20%～30%情景”不是预测？</h3>
+  <p><span class="tag calc">CALCULATION</span>若未来强催化使市场重新给予约3.0～3.3倍PB，静态对应约18.34～20.18元，即相对15.35元约+19%～+31%。这只是<strong>条件敏感性</strong>。</p>
+  <p><span class="tag fact">FACT</span>3.3倍附近并非凭空选择：8月19日真实市场价格20.19元，大致对应当前静态H1每股净资产的3.3倍左右；随后市场迅速压缩该溢价。<a href="#s6">[S6]</a></p>
+  <p><span class="tag calc">CALCULATION</span>若溢价压缩至2.0倍PB，静态价格约12.23元，相对15.35元约-20%。这说明事件股不是“下行很小、上行很大”的免费期权。</p>
+
+  <h3>8.3 Exit State：卖点是状态迁移，不是一个神奇价格</h3>
+  <div class="exit-grid">
+    <div class="exit-card">
+      <div class="exit-code">S1 · THESIS BREAK</div>
+      <strong>事件逻辑实质破坏</strong>
+      <p>蓝箭审核实质恶化，或多个核心项目兑现能力一起变差。若买入逻辑是“资产包”而非单一蓝箭，一个项目失败不能自动等于全部Thesis死亡，需要重新计算组合。</p>
+    </div>
+    <div class="exit-card">
+      <div class="exit-code">S2 · EXPECTATION OVERDRAFT</div>
+      <strong>股价跑得比事件/NAV快</strong>
+      <p>例如蓝箭仍在C3，鲁信却重新进入强烈事件亢奋；如果市值增加远大于可解释的NAV变化，即使基本面没坏，赔率也可能已经恶化。</p>
+    </div>
+    <div class="exit-card">
+      <div class="exit-code">S3 · CATALYST REALIZATION</div>
+      <strong>利好兑现后重新评估</strong>
+      <p>上会、注册、发行、上市都不是“自动继续持有”的理由。每次状态跃迁都重新比较：这一步市场之前已经预期了多少？是否出现 Sell the News。</p>
+    </div>
+    <div class="exit-card">
+      <div class="exit-code">S4 · THESIS STAGNATION</div>
+      <strong>没有坏消息，但一直不兑现</strong>
+      <p>如果较长时间内关键IPO项目停留原状态、退出现金流没有增强，“时间没有发生事情”本身也会逐渐成为负面证据，因为事件驱动交易存在明确机会成本。</p>
+    </div>
+  </div>
+</section>
+
+<section id="lessons">
+  <h2>09｜这个Case让AlphaOS学到了什么？</h2>
+  <h3>9.1 不能把产业公司的CV体系硬套到创投平台</h3>
+  <p><span class="tag infer">INFERENCE</span>鲁信不是靠单一产品“试样→小批→量产→复购”兑现价值，更适合使用 <strong>Asset Realization / Catalyst State</strong> 表达：资产成熟 → IPO推进 → 上市 → 解禁 → 退出。</p>
+
+  <h3>9.2 Event-Driven的基本结构</h3>
+  <div class="formula">Event State
+    ↓
+Look-through / NAV Impact
+    ↓
+Expectation State
+    ↓
+Entry / Exit State
+
+核心问题不是：
+“这是不是利好？”
+
+而是：
+“事件确定性提高了多少？”
+“真实经济价值增加了多少？”
+“市场已经提前支付了多少？”
+“剩余赔率是否值得承担失败路径？”</div>
+
+  <h3>9.3 买卖点更应该表达成“状态迁移”</h3>
+  <p><span class="tag infer">INFERENCE</span>本案例最重要的产品启发不是“蓝箭上会就买”，而是：</p>
+  <div class="callout">
+    <strong>Entry Quality ≈ Event Progress 相对 Expectation Progress 的差。</strong>
+    这不是可直接套公式的数学模型，而是一种待继续验证的判断结构。
+  </div>
+
+  <h3>9.4 不急着新建一个庞大的 Event-Driven Engine</h3>
+  <p><span class="tag hyp">HYPOTHESIS</span>为了控制AlphaOS v0.1范围，本案例更适合先沉淀为 <strong>Thesis Card + Event Monitor</strong> 内的一种 Event-Driven Template，而不是立刻膨胀出一个全新大引擎。</p>
+  <p><span class="tag missing">MISSING</span>这一点仍属于案例发现，不自动升级为Core Spec正式规则；需要未来至少更多事件型案例交叉验证。</p>
+</section>
+
+<section id="gaps">
+  <h2>10｜尚未解决的证据缺口</h2>
+  <p>对专业读者而言，以下未解决项比“给一个目标价”更重要：</p>
+  <table>
+    <thead><tr><th>缺口</th><th>为什么重要</th><th>下一步</th></tr></thead>
+    <tbody>
+      <tr><td>三只基金对蓝箭的最新精确穿透经济权益</td><td>决定蓝箭价值变化对鲁信的真实敏感度</td><td>逐基金核验最新LP/GP份额、间接权益及收益分配</td></tr>
+      <tr><td>蓝箭在各基金当前会计账面/公允价值</td><td>只有“未来价值 - 已反映价值”才接近新增NAV</td><td>从鲁信基金层附注、审计/估值披露或后续问答中核验</td></tr>
+      <tr><td>27个拟IPO项目的Materiality排序</td><td>避免只盯蓝箭，也避免把27家公司全部做成无底洞</td><td>按穿透权益 × 估值潜力 × 兑现阶段筛选前5–8项</td></tr>
+      <tr><td>事件阶段历史基准率</td><td>不能凭感觉给“上会成功率80%”等伪精确概率</td><td>建立A股/港股不同审核节点的历史转化率基线</td></tr>
+      <tr><td>Market Regime与事件股溢价关系</td><td>同一催化在risk-on和risk-off环境中的定价可能差异很大</td><td>等待AlphaOS Market Regime与实时数据层接入后验证</td></tr>
+    </tbody>
+  </table>
+  <div class="callout">
+    <strong>结论边界</strong>
+    这份Case已经可以回答“如何从风声走到可执行条件”，但还不能证明某个具体价格一定是最佳买点，也不能给出蓝箭IPO成功概率或鲁信未来涨幅的确定预测。
+  </div>
+</section>
+
+<section id="sources">
+  <h2>11｜来源与证据等级</h2>
+  <p class="note">优先使用公司公告、交易所文件和招股书；行情使用公开市场数据。二手穿透计算明确降级为“待核实工作估算”。</p>
+  <ol class="source-list">
+    
+      <li id="s1">
+        <div><span class="source-id">S1</span><a href="https://static.cninfo.com.cn/finalpage/2026-08-29/1225524993.PDF" target="_blank" rel="noopener">鲁信创投 2026年半年度报告（巨潮资讯，2026-08-29）</a></div>
+        <p>一手：财务、基金规模、IPO储备、投资收益、公允价值变动等</p>
+      </li>
+      <li id="s2">
+        <div><span class="source-id">S2</span><a href="https://paper.cnstock.com/html/2026-08/29/content_2262489.htm" target="_blank" rel="noopener">鲁信创投 2026年半年度报告摘要（上海证券报，2026-08-29）</a></div>
+        <p>二手转引官方报告：27个拟IPO项目、13个已受理、退出回笼3.71亿元等</p>
+      </li>
+      <li id="s3">
+        <div><span class="source-id">S3</span><a href="https://static.sse.com.cn/stock/disclosure/announcement/c/202512/002174_20251231_1QK0.pdf" target="_blank" rel="noopener">蓝箭航天招股说明书（申报稿，上交所）</a></div>
+        <p>一手：蓝箭股权结构、菁蓉贰期基金出资结构等</p>
+      </li>
+      <li id="s4">
+        <div><span class="source-id">S4</span><a href="https://www.stcn.com/ipo/detail/3623.html" target="_blank" rel="noopener">蓝箭航天IPO进程（证券时报IPO资料页，更新至2026-06-29）</a></div>
+        <p>审核状态：已问询；财务资料更新后恢复推进</p>
+      </li>
+      <li id="s5">
+        <div><span class="source-id">S5</span><a href="https://static.cninfo.com.cn/finalpage/2026-01-09/1224926019.PDF" target="_blank" rel="noopener">鲁信创投股票交易异常波动公告（巨潮资讯，2026-01-09）</a></div>
+        <p>一手：三只基金合计持有蓝箭0.89%，公司提示穿透后对财务及经营成果影响较小</p>
+      </li>
+      <li id="s6">
+        <div><span class="source-id">S6</span><a href="https://hk.investing.com/equities/luxin-venture-historical-data" target="_blank" rel="noopener">鲁信创投历史行情（Investing，2026-08-19 至 2026-09-18）</a></div>
+        <p>市场数据：8/19 20.19元，随后连续回落，9/18 15.35元</p>
+      </li>
+      <li id="s7">
+        <div><span class="source-id">S7</span><a href="https://caifuhao.eastmoney.com/news/20260113190305105217750" target="_blank" rel="noopener">关于鲁信体系穿透蓝箭权益的公开重构（东方财富财富号，2026-01-13）</a></div>
+        <p>二手重构：约0.4334%工作估算；本文仅作为待核实计算线索，不作为公司确认口径</p>
+      </li>
+  </ol>
+</section>
+
+<section>
+  <h2>一页结论｜把整个Case压缩回用户问题</h2>
+  <div class="status-card">
+    <div class="status-row"><div class="label">能买吗？</div><div class="value">不是“看到蓝箭就买”。当前更合理的状态是重点观察，等待新的事件—预期差。</div></div>
+    <div class="status-row"><div class="label">什么时候买？</div><div class="value">核心IPO项目出现实质状态跃迁，同时鲁信价格/成交没有明显提前抢跑，且新增NAV能解释市值变化。</div></div>
+    <div class="status-row"><div class="label">可能涨多少？</div><div class="value">只能做条件情景。以H1静态净资产敏感性看，强催化重新扩张至3.0–3.3倍PB对应约+19%～+31%；不是预测。</div></div>
+    <div class="status-row"><div class="label">一定涨吗？</div><div class="value">不。8月真实事件后的快速回撤已经证明，利好真实性与持股收益不是同一件事。</div></div>
+    <div class="status-row"><div class="label">什么时候卖？</div><div class="value">Thesis Break、Expectation Overdraft、Catalyst Realization后的再定价，或Thesis长期停滞。</div></div>
+  </div>
+</section>
+</main>
+</div>
+
+<div class="footer">
+  AlphaOS Case Study 001 · Generated 2026-09-20 · 研究展示用途。本文展示的是可审计的研究决策轨迹，不是模型隐藏思维链，也不构成证券投资建议。
+</div>
+</body>
+</html>

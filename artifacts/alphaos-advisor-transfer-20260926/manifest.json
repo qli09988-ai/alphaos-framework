@@ -1,0 +1,71 @@
+{
+  "version": "v0.1.1-working",
+  "date": "2026-09-26",
+  "files": [
+    {
+      "path": "alphaos_core_spec.md",
+      "bytes": 17474,
+      "sha256": "748e929ccff9f1590541364edc11e1bbb2757ec658ee753a51b8c6e23d1c2b54"
+    },
+    {
+      "path": "alphaos_status_board.md",
+      "bytes": 6269,
+      "sha256": "6bd1ca2ae8fe574b5c3f101e533fe85ee2a8c3619550d6c96be40a69ff6ae1bf"
+    },
+    {
+      "path": "alphaos_case_lab.md",
+      "bytes": 12912,
+      "sha256": "1b77d2c796f1bb86f19b1600f025eeb3edc380b50c42638745a761c78124285d"
+    },
+    {
+      "path": "alphaos_backlog_changelog.md",
+      "bytes": 8946,
+      "sha256": "28179328624bdd2ee163bf191acf0a1798390b0e0bb03ee603c3e284a4017302"
+    },
+    {
+      "path": "alphaos_usage_protocol.md",
+      "bytes": 5138,
+      "sha256": "b9f513d94ed5f946dc295c10439f3abdf86d339fe82a5fb5a8653d5f1a5606f9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2370,
+      "sha256": "867c79e386e5938bf70248c96a8f6a78edf2c074894c628c88542212f58a467c"
+    },
+    {
+      "path": "templates/AlphaOS_增量交接单.md",
+      "bytes": 1106,
+      "sha256": "6176f9b4a702e11e421ff901841f29edce9868f730fb95fa2e7b62ecbbbe6c68"
+    },
+    {
+      "path": "handoffs/2026-09-26-蓝箭事件驱动-01.md",
+      "bytes": 10822,
+      "sha256": "d399f87a82d70af6fa23d7a92d436f27cfe1d2b1dd3d62297105ceb1f383ff19"
+    },
+    {
+      "path": "AlphaOS_工作方式与产品路线_建议稿.md",
+      "bytes": 7495,
+      "sha256": "d3c75a5b416e6d01e7d8e8c51440e9998739a319d61a170bf9c5a8bc4ae000b3"
+    },
+    {
+      "path": "artifacts/ths-validation/核验报告.md",
+      "bytes": 5906,
+      "sha256": "7edbf498643a6415650a977d092d24e2c746822a732a7dd4e66bbe65fb296bab"
+    },
+    {
+      "path": "artifacts/ths-validation/LOCAL_RUNTIME.md",
+      "bytes": 3053,
+      "sha256": "48b00d04833ca3b63106aaf1918a63d3a8f50407812a495f7c9fcbec51283c34"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/merge_report.md",
+      "bytes": 5033,
+      "sha256": "721836946653afe703de483faa58a584267ece91b060a60665a7bf3762ff4821"
+    },
+    {
+      "path": "artifacts/alphaos-20260926-lanjian-01/case_lanjian_20260819.source.md",
+      "bytes": 17242,
+      "sha256": "17044537a9591c91b16206ab81f288f40a6d0a32325bff5d56ffff988ae0d02c"
+    }
+  ]
+}

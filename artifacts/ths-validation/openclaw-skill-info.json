@@ -1,0 +1,29 @@
+{
+  "name": "ths-advanced-analysis",
+  "description": "基于 thsdk 进行高级股票分析：分钟K线（1m/5m/15m/30m/60m/120m）、板块/指数行情（主要指数/申万行业/概念板块成分股）、多股票批量对比（表格+归一化走势图+相关性热力图）、盘口深度、大单流向、集合竞价异动、日内分时、历史分时。当用户提到\"分钟K线\"、\"日内走势\"、\"盘口\"、\"大单\"、\"竞价异动\"、\"板块行情\"、\"行业排名\"、\"概念板块\"、\"成分股\"、\"对比多只股票\"、\"批量分析\"、\"涨幅对比\"、\"相关性\"、\"港股\"、\"美股\"、\"外汇\"、\"期货\"、\"资讯\"、\"快讯\"，或者需要同时查看2只以上股票、关注短线交易、量化研究时，必须使用此skill。",
+  "source": "openclaw-workspace",
+  "bundled": false,
+  "filePath": "/root/.openclaw/workspace/skills/ths-advanced-analysis/SKILL.md",
+  "baseDir": "/root/.openclaw/workspace/skills/ths-advanced-analysis",
+  "skillKey": "ths-advanced-analysis",
+  "always": false,
+  "disabled": false,
+  "blockedByAllowlist": false,
+  "eligible": true,
+  "requirements": {
+    "bins": [],
+    "anyBins": [],
+    "env": [],
+    "config": [],
+    "os": []
+  },
+  "missing": {
+    "bins": [],
+    "anyBins": [],
+    "env": [],
+    "config": [],
+    "os": []
+  },
+  "configChecks": [],
+  "install": []
+}

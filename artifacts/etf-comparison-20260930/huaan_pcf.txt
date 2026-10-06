@@ -1,0 +1,6219 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+<html>
+
+
+
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<title>华安国证机器人产业ETF</title>
+
+<SCRIPT language=javascript src="/etf/jscript/calendar.js"></SCRIPT>
+
+<SCRIPT language=javascript src="/etf/jscript/common.js"></SCRIPT>
+<SCRIPT language=javascript src="/etf/jscript/jquery.js"></SCRIPT>
+<SCRIPT language=javascript src="/etf/jscript/jquery-ui-1.9.2.custom.min.js"></SCRIPT>
+<link rel="stylesheet" href="/etf/jscript/jquery-ui.css">
+
+<script>
+
+function initpage()
+
+{
+
+
+
+	var datevalue=20260930;
+
+	var savedatevalue=datevalue.toString();
+
+
+
+	if(savedatevalue.length>=8)
+
+	{
+
+		savedatevalue=savedatevalue.substring(0,4)+"-"+savedatevalue.substring(4,6)+"-"+savedatevalue.substring(6,8);
+
+	}
+
+	queryetf.querydate.value=savedatevalue;
+
+
+
+}
+
+function historyquery()
+
+{
+
+	queryetf.action="sgshqd.jsp";
+
+	queryetf.submit();
+
+	//alert(queryetf.querydate.value);
+
+}
+
+</script>
+
+<style type="text/css">
+
+<!--
+
+.style43 {
+
+	color: #000000;
+
+	font-weight: bold;
+
+}
+
+
+
+.style47 {
+
+	FONT-SIZE: 10.5pt;
+
+	LINE-HEIGHT: 15pt;
+
+	FONT-FAMILY: "宋体";
+
+	font-weight: bold;
+
+	color: #FFFFFF;
+
+}
+
+
+
+.text {
+
+	FONT-SIZE: 10.5pt;
+
+	LINE-HEIGHT: 15pt;
+
+	FONT-FAMILY: "宋体"
+
+}
+
+
+
+.unnamed1 {
+
+	border: 1px solid #666666;
+
+}
+
+
+
+a:link {
+
+	text-decoration: none;
+
+}
+
+
+
+a:visited {
+
+	text-decoration: none;
+
+}
+
+
+
+a:hover {
+
+	text-decoration: none;
+
+}
+
+
+
+a:active {
+
+	text-decoration: none;
+
+}
+
+
+
+.STYLE48 {
+
+	font-size: 14px
+
+}
+
+
+
+body, td, th {
+
+	font-size: 12px;
+
+}
+
+-->
+
+</style>
+
+</head>
+
+<body onload=initpage()>
+
+	<table width="780" border="0" align="center" cellpadding="0"
+
+		cellspacing="0" class="unnamed1">
+
+
+
+		<tr>
+
+
+
+			<td><img src="img/title.jpg" width="780" height="146"></td>
+
+
+
+		</tr>
+
+
+
+		<tr>
+
+
+
+			<td>
+
+				
+
+				<form name="queryetf">
+
+					<table width="780" border="0" align="center" cellpadding="0"
+
+						cellspacing="0" class="unnamed1">
+
+
+
+						<tr>
+
+							<td>&nbsp;&nbsp;  <strong>申购赎回清单<a href="etffiledownload.jsp?etffilename=pcf_159039_20260930.xml"
+
+									target="_blank"><font size="2" color="#0000FF"><b>(文件下载)</b>
+
+									</font> </a>
+
+							</strong>
+
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+								历史查询&nbsp;&nbsp; <input type="text"   id="querydate" name="querydate" readonly="readonly"/> &nbsp; 
+
+								<a href="javascript:historyquery()"><font color=red><span class="STYLE48">查询</span></font></a>
+
+							</td>
+
+						</tr>
+
+						<tr>
+
+							<td colspan="2">
+
+								<hr>
+
+							</td>
+
+						</tr>
+
+						<tr>
+
+							<td>
+
+								<table width="650" border="1" align="center" cellpadding="0"
+
+									cellspacing="0" bordercolor="#004b9d">
+
+
+
+									<tr bgcolor="#004b9d">
+
+
+
+										<td height="20" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp; <span
+
+											class="style47">基本信息</span>
+
+										</td>
+
+
+
+									</tr>
+
+
+
+									<tr>
+
+										<td height="20" class="text">
+
+											<div align="right" class="style43">
+
+												<strong>最新公告日期</strong>
+
+											</div>
+
+										</td>
+
+										<td height="20" class="text">
+
+											<div align="left">
+
+												&nbsp;&nbsp;
+
+												20260930
+
+											</div>
+
+										</td>
+
+									</tr>
+
+									<tr>
+
+										<td height="20" class="text">
+
+											<div align="right" class="style14 style44">
+
+												<strong>基金名称</strong>
+
+											</div>
+
+										</td>
+
+
+
+										<td height="20" class="text">
+
+											<div align="left">&nbsp;&nbsp;华安国证机器人产业ETF</div>
+
+										</td>
+
+
+
+									</tr>
+
+									<tr>
+
+										<td height="20" class="text">
+
+											<div align="right" class="style14 style44">
+
+												<strong>基金管理公司名称</strong>
+
+											</div>
+
+										</td>
+
+
+
+										<td height="20" class="text">
+
+											<div align="left">&nbsp;&nbsp;华安基金管理有限公司</div>
+
+										</td>
+
+									</tr>
+
+									<tr>
+
+										<td height="20" class="text">
+
+											<div align="right" class="style10 style44">
+
+												<strong>证券代码</strong>
+
+											</div>
+
+										</td>
+
+										<td height="20" class="text">
+
+											<div align="left">
+
+												&nbsp;&nbsp;
+
+												159039
+
+											</div>
+
+										</td>
+
+									</tr>
+
+									<tr>
+
+										<td height="20" class="text">
+
+											<div align="right" class="style10 style44">
+
+												<strong>拟合指数代码</strong>
+
+											</div>
+
+										</td>
+
+										<td height="20" class="text">
+
+											<div align="left">
+
+												&nbsp;&nbsp;
+
+												980022
+
+											</div>
+
+										</td>
+
+									</tr>
+
+								</table>
+
+								<p>&nbsp;
+
+									</p>
+
+									<table width="650" height="20" border="1" align="center"
+
+										cellpadding="0" cellspacing="0" bordercolor="#004b9d">
+
+										<tr bgcolor="#004b9d">
+
+
+
+											<td height="20" colspan="2">
+
+												&nbsp;&nbsp;
+
+												<span class="text">&nbsp;&nbsp;</span><span class="style47">20260929
+
+													信息内容</span>
+
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													现金差额(单位:元)
+
+												</div>
+
+											</td>
+
+											<td width="227" height="20">
+
+												&nbsp;&nbsp;￥
+
+												-7,533.85
+
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													最小申购、赎回单位资产净值(单位:元)
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												&nbsp;&nbsp;￥
+
+												795,575.15
+
+											</td>
+
+
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													基金份额净值(单位:元)
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												&nbsp;&nbsp;￥
+
+												0.7956
+
+											</td>
+
+										</tr>
+
+									</table>
+
+									<p>&nbsp;
+
+									</p>
+
+									<table width="650" border="1" align="center" cellpadding="0"
+
+										cellspacing="0" bordercolor="#004b9d">
+
+										<tr bgcolor="#004b9d" class="text">
+
+											<td height="20" colspan="6" class="style7">
+
+												&nbsp;&nbsp;
+
+												<span class="text">&nbsp;&nbsp;</span><span class="style47">20260930
+
+													信息内容</span>
+												
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													预估现金部分(单位:元)
+
+												</div>
+
+											</td>
+
+											<td height="20" class="text">
+
+												&nbsp;&nbsp;￥
+
+												-7,419.85
+
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													最小申购赎回单位(单位:份)
+
+												</div>
+
+											</td>
+
+											<td height="20" class="text">
+
+												&nbsp;&nbsp;
+
+												1,000,000.00
+
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													红利金额
+
+												</div>
+
+											</td>
+
+											<td height="20" class="text">
+
+												&nbsp;&nbsp;
+
+												0.00
+
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													是否发布 IOPV
+
+												</div>
+
+											</td>
+
+											<td height="20" class="text">
+
+												&nbsp;&nbsp;
+
+												是
+
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													是否允许申购
+
+												</div>
+
+											</td>
+
+											<td height="20" class="text">
+
+												&nbsp;&nbsp;
+
+												是
+
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													是否允许赎回
+
+												</div>
+
+											</td>
+
+											<td height="20" class="text">
+
+												&nbsp;&nbsp;
+
+												是
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													最大现金替代比例
+
+												</div>
+
+											</td>
+
+											<td height="20" class="text">
+
+												&nbsp;&nbsp;
+
+												50.00%
+
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													当日累计申购份额上限
+
+												</div>
+
+											</td>
+
+											<td height="20" class="text">
+
+												&nbsp;&nbsp;
+
+												无
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													当日累计赎回份额上限
+
+												</div>
+
+											</td>
+
+											<td height="20" class="text">
+
+												&nbsp;&nbsp;
+
+												100000000.00
+
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													单个账户当日累计申购份额上限
+
+												</div>
+
+											</td>
+
+											<td height="20" class="text">
+
+												&nbsp;&nbsp;
+
+												无
+											</td>
+
+										</tr>
+
+										<tr>
+
+											<td height="20" class="text">
+
+												<div align="right" class="style43">
+
+													单个账户当日累计赎回份额上限
+
+												</div>
+
+											</td>
+
+											<td height="20" class="text">
+
+												&nbsp;&nbsp;
+
+												无
+
+
+												
+
+											</td>
+
+										</tr>
+										<tr>
+											<td height="20" class="text">
+												<div align="right" class="style43">
+													当日净申购总额限制
+												</div>
+											</td>
+											<td height="20" class="text">
+												&nbsp;&nbsp;
+												无
+											</td>
+										</tr>
+										<tr>
+											<td height="20" class="text">
+												<div align="right" class="style43">
+													当日净赎回总额限制
+												</div>
+											</td>
+											<td height="20" class="text">
+												&nbsp;&nbsp;
+												无
+											</td>
+										</tr>
+										
+										
+
+										<tr>
+											<td height="20" class="text">
+												<div align="right" class="style43">
+													单个账户当日净申购份额上限
+												</div>
+											</td>
+											<td height="20" class="text">
+												&nbsp;&nbsp;
+												无
+											</td>
+										</tr>
+										
+										<tr>
+											<td height="20" class="text">
+												<div align="right" class="style43">
+													单个账户当日净赎回份额上限
+												</div>
+											</td>
+											<td height="20" class="text">
+												&nbsp;&nbsp;
+												无
+											</td>
+										</tr>
+										
+										<tr>
+											<td height="20" class="text">
+												<div align="right" class="style43">
+													深市成份证券数码
+												</div>
+											</td>
+											<td height="20" class="text">
+												&nbsp;&nbsp;
+												29
+											</td>
+										</tr>
+										
+										<tr>
+											<td height="20" class="text">
+												<div align="right" class="style43">
+													所有成份证券数目
+												</div>
+											</td>
+											<td height="20" class="text">
+												&nbsp;&nbsp;
+												51
+											</td>
+										</tr>
+
+									</table>
+
+									<p>&nbsp;
+
+									</p>
+
+									<table width="650" border="1" align="center" cellpadding="0"
+
+										cellspacing="0" bordercolor="#004b9d">
+
+
+
+										<tr bgcolor="#004b9d" class="text">
+
+											<td height="20" colspan="8" class="style7">
+
+												&nbsp;&nbsp;&nbsp;&nbsp;
+
+												<span class="style47">成份股信息内容</span>
+
+											</td>
+
+										</tr>
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<strong>证券代码</strong>
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<strong>证券简称</strong>
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<strong>股票数量</strong>
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<strong>现金替代标志</strong>
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<strong>可以现金替代溢价比例</strong>
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<strong>申购替代金额</strong>
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<strong>赎回替代金额</strong>
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<strong>挂牌市场</strong>
+
+												</div>
+
+											</td>
+
+										</tr>
+
+										
+
+										
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													159900
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													申赎现金
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													0
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													必须
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													359,136.15
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													259,283.85
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													000967
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													盈峰环境
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													2800
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													34.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													002050
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													三花智控
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													600
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													34.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													002139
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													拓邦股份
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													1100
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													34.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													002230
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													科大讯飞
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													700
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													34.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													002338
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													奥普光电
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													300
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													34.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													002472
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													双环传动
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													1100
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													34.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													002600
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													领益智造
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													3600
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													34.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													002747
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													埃斯顿
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													1100
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													34.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													002892
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													科力尔
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													900
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													34.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													002896
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													中大力德
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													200
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													34.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													002979
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													雷赛智能
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													400
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													34.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													003021
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													兆威机电
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													200
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													34.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300007
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													汉威科技
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													300
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300024
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													机器人
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													2600
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300124
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													汇川技术
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													400
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300161
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													华中数控
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													300
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300222
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													科大智能
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													700
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300276
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													三丰智能
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													2000
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300432
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													富临精工
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													1100
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300455
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													航天智装
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													700
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300466
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													赛摩智能
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													600
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300503
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													昊志机电
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													400
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300580
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													贝斯特
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													500
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300607
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													拓斯达
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													700
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													300953
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													震裕科技
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													300
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													301368
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													丰立智能
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													100
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													301413
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													安培龙
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													100
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													301510
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													固高科技
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													600
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													73.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													深圳证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													601608
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													中信重工
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													3700
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													10.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													601689
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													拓普集团
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													500
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													10.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													603015
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													弘讯科技
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													500
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													10.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													603119
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													浙江荣泰
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													600
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													10.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													603416
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													信捷电气
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													200
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													10.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													603486
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													科沃斯
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													200
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													10.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													603662
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													柯力传感
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													100
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													10.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													603728
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													鸣志电器
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													400
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													10.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													603915
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													国茂股份
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													500
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													10.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													603960
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													克来机电
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													200
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													10.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													688017
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													绿的谐波
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													200
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													21.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													688160
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													步科股份
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													200
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													21.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													688165
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													埃夫特
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													600
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													21.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													688169
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													石头科技
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													200
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													21.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													688248
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													南网科技
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													400
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													21.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													688277
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													天智航
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													700
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													21.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													688279
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													峰岹科技
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													0
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													必须
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													0.00
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													0.00
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													688322
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													奥比中光
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													200
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													21.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													688400
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													凌云光
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													300
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													21.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													688686
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													奥普特
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													0
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													必须
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													0.00
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													0.00
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													688698
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													伟创电气
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													200
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													允许
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													21.00%
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													上海证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+										<tr class="text">
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 证券代码 -->
+
+													920593
+
+												</div>
+
+											</td>
+
+											 <td height="20">
+
+												<div align="center">
+
+													<!-- 证券简称-->
+
+													鼎智科技
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 股票数量-->
+
+													0
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<div align="center">
+
+													<!-- 现金替代标志-->
+
+													必须
+
+												</div>
+
+											</td>
+
+											<td height="20">
+
+												<!-- 可以现金替代溢价比例 -->
+
+												<div align="center">
+
+													&nbsp;
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 申购替代金额 -->
+
+													2,311.00
+
+												</div>
+
+											</td> 
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 赎回替代金额 -->
+
+													2,311.00
+
+												</div>
+
+											</td>
+
+											<td valign="20">
+
+												<div align="center">
+
+													<!-- 证券市场 -->
+
+													北京证券交易所
+
+												</div>
+
+											</td> 
+
+										</tr> 
+
+												
+
+									</table>
+
+								</td>
+
+							</tr>
+
+						</table>
+
+					</form>
+
+					
+
+					</td>
+
+			</tr>
+
+			<tr>
+
+				<td>
+
+					<div align="right">
+
+						<img src="img/2.jpg" width="180" height="88">
+
+					</div>
+
+				</td>
+
+			</tr>
+
+				</table>	
+
+			<p>&nbsp;
+
+			</p>						
+
+</body>
+
+<script type="text/javascript">
+	$(function() {
+		
+	  //年月控件
+	    $('#querydate').datepicker({
+	    	 numberOfMonths:1,//显示几个月 
+	         showButtonPanel:true,//是否显示按钮面板 
+	         dateFormat: 'yy-mm-dd',//日期格式 
+	         clearText:"清除",//清除日期的按钮名称 
+	         closeText:"关闭",//关闭选择框的按钮名称 
+	         yearSuffix: '年', //年的后缀 
+	         showMonthAfterYear:true,//是否把月放在年的后面 
+	         
+	         monthNames: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'], 
+	         dayNames: ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'], 
+	         dayNamesShort: ['周日','周一','周二','周三','周四','周五','周六'], 
+	         dayNamesMin: ['日','一','二','三','四','五','六']
+
+		});
+	});
+</script>
+</html>

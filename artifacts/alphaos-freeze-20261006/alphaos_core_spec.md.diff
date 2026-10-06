@@ -1,0 +1,143 @@
+--- before/alphaos_core_spec.md
++++ after/alphaos_core_spec.md
+@@ -1,12 +1,15 @@
+-# AlphaOS Core Spec — v0.1.1 Working
+-
+-Version: v0.1.1-working  
+-Last updated: 2026-09-26  
+-Baseline: v0.1-working（2026-09-20 本地快照）  
+-Approved changes: CHG-007–CHG-012；交接编号 `2026-09-26-蓝箭事件驱动-01`。
+-
+-Status: **formal framework / source of truth**  
+-Rule: only approved changes may be added here.
++# AlphaOS Core Spec — Framework v0.1 FROZEN
++
++Version: AlphaOS Framework v0.1  
++Last updated / Freeze date: 2026-10-06  
++Baseline: v0.1.1-working（2026-09-26 文档增量；本次正式发布命名为 Framework v0.1，不回退既有内容）  
++Approved changes: 保留 CHG-001–CHG-012；本次 Final Approval Set 见 CHG-013。
++Human Approval（2026-10-06）：“批准 AlphaOS Framework v0.1 Final Approval Set，冻结 v0.1”。
++
++Status: **FROZEN / Core Sole Source of Truth**  
++Rule: only explicitly human-approved changes may be added here through version control.
++
++冻结范围和排除项见 [FREEZE_v0.1.md](FREEZE_v0.1.md)；个人风险参数独立存于 [alphaos_personal_policy.md](alphaos_personal_policy.md)。AI may propose changes but may not self-approve or silently mutate Core. 本次是执行已获 Human Approval 的文档合入，不授予后续自行改写权限。
+ 
+ ---
+ 
+@@ -315,26 +318,56 @@
+ 
+ Price stops are a last-resort risk fail-safe, not the primary thesis criterion.
+ 
++### Execution — Approved / CHG-013
++
++以下为本次 Execution 唯一规范表述；历史聊天中的 AC-EXEC 近义条目不构成并行规则。
++
++1. **OPEN** 前必须通过 Thesis / Why Now / Expectation / Invalidation / Risk 五项检查。
++2. **ADD** 必须有新增证据；**HOLD ≠ ADD**，原持有理由不自动构成加仓理由。
++3. Thesis 改变必须 **RE-UNDERWRITE**；禁止 **Bought for A, held for B**。
++4. 回本价 / 券商动态成本不得作为持有或加仓理由。
++5. 重大监管、政策、事故、核心客户等冲击触发 **Shock Review**。
++
++### Risk & Position — Approved / CHG-013
++
++以下为本次 Risk 唯一规范表述；与 Execution 共用，不另保留重复 AC-RISK 条目。
++
++1. LLM 不得直接编仓位；仓位必须由确定性 **Risk Engine** 计算。
++2. 同一 Thesis 的首仓与所有加仓共享**累计 Risk Budget**，不得每次加仓重置预算。
++3. 同时管理 **Single Instrument / Thesis / Theme-Cluster / Portfolio Risk**。
++4. **Conviction** 只能在风险边界内调节，不能取消边界。
++5. 有明确失效距离时使用 **Risk-Distance Sizing**；长期产业 Thesis 可使用 **Stress-Based Sizing**。
++
++个人预算、权益基准、压力参数、上限与恢复约束读取 Personal Policy；本节不把个人参数规定为普适市场真理。Risk Engine 的代码实现和验收属于 Runtime MVP，本次冻结不代表代码已实现或已通过实盘验证。
++
++
+ ---
+ 
+ ## 15. Position Thesis Card
+ 
+-Each tracked position/company should store:
+-- stock / code / mode
+-- Thesis Type：Industrial / Event-Driven / Asset Realization / Hybrid；primary / secondary（如适用）
+-- Why Now?：为什么是现在，而不是三个月前或三个月后；对应证据时间、临近确认事件、尚未消失的预期差与失效条件（Approved / CHG-010）
+-- core causal thesis
+-- validation metrics
+-- catalysts
+-- strengthening conditions
+-- weakening / break conditions
+-- latest CV / expectation / regime states（不适用项写 N/A，不得硬套）
+-- Event State / substage（如适用）、事件主体、关联路径、证据时间与 next transition
++Each tracked position/company must store the following fixed fields:
++
++- **Thesis Type**：Industrial / Event-Driven / Asset Realization / Hybrid；primary / secondary（如适用）
++- **Core Thesis**：核心因果论点
++- **Why Now**：为什么是现在，而不是三个月前或三个月后；对应证据时间、临近确认事件、尚未消失的预期差与失效条件（保留 CHG-010）
++- **Evidence For**：支持证据
++- **Evidence Against**：反对证据
++- **Expectation**：市场预期状态及依据
++- **Invalidation**：失效条件
++- **Risk State**：当前风险状态
++- **Current Action**：当前行动
++- **Next Confirmation**：下一确认事件/条件
++- **Missing Evidence**：缺失证据
++
++保留原有扩展字段，不以固定字段替换类型所需信息：
++
++- stock / code / mode；validation metrics；catalysts；strengthening conditions；weakening / break conditions
++- Industrial 及 Hybrid 产业部分保留 **Lifecycle / CV / Economics**；Expectation / Market Regime 状态保留，不适用项写 N/A 并说明原因
++- Event-Driven 保留 Event State / substage / event_status、事件主体、关联路径、证据时间与 next transition
+ - Event Progress vs Expectation Progress：各自变化、依据和置信度
+ - Relative Strength：vs Market / Industry / Event Basket；窗口、基准与缺失项
+-- current action status
+-- missing evidence
+-- next confirmation event
++
++卡片**只在五类触发更新**：新事实 / 状态迁移 / 交易动作 / Shock / Deadline Miss。没有触发时不因模型重新措辞而改写状态。
+ 
+ The card stores **state + transition conditions**, not “good/bad company” labels.
+ 
+@@ -394,7 +427,21 @@
+ 
+ AlphaOS should improve through:
+ 
+-Decision -> Evidence record -> Outcome -> Error diagnosis -> Proposed rule change -> Validation -> Human approval -> Version update
++**Decision Snapshot → Outcome → Error Diagnosis → Proposed Change → Validation → Human Approval → Version Update**
++
++Decision Snapshot 保存当时可见证据、判断和规则版本。复盘必须分别评价 **Process Good/Bad** 与 **Outcome Good/Bad**；两者可独立组合，禁止“涨了 = 判断正确”。
++
++Error taxonomy：
++
++- Data Error
++- Thesis Error
++- Expectation Error
++- Timing-Execution Error
++- Risk-Position Error
++- Process Violation
++- No Error-Variance
++
++Outcome 不直接触发 Core 修改；改动需完成上述验证与 Human Approval。
+ 
+ AI must NOT silently rewrite rules.
+ 
+@@ -450,16 +497,18 @@
+ 
+ ## 20. Data Layer / Data Source Abstraction — Approved / CHG-011
+ 
+-**Data Source 可替换，Derived Signals 才是资产。** 保留派生指标定义、版本、原始输入、口径、时间戳和可重算记录；“资产”不意味着指标已证明有预测力。
++**字段定义与 Derived Signals 是资产，Data Source 可替换。** 保留派生指标定义、版本、原始输入、口径、时间戳和可重算记录；“资产”不意味着指标已证明有预测力。
+ 
+ | 数据职责 | 当前默认来源 | 使用边界 / 备援 |
+ |---|---|---|
+ | 当日实时盘面感知：竞价、Tick、盘口、分时 | thsdk 游客模式，经现有 run-readonly | 仅当日/最近交易日快照范围；历史能力不能从实时接口推定；检查行情时间和新鲜度 |
+ | 历史基准、个股/指数日线、控制组输入 | BaoStock | 按标的/字段验证覆盖、复权和单位；缺失则显式记录；其他源替换须先核对口径 |
+-| 事件事实与时间戳 | 公开公告、交易所/公司文件、新闻 | 事件发生时间、首次发布时间、采集时间分开；新闻不能自动替代一手事实 |
++| 事件与基本面事实及时间戳 | 官方公告 / 财报 / 监管 / 公司材料优先；新闻为补充 | 事件发生时间、首次发布时间、采集时间分开；新闻不能自动替代一手事实 |
+ | 可选补充数据 | 经核验的备用源 | 不把单次跑通当生产保证；切换保留 provenance |
+ 
+-### 2026-09-26 部署审计快照（非永久能力承诺）
++**Missing is Missing**：禁止模型补造数据。事实必须保留 **source / timestamp / freshness / provenance**；无法判定新鲜度时明确写未知，不得冒充实时。OpenClaw 具体数据部署属于 Runtime MVP，不因封版继续扩框架。
++
++### 2026-09-26 部署审计快照（历史记录，非永久能力承诺）
+ 
+ 证据索引见 Case Lab Case #003 及本轮交接单。以下为已有报告/用户转述的审计结论，本轮未连接服务器重测：
+ 

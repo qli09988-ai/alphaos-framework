@@ -1,0 +1,173 @@
+[
+  {
+    "id": "159039_tencent",
+    "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159039,day,2026-02-01,2026-09-30,240,",
+    "status": 0,
+    "bytes": 6002,
+    "sha256": "6d7b58426c2d65cf6b24aad76ed90089b43e8a340ba607cf080547d54a037178",
+    "captured_at": "2026-09-30T11:39:28.658972+08:00",
+    "preview": "{\"code\":0,\"msg\":\"\",\"data\":{\"sz159039\":{\"day\":[[\"2026-06-18\",\"0.995\",\"1.027\",\"1.035\",\"0.995\",\"1369098.000\"],[\"2026-06-22\",\"1.032\",\"1.008\",\"1.032\",\"0.97"
+  },
+  {
+    "id": "159039_sohu",
+    "url": "https://q.stock.sohu.com/hisHq?code=cn_159039&start=20260201&end=20260930&stat=1&order=A&period=d&rt=json",
+    "status": 0,
+    "bytes": 7233,
+    "sha256": "a0cb9e61c77804f9377b6ea06aa6a268d7db4e7cc7a5366df4b475dea80ec37b",
+    "captured_at": "2026-09-30T11:39:28.655396+08:00",
+    "preview": "[{\"status\":0,\"hq\":[[\"2026-06-18\",\"0.995\",\"1.027\",\"0.028\",\"2.80%\",\"0.995\",\"1.035\",\"1369098\",\"13901.764\",\"0.00%\"],[\"2026-06-22\",\"1.032\",\"1.008\",\"-0.019\""
+  },
+  {
+    "id": "159039_eastmoney",
+    "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=0.159039&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61&klt=101&fqt=0&beg=20260201&end=20260930",
+    "status": 0,
+    "bytes": 5973,
+    "sha256": "49c0234e9f4c707342cbe4e86c0489a38063762746209bab36da16a48cee5f46",
+    "captured_at": "2026-09-30T11:39:28.462553+08:00",
+    "preview": "{\"rc\":0,\"rt\":17,\"svr\":181669733,\"lt\":1,\"full\":0,\"dlmkts\":\"\",\"dsc\":\"0\",\"data\":{\"code\":\"159039\",\"market\":0,\"name\":\"机器人ETF华安\",\"decimal\":3,\"dkto"
+  },
+  {
+    "id": "159039_flow",
+    "url": "https://push2his.eastmoney.com/api/qt/stock/fflow/daykline/get?lmt=140&klt=101&secid=0.159039&fields1=f1,f2,f3,f7&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f62,f63",
+    "status": 0,
+    "bytes": 7744,
+    "sha256": "5c69354b22ef96cac7fa3709dbb53b45d3aeaf61004bfcdbad7bf21ee6907eec",
+    "captured_at": "2026-09-30T11:39:28.455617+08:00",
+    "preview": "{\"rc\":0,\"rt\":22,\"svr\":181669633,\"lt\":1,\"full\":0,\"dlmkts\":\"\",\"dsc\":\"0\",\"data\":{\"code\":\"159039\",\"market\":0,\"name\":\"机器人ETF华安\",\"klines\":[\"2026-0"
+  },
+  {
+    "id": "159039_nav",
+    "url": "https://api.fund.eastmoney.com/f10/lsjz?fundCode=159039&pageIndex=1&pageSize=200&startDate=2026-02-01&endDate=2026-09-30",
+    "status": 0,
+    "bytes": 4478,
+    "sha256": "edb5ae0ff51b0ed8eb7b70b8d6d2460ce5cea65e1d866759650f946d20026e3d",
+    "captured_at": "2026-09-30T11:39:28.719137+08:00",
+    "preview": "{\"Data\":{\"LSJZList\":[{\"FSRQ\":\"2026-09-29\",\"DWJZ\":\"0.7956\",\"LJJZ\":\"0.7956\",\"SDATE\":null,\"ACTUALSYI\":\"\",\"NAVTYPE\":\"1\",\"JZZZL\":\"0.24\",\"SGZT\":\"场内买�"
+  },
+  {
+    "id": "159039_holdings",
+    "url": "https://fundf10.eastmoney.com/FundArchivesDatas.aspx?type=jjcc&code=159039&topline=100&year=2026&month=6",
+    "status": 0,
+    "bytes": 6779,
+    "sha256": "ff29b1b051e2b8ff07c21e86dfa6623fc7e2f48f6140ef89571ab77c168ed887",
+    "captured_at": "2026-09-30T11:39:28.651670+08:00",
+    "preview": "var apidata={ content:\"<div class='box'><div class='boxitem w790'><h4 class='t'><label class='left'><a title='机器人ETF华安' href='http://fund.ea"
+  },
+  {
+    "id": "159559_tencent",
+    "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz159559,day,2026-02-01,2026-09-30,240,",
+    "status": 0,
+    "bytes": 11346,
+    "sha256": "84db9134e9cc62a39e28f41354271685b6d9d3b57450fc4e2bde796a7394fadb",
+    "captured_at": "2026-09-30T11:39:28.655073+08:00",
+    "preview": "{\"code\":0,\"msg\":\"\",\"data\":{\"sz159559\":{\"day\":[[\"2026-02-02\",\"1.398\",\"1.379\",\"1.416\",\"1.374\",\"1580360.000\"],[\"2026-02-03\",\"1.395\",\"1.413\",\"1.413\",\"1.37"
+  },
+  {
+    "id": "159559_sohu",
+    "url": "https://q.stock.sohu.com/hisHq?code=cn_159559&start=20260201&end=20260930&stat=1&order=A&period=d&rt=json",
+    "status": 0,
+    "bytes": 206,
+    "sha256": "1e2ea44c8bb71ad3a3195b4625c66b931827a2eb5e4099533860bf4270f67bcb",
+    "captured_at": "2026-09-30T11:39:28.443717+08:00",
+    "preview": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>503 Service Temporarily Unavailable</h1><"
+  },
+  {
+    "id": "159559_eastmoney",
+    "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=0.159559&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61&klt=101&fqt=0&beg=20260201&end=20260930",
+    "status": 0,
+    "bytes": 13091,
+    "sha256": "564eb0b57ebebba1bb22893d553fe32ebd64cc6b2d10ca593c0607af60f23d5f",
+    "captured_at": "2026-09-30T11:39:28.899327+08:00",
+    "preview": "{\"rc\":0,\"rt\":17,\"svr\":181669633,\"lt\":1,\"full\":0,\"dlmkts\":\"\",\"dsc\":\"0\",\"data\":{\"code\":\"159559\",\"market\":0,\"name\":\"机器人ETF景顺\",\"decimal\":3,\"dkto"
+  },
+  {
+    "id": "159559_flow",
+    "url": "https://push2his.eastmoney.com/api/qt/stock/fflow/daykline/get?lmt=140&klt=101&secid=0.159559&fields1=f1,f2,f3,f7&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f62,f63",
+    "status": 0,
+    "bytes": 13050,
+    "sha256": "68da3cc5948813eefbc4933871c355b4874dade9f672fd6b3dc8e1bc3ff2d242",
+    "captured_at": "2026-09-30T11:39:28.906036+08:00",
+    "preview": "{\"rc\":0,\"rt\":22,\"svr\":181669906,\"lt\":1,\"full\":0,\"dlmkts\":\"\",\"dsc\":\"0\",\"data\":{\"code\":\"159559\",\"market\":0,\"name\":\"机器人ETF景顺\",\"klines\":[\"2026-0"
+  },
+  {
+    "id": "159559_nav",
+    "url": "https://api.fund.eastmoney.com/f10/lsjz?fundCode=159559&pageIndex=1&pageSize=200&startDate=2026-02-01&endDate=2026-09-30",
+    "status": 0,
+    "bytes": 4479,
+    "sha256": "4de7f47f78721515781026ad16339832e3888be5b395d2f51afe66f3aa0fe40a",
+    "captured_at": "2026-09-30T11:39:29.065473+08:00",
+    "preview": "{\"Data\":{\"LSJZList\":[{\"FSRQ\":\"2026-09-29\",\"DWJZ\":\"1.1504\",\"LJJZ\":\"1.1504\",\"SDATE\":null,\"ACTUALSYI\":\"\",\"NAVTYPE\":\"1\",\"JZZZL\":\"0.26\",\"SGZT\":\"场内买�"
+  },
+  {
+    "id": "159559_holdings",
+    "url": "https://fundf10.eastmoney.com/FundArchivesDatas.aspx?type=jjcc&code=159559&topline=100&year=2026&month=6",
+    "status": 0,
+    "bytes": 52311,
+    "sha256": "372f5afe330af0e49cbb24e81978b16a5abb114566aa02702216c3e5f81b9ed7",
+    "captured_at": "2026-09-30T11:39:29.075694+08:00",
+    "preview": "var apidata={ content:\"<div class='box'><div class='boxitem w790'><h4 class='t'><label class='left'><a title='机器人ETF景顺' href='http://fund.ea"
+  },
+  {
+    "id": "980022_tencent",
+    "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz980022,day,2026-02-01,2026-09-30,240,",
+    "status": 0,
+    "bytes": 1649,
+    "sha256": "b549b7f1948e0ce0c7c21eab4d64ebfa40e9a3019522efc6e988a2074941dfe4",
+    "captured_at": "2026-09-30T11:39:28.865825+08:00",
+    "preview": "{\"code\":0,\"msg\":\"\",\"data\":{\"sz980022\":{\"day\":[[\"2026-09-30\",\"2126.60\",\"2119.81\",\"2147.19\",\"2111.18\",\"2979997\"]],\"qt\":{\"sz980022\":[\"51\",\"\\u673a\\u5668\\u"
+  },
+  {
+    "id": "980022_sohu",
+    "url": "https://q.stock.sohu.com/hisHq?code=cn_980022&start=20260201&end=20260930&stat=1&order=A&period=d&rt=json",
+    "status": 0,
+    "bytes": 65,
+    "sha256": "7f6e57ad4c403f83f6c054f9873919173baab3cdeb216a0cf75a14645450c6b7",
+    "captured_at": "2026-09-30T11:39:28.862853+08:00",
+    "preview": "[{\"status\":2,\"msg\":\"cn_980022 non-existent\",\"code\":\"cn_980022\"}]\n"
+  },
+  {
+    "id": "980022_eastmoney",
+    "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=0.980022&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61&klt=101&fqt=0&beg=20260201&end=20260930",
+    "status": 0,
+    "bytes": 14759,
+    "sha256": "2d7216de549e46890fe38456cc52cbfad0e462cf38d26dfc58a3352eb91f5997",
+    "captured_at": "2026-09-30T11:39:29.070166+08:00",
+    "preview": "{\"rc\":0,\"rt\":17,\"svr\":181669694,\"lt\":1,\"full\":0,\"dlmkts\":\"\",\"dsc\":\"0\",\"data\":{\"code\":\"980022\",\"market\":0,\"name\":\"机器人产业\",\"decimal\":2,\"dktotal"
+  },
+  {
+    "id": "snapshot",
+    "url": "https://qt.gtimg.cn/q=sz159039,sz159559,sz980022",
+    "status": 0,
+    "bytes": 1437,
+    "sha256": "7abc538a4e9a281188da7563870b2bba0e6888c7fe54628cc63867a096ef3e43",
+    "captured_at": "2026-09-30T11:39:29.098753+08:00",
+    "preview": "v_sz159039=\"51~������ETF����~159039~0.794~0.795~0.796~73767~30431~43336~0.794~3342~0.793~2014~0.792~971~0.791~245~0.790~2512~0.796~1962~0.797~1749~0.7"
+  },
+  {
+    "id": "index_method",
+    "url": "https://www.cnindex.com.cn/docs/gz_980022.pdf",
+    "status": 0,
+    "bytes": 1234834,
+    "sha256": "80612032de2b9c30a103cd9302a739ce86cbd7e0cec8000f2d3a58f693c68f89",
+    "captured_at": "2026-09-30T11:39:30.522620+08:00",
+    "preview": ""
+  },
+  {
+    "id": "huaan_pcf",
+    "url": "https://www.huaan.com.cn/etf/159039/sgshqd.jsp",
+    "status": 0,
+    "bytes": 81657,
+    "sha256": "70f7e7971f40521d96097e94a1b6b5a892b1a540b091189a221cbc48e316ff38",
+    "captured_at": "2026-09-30T11:39:30.418352+08:00",
+    "preview": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\t\n\t\n\t\n\n<html>\n\n\n\n<head>\n\n\n\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=gb2312\">\n\n<title>������֤�����˲��"
+  },
+  {
+    "id": "jingshun_product",
+    "url": "https://www.igwfmc.com/main/jjcp/product/159559.html",
+    "status": 0,
+    "bytes": 1480,
+    "sha256": "60762f74f068d347b4d6dacae73931bbc9552174e6d6e4bf3903c87e02c8500d",
+    "captured_at": "2026-09-30T11:39:29.267963+08:00",
+    "preview": "<!DOCTYPE html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"renderer\" content=\"webkit\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge"
+  }
+]

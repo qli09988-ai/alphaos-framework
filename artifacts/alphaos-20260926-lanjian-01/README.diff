@@ -1,0 +1,31 @@
+--- README.md (v0.1-working)
++++ README.md (v0.1.1-working)
+@@ -1,6 +1,7 @@
+ # AlphaOS Portable Docs
+ 
+-Version: v0.1-working  
++Version: v0.1.1-working  
++Last updated: 2026-09-26  
+ Purpose: keep AlphaOS portable across ChatGPT, Claude, DeepSeek, local agents, OpenClaw, etc.
+ 
+ ## Files
+@@ -10,6 +11,19 @@
+ - `alphaos_case_lab.md` — real-world cases used to pressure-test the framework
+ - `alphaos_backlog_changelog.md` — gaps, proposed changes, and approved version changes
+ - `alphaos_usage_protocol.md` — how any model/agent should use these files without causing memory drift
++
++- `templates/AlphaOS_增量交接单.md` — 既有模板，保持原样
++- `handoffs/2026-09-26-蓝箭事件驱动-01.md` — 本轮增量交接与合入结果
++
++## Current revision
++
++唯一当前主档仍为本目录 `alphaos_core_spec.md`；本轮 Approved：Router、C0–C7、Event–Expectation、Why Now?、数据源抽象、相对强弱控制组。Market Leadership 与 Catalyst Quality 仍为 Proposed/Testing，定义放在 Case Lab / Backlog，不是 Core 正式规则。
++
++v0.1.1-working 是 v0.1 的文档增量修订，不代表风险/仓位、持续监控和评估闭环已完成。
++
++[增量交接单](handoffs/2026-09-26-蓝箭事件驱动-01.md) · [合入与冲突报告](artifacts/alphaos-20260926-lanjian-01/merge_report.md)
++
++`archives/` 为历史备份，`artifacts/` 为证据与差异，`deployment/` 为旧案例展示；都不是另一套 Source of Truth。`sources/` 及同步参考文件保持只读。根目录主档是原 ZIP 解包的可编辑工作文件；本轮在原文件更新，没有另建框架。
+ 
+ ## Governance rule
+ 

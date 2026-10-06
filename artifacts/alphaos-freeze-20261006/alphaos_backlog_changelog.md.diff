@@ -1,0 +1,109 @@
+--- before/alphaos_backlog_changelog.md
++++ after/alphaos_backlog_changelog.md
+@@ -1,7 +1,7 @@
+ # AlphaOS Backlog & Change Log
+ 
+-Version: v0.1.1-working  
+-Last updated: 2026-09-26
++Version: AlphaOS Framework v0.1 FROZEN  
++Last updated: 2026-10-06
+ 
+ Purpose:
+ - prevent chat discoveries from silently mutating the framework;
+@@ -67,47 +67,44 @@
+ 
+ ---
+ 
+-## B. v0.1 MUST finish
+-
+-### TODO-001 — Risk & Position Engine
+-Need:
+-- portfolio risk budget
+-- single-position risk budget
+-- volatility / structure inputs
+-- correlation / concentration
+-- max portfolio loss logic
+-- deterministic calculation rules
+-- no LLM-invented percentages
+-
+-### TODO-002 — Thesis Card + Event Monitor
+-2026-09-26：Router、Why Now?、C0–C7 已 Approved；字段规范完成部分合入。下面持续运行与验收仍未完成，TODO 不关闭。
+-Need:
+-- state fields
+-- validation metrics
+-- strengthening / weakening / break conditions
+-- catalyst calendar
+-- T-3~7, T, T+1 behavior
+-- proactive updates
+-
+-### TODO-003 — Data Requirement Mapping
+-2026-09-26：实时/历史/事件源分工与部署审计边界已合入 Core §20；需补每字段覆盖、备援与运行验收，不关闭 TODO。
+-For each decision point:
+-- data needed
+-- source
+-- frequency
+-- automation
+-- backup source
+-- timestamp / provenance / confidence
+-
+-### TODO-004 — Review / Evaluation Loop
+-Need:
+-- record decision at time T
+-- outcome later
+-- diagnose data / reasoning / rule / execution failure
+-- propose rule change
+-- validate change
+-- human approval
+-- version update
++## A3. CHG-013 — Final Approval Set / Freeze — 2026-10-06
++
++Status: **Human Approved / 已合入 / AlphaOS Framework v0.1 FROZEN**。
++
++正式批准原文：“批准 AlphaOS Framework v0.1 Final Approval Set，冻结 v0.1”。批准来源：当前用户封版任务；原对话同句批准可追溯至 `e09fb77e-bba7-4f39-899f-8cccfcd30bd0`，对话 `6a72cde8-968c-83e9-8e76-dbd98abc4935`。本条统一登记本次批准集，不将旧助手建议当作授权。
++
++| 范围 | 合入位置 / 处理 |
++|---|---|
++| Execution | Core §14：OPEN 五项检查、ADD 新证据、RE-UNDERWRITE、成本纪律、Shock Review |
++| Risk & Position | Core §14：确定性 Risk Engine、累计 Thesis 预算、四层风险、Conviction 边界、两类 sizing |
++| Personal Policy | 独立 `alphaos_personal_policy.md`：动态权益、1R、Disaster Limit、Theme Hard Ceiling、Recovery；45% 仅 Runtime 校准 |
++| Thesis Card / Monitor | Core §15：固定字段、五类更新触发；保留 Industrial 与 Event 字段 |
++| Data Discipline | Core §20：字段与派生信号、Missing、来源/时间/新鲜度/provenance；不扩部署 |
++| Review Loop | Core §17：Snapshot 至 Version Update、过程/结果分评、七类错误 |
++| 既有 Approved | CHG-001–012 保留；Router、C0–C7、Event/Expectation、Why Now、源抽象、相对强弱控制组不重写 |
++| 雷科 Acceptance Case | Case Lab #004；历史价格带与用户减仓分类仅属 Case |
++| 工程治理 | README / Usage / Status、FREEZE、HANDOFF；AI 不自批或静默改 Core |
++
++版本说明：此前 `v0.1.1-working` 是文档增量标识；本次正式发布名为 **AlphaOS Framework v0.1**，继承全部既有 Approved 内容，未用旧快照回退主档。
++
++规则合并：可用本地主档未发现 AC-RISK / AC-EXEC 编号实体；将本次已批准内容及既有相关表述规范到 Core §14，避免另加两套近义编号。历史聊天编号不作为第二规范来源；旧 handoffs / artifacts / archives 原样保留。
++
++## B. 原 v0.1 TODO 结项与 Runtime 移交
++
++| 原 ID | Framework 规范状态 | 未完成实现 / 验收去向 |
++|---|---|---|
++| TODO-001 Risk & Position | 2026-10-06 Approved / FROZEN | 确定性 Risk Code、输入验证及预算聚合验收 → Runtime MVP |
++| TODO-002 Thesis Card + Event Monitor | 固定字段/触发已冻结，既有事件规则保留 | 卡片持久化与运行验收 → Runtime；原 T-3~7 / T / T+1 实验安排不作为新增强制规则 |
++| TODO-003 Data Requirement Mapping | 数据纪律与来源职责已冻结 | 逐字段覆盖、频率、备援、freshness 与 schema 验证 → Runtime MVP |
++| TODO-004 Review / Evaluation Loop | 流程与错误分类已冻结 | Decision Snapshot / Outcome / Diagnosis 落盘和回放验收 → Runtime |
++
++旧 TODO 原文见封版前备份，历史证据不删除。实现未完成不等于框架仍待审批；冻结不等于实盘能力已验收。
++
++Freeze 后所有新问题先分类为 **Runtime Bug / Case Finding / CHG for v0.1.1 or v0.2**。Core 变更必须走：
++
++`Case Finding → Gap → Proposed Change → Review → Human Approval → Core Update`
++
++其中验证按 Core §17 执行；AI 可提议，不可自批或静默修改 Core。Personal Policy 的参数变更独立记录并由用户批准，不自动改变通用规则。
+ 
+ ---
+ 
+@@ -233,3 +230,10 @@
+ - 本地与原对话附件同名 `AlphaOS_增量交接单.md` 完全一致；保留模板，新增一张已填写交接单，不覆盖模板。
+ - 旧聊天提及 `AlphaOS_Specification_v0.1.md`，本地和已取得附件均未找到正文，因此无法比较其内容；记录为外部旧版本未取得，不将其当最新主档。
+ - 本地主档已合入 v0.1.1-working；保留合入前 ZIP、哈希与 diff。历史部署页面/上传包未改，不能作为当前框架版本。
++
++
++## F. Freeze 排除项登记 — 2026-10-06
++
++Market Leadership = Experimental/Testing；Catalyst Quality Q0–Q3、Pre-Event Leader / Event Review = Proposed/Testing。低空经济完整案例留 Case Backlog；完整 Asset Realization Engine 留 Proposed；Product Trust / Debate Mode / Confidence / User Override 等产品能力留产品 Backlog。159039 vs 159559 留 Runtime/Case Validation。雷科 Dry Run 为 Acceptance Case，价格带与 Swing High 不进入 Core。
++
++这些项目未因 CHG-013 变为 Approved。卡片既有证据置信度元数据不等于批准产品层 Confidence 模块。

@@ -1,0 +1,30 @@
+--- before/alphaos_case_lab.md
++++ after/alphaos_case_lab.md
+@@ -1,7 +1,7 @@
+ # AlphaOS Case Lab
+ 
+-Version: v0.1.1-working  
+-Last updated: 2026-09-26
++Framework reference: AlphaOS Framework v0.1 FROZEN  
++Last updated: 2026-10-06
+ 
+ Rule: this file contains experiments and observations.
+ Nothing here becomes a formal AlphaOS rule unless approved in the Change Log and added to Core Spec.
+@@ -209,3 +209,17 @@
+ 4. 下一次材料到达即更新卡片；窗口假设届满而无披露时登记延迟并复核 thesis，不把预测日期当事实。无已核实硬期限，不在本轮开启自动监控。
+ 
+ 本案例只为六项已获授权的方法更新提供问题背景；Leadership、Q 分级及 Pre-Event Leader 阈值均未升为 Core。
++
++
++---
++
++## Case #004 — 雷科防务（002413）v0.1 Acceptance Case
++
++状态：**Acceptance Case / Case only**；记录日期 2026-10-06，时区 Asia/Shanghai。用于检验事实纠错与行动分类，不新增 Core 价格规则。
++
++- **FACT（历史证据）**：2026-08-07 日线高 9.52，收 9.17 元。已归档分钟核验显示：14:15 标签分钟K线起突破 9.18，14:20 时段冲至 9.52，之后回落至 9.18 附近，最终收 9.17。分钟标签不等于秒级成交时刻。
++- **Case conclusion**：`9.18不是8/07硬压力高点`；`9.10–9.25 = Historical Acceptance/Rejection Zone（Partial）`；`9.52 = Confirmed prior Swing High`。Partial 不表示经过多轮独立检验，也不是当前买卖信号。
++- **FACT（用户交易陈述）**：用户 2026-09-24 在 8.97 涨停日部分减仓。
++- **Action classification**：**Pre-emptive Tactical Reduction**；依据为接近上一轮接受失败区，而不是已确认突破失败。不据后续涨跌反推过程正确。
++- **Source / timestamp / freshness / provenance**：[v2 完整历史证据交接](artifacts/leike-20260807-verification/发送至AlphaOS_chat_完整交接正文_v2.md)。日线来源腾讯/搜狐，采集于 2026-09-27，历史观察截至 2026-09-24；分钟来源及采集记录见该交接内分钟补充报告和原始清单。本次沿用归档核验与用户批准结论，未重新抓行情，不代表 10/06 实时数据。
++- **Missing Evidence / limits**：本轮未取得券商成交回单，交易动作按用户陈述登记；历史分钟跨源差异及覆盖边界沿用原证据，不宣称逐条完全一致。原始分钟数据保留在 artifacts，不复制进 Core。

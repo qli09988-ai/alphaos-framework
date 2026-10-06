@@ -1,0 +1,12 @@
+# Local caches and runtime credentials
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+account.session
+*.pem
+*.key
+# Third-party installation caches remain outside the documentation repository
+artifacts/ths-validation/sdk-source/
+artifacts/ths-validation/thsdk-*.tar.gz

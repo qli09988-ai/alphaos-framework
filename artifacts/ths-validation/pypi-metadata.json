@@ -1,0 +1,170 @@
+{
+  "info": {
+    "author": null,
+    "author_email": null,
+    "bugtrack_url": null,
+    "classifiers": [
+      "Operating System :: MacOS :: MacOS X",
+      "Operating System :: Microsoft :: Windows",
+      "Operating System :: POSIX :: Linux",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Typing :: Typed"
+    ],
+    "description": "\n# THSDK\n\n## 介绍\n\nTHSDK 是面向 Python 的同步证券数据 SDK，覆盖实时与历史行情、证券与板块资料、资讯事件、\n问财选股、排行统计以及账号自选管理。安装后直接调用 `thsdk` 模块，无需创建客户端对象。\n\n常用查询和多数多行接口返回 `pandas.DataFrame`，方便继续筛选、分析或导出。当前版本只提供\n同步查询与账号自选管理，不包含订阅、Level-2 或任意原始方法分发入口。\n\n## 安装\n\n```bash\npip install --upgrade thsdk\n```\n\n\n## 认证\n\n调用数据接口前，从下面三种登录方式中任选一种：\n\n| 登录方式 | 调用 | 说明 |\n| --- | --- | --- |\n| 自动登录 | `thsdk.auth()` | 复用当前进程或本地会话；没有可用会话时使用临时账号 |\n| 账号密码 | `thsdk.auth(\"username\", \"password\")` | 使用传入的账号和密码登录 |\n| 扫码登录 | `thsdk.auth_qrcode()` | 优先复用本地会话，否则显示二维码并等待扫码 |\n\n```python\nimport thsdk\n\n# 三选一\nthsdk.auth()\n# thsdk.auth(\"username\", \"password\")\n# thsdk.auth_qrcode()\n```\n\n登录成功后，可复用会话保存在首次调用时工作目录的 `account.session`。请把它视为敏感凭据，\n不要提交到 Git 或交给他人。`thsdk.logout()` 会退出当前账号并删除该会话文件。临时账号仅适合\n体验和只读查询，其数据权限与调用频率可能受限。\n\n## 使用案例\n\n以下案例均先完成导入与认证：\n\n```python\nimport thsdk\n\nthsdk.auth()\n```\n\n### 行情查询\n\n```python\ndaily = thsdk.get_price(\n    \"USHA600519\",\n    frequency=\"daily\",\n    count=20,\n    fq=\"pre\",\n)\nintraday = thsdk.intraday_data(\"USHA600519\")\norder_book = thsdk.depth([\"USHA600519\", \"USZA300033\"])\n\nprint(daily)\nprint(intraday)\nprint(order_book)\n```\n\n接口使用“4 位市场代码 + 证券代码”的完整标识，例如 `USHA600519`、`USZA300033`。\n只有名称或短代码时，可先调用 `search_symbols()` 或 `complete_ths_code()`。\n\n### 问财、板块与资讯\n\n```python\nstock_pool = thsdk.wencai_nlp(\"市盈率小于 20，净利润增长率大于 20%\", limit=50)\nmembers = thsdk.block_constituents(\"沪深300\", count=20)\nflash_news = thsdk.news(page=1, page_size=20)\n\nprint(stock_pool)\nprint(members)\nprint(flash_news)\n```\n\n### 标准 API\n\n标准 API 与底层运行组件的方法一一对应，可直接传入完整请求字段：\n\n```python\nrows = thsdk.list_security_k_lines(\n    security=\"USHA600519\",\n    start=-20,\n    end=0,\n    adjust=thsdk.Adjust.FORWARD,\n    period=thsdk.Period.DAY,\n)\nprint(rows)\n```\n\n数据接口只返回结果，不会主动打印。`thsdk/examples/` 包含 102 个脚本：96 个公开函数的同名\n最小示例、5 个组合流程，以及用于观察 50ms 限频的 `loop.py`；账号写操作与 `logout()` 的示例\n默认不会执行。\n\n## 全部公开 API\n\nTHSDK 3.x 公开 96 个函数。12 个便捷数据 API 建立在标准 API 之上，因此两层能力存在重叠。\n\n| 接口层 | 数量 | 说明 |\n| --- | ---: | --- |\n| 认证、会话与清单 | 4 | 登录、退出和标准 API 静态清单 |\n| 便捷数据 API | 12 | 适配常用参数并返回 `pandas.DataFrame` |\n| 标准 API | 80 | 与底层运行组件的同步业务方法一一对应 |\n\n12 个便捷数据 API 和 63 个多行标准 API 返回 `pandas.DataFrame`；7 个单对象读取和\n10 个账号写操作保留运行组件解码后的 `dict` 或标量。标准 API 可直接传关键字字段，\n也可把完整请求映射作为第一个参数；所有标准 API 都接受可选的 `timeout=`。\n\n### 认证、会话与清单（4）\n\n| API | 用途 |\n| --- | --- |\n| `auth()` | 自动登录，或使用传入的账号密码登录 |\n| `auth_qrcode()` | 恢复本地会话，必要时显示二维码并等待扫码 |\n| `logout()` | 退出账号并删除持久会话 |\n| `method_inventory()` | 返回 80 个标准 API 的静态元数据 |\n\n### 便捷数据 API（12）\n\n| API | 用途 |\n| --- | --- |\n| `get_price()` | 查询一只证券的 K 线，可按日期、条数、周期、复权和字段筛选 |\n| `klines()` | 使用传统参数名查询 K 线 |\n| `intraday_data()` | 查询当天或指定交易日的分时走势 |\n| `tick_level1()` | 按最近条数或时间范围查询普通逐笔成交 |\n| `depth()` | 查询一只或多只证券的五档买卖盘并按档位展开 |\n| `corporate_action()` | 查询分红、送转、配股和除权除息记录 |\n| `search_symbols()` | 按代码、拼音或中文名称搜索证券 |\n| `complete_ths_code()` | 把一个或多个短代码解析为完整证券代码 |\n| `wencai_nlp()` | 执行自然语言选股并把动态字段展开为表格列 |\n| `news()` | 分页查询 7x24 快讯 |\n| `market_securities()` | 分页列出指定市场中的证券 |\n| `block_constituents()` | 按板块 ID 或名称查询成分证券 |\n\n### 账户权限与自选股（13）\n\n| API | 用途 | 类型 |\n| --- | --- | --- |\n| `account_permissions()` | 查询当前账号的数据权限 | 读 |\n| `get_account_watchlist()` | 查询账号自选股及版本信息 | 读 |\n| `get_account_watchlist_groups()` | 查询自选分组及分组证券 | 读 |\n| `add_account_watchlist_group_securities()` | 向指定自选分组追加证券 | 写 |\n| `add_account_watchlist_securities()` | 向账号自选股追加证券 | 写 |\n| `clear_account_watchlist()` | 清空账号全部自选股 | 写 |\n| `create_account_watchlist_group()` | 创建自选分组，可同时设置初始证券 | 写 |\n| `delete_account_watchlist_group()` | 删除指定自选分组 | 写 |\n| `remove_account_watchlist_group_securities()` | 从指定自选分组移除证券 | 写 |\n| `remove_account_watchlist_securities()` | 从账号自选股移除证券 | 写 |\n| `rename_account_watchlist_group()` | 重命名自选分组 | 写 |\n| `replace_account_watchlist_group_securities()` | 整体替换指定分组中的证券 | 写 |\n| `replace_account_watchlist_securities()` | 按版本整体替换账号自选股 | 写 |\n\n10 个写接口会修改远端账号数据，其中 `clear_account_watchlist()` 会清空全部自选股，请只在明确\n需要时调用。\n\n### 市场目录、证券发现与关系（18）\n\n| API | 用途 |\n| --- | --- |\n| `get_market_metadata()` | 查询市场元数据和版本信息 |\n| `get_market_security_names()` | 查询指定市场的证券名称数据 |\n| `get_security_concept_tags()` | 查询证券所属概念标签 |\n| `get_security_industry()` | 查询证券的行业归属 |\n| `list_block_constituents()` | 查询板块成分证券并支持服务端排序 |\n| `list_block_descriptions()` | 批量查询板块名称和简介 |\n| `list_futures_related_securities()` | 查询期货相关证券目录 |\n| `list_industry_children()` | 查询行业节点的下级行业 |\n| `list_market_securities()` | 分页查询指定市场的证券 |\n| `list_related_security_performances()` | 查询关联证券及其表现 |\n| `list_security_ah_relations()` | 查询证券的 A/H 股对应关系 |\n| `list_security_block_memberships()` | 查询证券所属板块 |\n| `list_security_futures_relations()` | 批量查询证券与期货的关联关系 |\n| `list_security_industry_mappings()` | 批量查询证券的行业映射 |\n| `list_security_link_relations()` | 按关联键查询证券链接关系 |\n| `resolve_block()` | 按名称或条件解析唯一板块标识 |\n| `resolve_securities()` | 批量解析短代码或候选证券 |\n| `search_securities()` | 按代码、拼音或名称搜索证券候选项 |\n\n### 行情、交易序列与基本面（17）\n\n| API | 用途 |\n| --- | --- |\n| `check_market_timeline_readiness()` | 检查市场交易时间线数据是否就绪 |\n| `get_security_trading_timeline()` | 查询证券交易时段和时间线 |\n| `list_index_call_auction_quotes()` | 查询指数集合竞价行情 |\n| `list_security_call_auction_quotes()` | 查询证券集合竞价行情 |\n| `list_security_corporate_actions()` | 查询公司行为和除权除息资料 |\n| `list_security_daily_capital_flows()` | 查询证券每日资金流 |\n| `list_security_daily_k_lines_with_previous_close()` | 查询带前收盘价的日 K 线 |\n| `list_security_extended_hours_intraday_bars()` | 查询盘前盘后分时数据 |\n| `list_security_extended_hours_ticks()` | 查询盘前盘后逐笔数据 |\n| `list_security_financial_snapshots()` | 批量查询证券财务快照字段 |\n| `list_security_intraday_bars()` | 查询指定交易日分时数据 |\n| `list_security_k_lines()` | 查询多周期、可复权的历史 K 线 |\n| `list_security_option_greeks()` | 查询期权 Greeks 指标 |\n| `list_security_order_books()` | 批量查询证券盘口 |\n| `list_security_price_volume_levels()` | 查询价量分布档位 |\n| `list_security_ticks()` | 查询证券逐笔成交 |\n| `list_security_time_and_sales_ticks()` | 查询成交明细时间序列 |\n\n### 资讯、事件与异动（14）\n\n| API | 用途 |\n| --- | --- |\n| `analyze_security_limit_up()` | 分析证券涨停状态与相关信息 |\n| `get_security_price_limit_events()` | 查询证券涨跌停事件 |\n| `get_security_short_term_highlights()` | 查询证券短线亮点 |\n| `list_commodity_stock_linkage_news()` | 查询商品与股票联动资讯 |\n| `list_hot_block_calendar_events()` | 查询热门板块日历事件 |\n| `list_hot_event_news()` | 查询热点事件资讯 |\n| `list_market_call_auction_unusual_events()` | 查询市场集合竞价异动 |\n| `list_market_change_events()` | 查询市场异动事件 |\n| `list_market_short_term_events()` | 查询市场短线事件 |\n| `list_news_flash_items()` | 分页查询 7x24 快讯 |\n| `list_news_items()` | 按分类、证券或市场查询资讯 |\n| `list_security_news_events()` | 按时间线查询证券资讯事件 |\n| `list_security_news_markers()` | 查询证券资讯时间标记 |\n| `list_security_research_reports()` | 查询证券研究报告 |\n\n### 问财（7）\n\n| API | 用途 |\n| --- | --- |\n| `list_wencai_expression_fields()` | 解析问财表达式可用字段 |\n| `list_wencai_hot_blocks()` | 查询问财热门板块 |\n| `query_wencai()` | 执行问财查询并返回字段和行数据 |\n| `query_wencai_realtime_fields()` | 查询证券的问财实时字段 |\n| `query_wencai_securities()` | 执行问财选股并返回证券结果 |\n| `rank_block_securities_by_wencai_field()` | 按问财字段对板块成分排序 |\n| `resolve_wencai_securities()` | 把问财条件解析为标准证券池 |\n\n### 实时统计、排行与排序（11）\n\n| API | 用途 |\n| --- | --- |\n| `calculate_security_realtime_statistics()` | 计算一组证券的实时统计指标 |\n| `get_security_popularity_rank()` | 查询单只证券的热度排名 |\n| `list_securities_by_realtime_signal()` | 按实时信号筛选证券 |\n| `rank_block_securities()` | 按指定指标对板块成分排序 |\n| `rank_block_securities_by_industry()` | 按行业指标对板块成分排序 |\n| `rank_constituents_by_performance_contribution()` | 按涨跌贡献度排行指数或板块成分 |\n| `rank_related_securities()` | 对关联证券进行服务端排序 |\n| `rank_securities_by_popularity()` | 查询证券热度榜单 |\n| `rank_securities_by_realtime_statistic()` | 按实时统计字段排行证券 |\n| `sort_securities()` | 按指定指标排序自定义证券池 |\n| `sort_securities_by_industry()` | 按行业指标排序自定义证券池 |\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": [
+      "Classifier",
+      "Description",
+      "Description-Content-Type",
+      "License-File",
+      "License-Expression",
+      "Requires-Dist",
+      "Requires-Python",
+      "Summary"
+    ],
+    "home_page": null,
+    "keywords": null,
+    "license": null,
+    "license_expression": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "thsdk",
+    "package_url": "https://pypi.org/project/thsdk/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/thsdk/",
+    "project_urls": null,
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/thsdk/2.0.2/",
+    "requires_dist": [
+      "pandas>=1.3.0"
+    ],
+    "requires_python": ">=3.10",
+    "summary": "Python SDK for financial market data",
+    "version": "2.0.2",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 40762714,
+  "ownership": {
+    "organization": null,
+    "roles": [
+      {
+        "role": "Owner",
+        "user": "panghu11033"
+      }
+    ]
+  },
+  "releases": {
+    "1.7.18": [
+      {
+        "comment_text": "",
+        "core-metadata": false,
+        "digests": {
+          "blake2b_256": "553e9e54b56ecdea6739d3e2a5a6874808f4e64d5afcbfb5ef745b3915037422",
+          "md5": "0c25da1cc0f582565e6600a6386330b3",
+          "sha256": "86266fba1745b707dba1378b60dbca62ed4e165cd92d7a0b789923afbe1a5d40"
+        },
+        "downloads": -1,
+        "filename": "thsdk-1.7.18.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0c25da1cc0f582565e6600a6386330b3",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 17299090,
+        "upload_time": "2026-04-01T14:39:09",
+        "upload_time_iso_8601": "2026-04-01T14:39:09.344043Z",
+        "url": "https://files.pythonhosted.org/packages/55/3e/9e54b56ecdea6739d3e2a5a6874808f4e64d5afcbfb5ef745b3915037422/thsdk-1.7.18.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.0.1": [
+      {
+        "comment_text": null,
+        "core-metadata": false,
+        "digests": {
+          "blake2b_256": "09a5e17d5ab6baf2a16f949bc5cfb15e76fc6d4c7a7e62fd54f6f9c860767b0e",
+          "md5": "91c0352269089c548c1f18bead5da9e4",
+          "sha256": "619f5b997410e162b522f8021fa2c6efcda16a7c35fbfbba80b9b3e2a6709236"
+        },
+        "downloads": -1,
+        "filename": "thsdk-2.0.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "91c0352269089c548c1f18bead5da9e4",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 22593753,
+        "upload_time": "2026-09-04T23:54:18",
+        "upload_time_iso_8601": "2026-09-04T23:54:18.982844Z",
+        "url": "https://files.pythonhosted.org/packages/09/a5/e17d5ab6baf2a16f949bc5cfb15e76fc6d4c7a7e62fd54f6f9c860767b0e/thsdk-2.0.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.0.2": [
+      {
+        "comment_text": null,
+        "core-metadata": false,
+        "digests": {
+          "blake2b_256": "e45453227fca0b82e93e6292e0703ab412e517c87c632f744e82977738da23f3",
+          "md5": "e720c1b2e9e6c1029a12eeec7907e724",
+          "sha256": "12b950a81df0ddc80f577dca3aed11660e8f0c5ef59b5ef4a21846ae3915f40a"
+        },
+        "downloads": -1,
+        "filename": "thsdk-2.0.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "e720c1b2e9e6c1029a12eeec7907e724",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 22590742,
+        "upload_time": "2026-09-05T13:54:28",
+        "upload_time_iso_8601": "2026-09-05T13:54:28.397562Z",
+        "url": "https://files.pythonhosted.org/packages/e4/54/53227fca0b82e93e6292e0703ab412e517c87c632f744e82977738da23f3/thsdk-2.0.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "core-metadata": false,
+      "digests": {
+        "blake2b_256": "e45453227fca0b82e93e6292e0703ab412e517c87c632f744e82977738da23f3",
+        "md5": "e720c1b2e9e6c1029a12eeec7907e724",
+        "sha256": "12b950a81df0ddc80f577dca3aed11660e8f0c5ef59b5ef4a21846ae3915f40a"
+      },
+      "downloads": -1,
+      "filename": "thsdk-2.0.2.tar.gz",
+      "has_sig": false,
+      "md5_digest": "e720c1b2e9e6c1029a12eeec7907e724",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.10",
+      "size": 22590742,
+      "upload_time": "2026-09-05T13:54:28",
+      "upload_time_iso_8601": "2026-09-05T13:54:28.397562Z",
+      "url": "https://files.pythonhosted.org/packages/e4/54/53227fca0b82e93e6292e0703ab412e517c87c632f744e82977738da23f3/thsdk-2.0.2.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}
